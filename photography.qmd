@@ -1,0 +1,25 @@
+---
+title: "Photography"
+page-layout: full
+title-block-banner: false
+---
+
+::: {layout-ncol=3}
+
+![Flying](images/photo/flying-bro.jpg)
+
+![Underwater](images/photo/underwater.jpg)
+
+![Summer](images/photo/insta.jpg)
+
+![Star Trails](images/photo/star-trail.jpg)
+
+![Dallas](images/photo/dallas.jpg)
+
+![Bird](images/photo/bird.jpg)
+
+![Film](images/photo/film.jpg)
+
+![Chill](images/photo/sprite.jpg)
+
+:::

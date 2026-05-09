@@ -1,0 +1,84 @@
+---
+title: "Summary: Large Datasets and Structured Databases"
+description: "A summary of Paul Goldsmith-Pinkham's article on AI-assisted data engineering for economists."
+author: "He Ren"
+date: "2026-05-09"
+categories: [AI, data, economics]
+---
+
+## Overview
+
+*A summary of [Paul Goldsmith-Pinkham's article](https://paulgp.substack.com/p/large-datasets-and-structured-databases), published April 5, 2026.*
+
+Paul Goldsmith-Pinkham argues that AI coding agents (specifically Claude Code) have collapsed the fixed costs of professional data engineering, making it feasible for economists to build harmonized, documented, queryable databases from massive government datasets without specialized data engineering training.
+
+## The Core Problem
+
+Economists traditionally work with flat CSV files and copies because learning proper data infrastructure (parquet files, databases, schemas) required significant upfront investment. This made messy workflows a rational choice — the fixed cost of "doing it right" was too high to justify for one-off projects.
+
+## The Demonstration
+
+To prove the point, the author transformed a 70GB HMDA (Home Mortgage Disclosure Act) mortgage dataset — 291 million rows across 18 years — into a professional-grade pipeline using Claude Code. Work that traditionally takes weeks now takes hours.
+
+### Key results
+
+- Downloaded and harmonized 18 years of mortgage data from two incompatible sources (2007–2017 vs. 2018–2024)
+- Achieved 15× compression converting CSVs to parquet (70GB → 6GB)
+- Built a DuckDB database with a queryable metadata table documenting every column
+- Created county-by-year aggregate tables (HHI concentration, denial rates, median loan amounts, etc.)
+- Classified lenders as fintech vs. traditional banks
+- Found fintech origination share grew from ~1.1% (2007) to a peak of 16.3% (2021), settling around 11% by 2024
+
+## The Original Prompts
+
+### Initial comprehensive prompt
+
+> I want to build a county-level panel dataset of mortgage lending in the US from 2007 to 2024 using HMDA (Home Mortgage Disclosure Act) data. The goal is to study the geographic expansion of fintech mortgage lenders over time.
+>
+> The data comes from two sources (I've verified both are accessible):
+>
+> - **2007–2017**: CFPB historic data at `https://files.consumerfinance.gov/hmda-historic-loan-data/hmda_{YEAR}_nationwide_all-records_codes.zip`. These are zipped CSVs with numeric codes and the old LAR column names.
+> - **2018–2024**: CFPB Data Browser API at `https://ffiec.cfpb.gov/v2/data-browser-api/view/nationwide/csv?years={YEAR}`. These stream as CSV with 99 columns, string codes, and the new format (uses `lei` instead of `respondent_id`, different column names throughout).
+>
+> Each year is millions of rows. The full panel is 250M+ rows. This will not fit in pandas.
+>
+> Here's what I'd like you to do:
+>
+> 1. Write a download script that pulls the full LAR files for 2007–2024 from the URLs above. Include resume capability in case downloads get interrupted. Use a proper User-Agent header.
+> 2. Convert each year's CSV to parquet for efficient storage.
+> 3. Set up a DuckDB database. Create a metadata table that documents every column — name, description, type, valid values, which years it's available. This metadata table is important: I want future sessions to be able to query it and immediately understand the dataset without me re-explaining anything.
+>
+> Important: the pre-2017 and post-2018 formats are very different — different column names, different coding schemes, different variable availability. You'll need to figure out a crosswalk and harmonize into a consistent schema.
+>
+> Key variables I care about: year, lender ID, lender name, county FIPS, state FIPS, loan type, loan purpose, action taken (originated, denied, etc.), loan amount, applicant race, applicant income. Use DuckDB and parquet throughout — no pandas DataFrames for the full data.
+
+### Feasibility inquiry
+
+> I want to classify lenders as fintech or shadow banks versus traditional. Start with the lender classification from Fuster, Plosser, Schnabl and Vickery (2019). Tell me what it would take to do this task before you try anything complicated. Is this feasible? What might be missing?
+
+### Aggregate table request
+
+> I want to build an aggregate database: county by year, total originations, dollar value, number of active lenders, the HHI (Herfindahl-Hirschman Index) of lender market shares, the denial rate, and the median loan amount.
+
+### Visualization request
+
+> Please make a figure of the trend in fintech origination share over time in the dataset, using Kieran Healy stylings for plotting.
+
+## Key Insights
+
+**Metadata as context engineering.** The metadata table acts as a form of "context engineering for data" — it stores column descriptions, valid values, and availability information directly inside the database. Future sessions can query the documentation without the human having to re-explain.
+
+**Right tools for big data.** When data exceeds RAM, parquet and DuckDB are the right tools — pandas is the wrong tool.
+
+**Plan before coding.** For complex pipelines, asking the model to scope the task before implementation pays off (the feasibility prompt above is a good example).
+
+## Conclusion
+
+The author argues that AI-assisted data engineering has fundamentally shifted the economics of research infrastructure. The bottleneck for empirical work has moved from *"can I build the infrastructure?"* to *"do I have a worthwhile research question?"*
+
+Key takeaways:
+
+- The fixed costs of professional data engineering have collapsed
+- Large public datasets are more accessible than commonly assumed
+- Embedding metadata in the database makes future work cheaper
+- Planning matters more than coding speed

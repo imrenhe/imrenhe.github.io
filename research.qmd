@@ -1,0 +1,19 @@
+---
+title: "Research"
+---
+
+## Journal Articles
+
+- **Zheng, Y., & Ren, H.** (2026). [Does fintech and digitalization adoption impact employee performance efficiency? Evidence from a machine learning approach.](https://www.worldscientific.com/doi/abs/10.1142/S2010139226500023) *The Quarterly Journal of Finance*. World Scientific.
+
+- **Zheng, Y., & Ren, H.** (2024). [COVID-19 vaccination and housing payments.](https://www.sciencedirect.com/science/article/pii/S1051137724000111) *Journal of Housing Economics*, 64, 101992. Academic Press.
+
+- **Choi, S., Li, Z., Boonme, K., & Ren, H.** (2024). [Face-to-face, online or HyFlex instruction? The effects of self-directed learning on stress reduction and student satisfaction among emerging adults.](https://www.emerald.com/insight/content/doi/10.1108/JIEB-06-2023-0044/full/html) *Journal of International Education in Business*, 17(3), 373–394. Emerald Publishing Limited.
+
+- **Ren, H., & Zheng, Y.** (2023). [COVID-19 vaccination and household savings: An economic recovery channel.](https://www.sciencedirect.com/science/article/pii/S1544612323000855) *Finance Research Letters*, 103711. Elsevier.
+
+- **Mantecon, T., Almomen, A., Ren, H., & Zheng, Y.** (2023). [An analysis of the potential impact of heightened capital requirements on banks' cost of capital.](https://link.springer.com/article/10.1007/s10693-023-00400-y) *Journal of Financial Services Research*. Springer Nature.
+
+## Working Papers
+
+- **Liu, Y., & Ren, H.** (2019). Impact of market state on momentum portfolio risk and performance: A risk-based explanation.

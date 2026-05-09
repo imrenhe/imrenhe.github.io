@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "He Ren"
+  site-url: https://imrenhe.github.io
+  description: "Personal website of He Ren"
+  favicon: images/favicon.svg
+  navbar:
+    title: false
+    left:
+      - href: index.qmd
+        text: Home
+      - href: teaching.qmd
+        text: Teaching
+      - href: research.qmd
+        text: Research
+      - href: blog/index.qmd
+        text: Blog
+      - href: photography.qmd
+        text: Photography
+  page-footer:
+    left: "© 2026 He Ren. All rights reserved."
+    right:
+      - icon: github
+        href: https://github.com/imrenhe
+      - icon: mortarboard-fill
+        href: https://scholar.google.com/citations?user=POuWIfYAAAAJ&hl=en
+      - icon: grid-3x3-gap
+        href: https://www.worldcubeassociation.org/persons/2025RENH02
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: cyborg
+    css: styles.css
+    toc: true
