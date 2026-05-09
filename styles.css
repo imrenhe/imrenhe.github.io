@@ -1,0 +1,11 @@
+/* Custom styles. Add overrides for the cosmo theme here as the site grows. */
+
+/* Render the profile photo as SDR — the source JPEG carries an HDR gain map. */
+.about-image {
+  dynamic-range-limit: standard;
+}
+
+/* Shrink the title on the home (about-trestles) page so the credentials line fits nicely. */
+body:has(.quarto-about-trestles) #title-block-header h1.title {
+  font-size: 1.75rem;
+}

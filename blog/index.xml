@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>He Ren</title>
+<link>https://imrenhe.github.io/blog/</link>
+<atom:link href="https://imrenhe.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
+<description>Personal website of He Ren</description>
+<generator>quarto-1.9.37</generator>
+<lastBuildDate>Sat, 09 May 2026 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Summary: Large Datasets and Structured Databases</title>
+  <dc:creator>He Ren</dc:creator>
+  <link>https://imrenhe.github.io/blog/posts/large-datasets-and-structured-databases/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p><em>A summary of <a href="https://paulgp.substack.com/p/large-datasets-and-structured-databases">Paul Goldsmith-Pinkham’s article</a>, published April 5, 2026.</em></p>
+<p>Paul Goldsmith-Pinkham argues that AI coding agents (specifically Claude Code) have collapsed the fixed costs of professional data engineering, making it feasible for economists to build harmonized, documented, queryable databases from massive government datasets without specialized data engineering training.</p>
+</section>
+<section id="the-core-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-core-problem">The Core Problem</h2>
+<p>Economists traditionally work with flat CSV files and copies because learning proper data infrastructure (parquet files, databases, schemas) required significant upfront investment. This made messy workflows a rational choice — the fixed cost of “doing it right” was too high to justify for one-off projects.</p>
+</section>
+<section id="the-demonstration" class="level2">
+<h2 class="anchored" data-anchor-id="the-demonstration">The Demonstration</h2>
+<p>To prove the point, the author transformed a 70GB HMDA (Home Mortgage Disclosure Act) mortgage dataset — 291 million rows across 18 years — into a professional-grade pipeline using Claude Code. Work that traditionally takes weeks now takes hours.</p>
+<section id="key-results" class="level3">
+<h3 class="anchored" data-anchor-id="key-results">Key results</h3>
+<ul>
+<li>Downloaded and harmonized 18 years of mortgage data from two incompatible sources (2007–2017 vs.&nbsp;2018–2024)</li>
+<li>Achieved 15× compression converting CSVs to parquet (70GB → 6GB)</li>
+<li>Built a DuckDB database with a queryable metadata table documenting every column</li>
+<li>Created county-by-year aggregate tables (HHI concentration, denial rates, median loan amounts, etc.)</li>
+<li>Classified lenders as fintech vs.&nbsp;traditional banks</li>
+<li>Found fintech origination share grew from ~1.1% (2007) to a peak of 16.3% (2021), settling around 11% by 2024</li>
+</ul>
+</section>
+</section>
+<section id="the-original-prompts" class="level2">
+<h2 class="anchored" data-anchor-id="the-original-prompts">The Original Prompts</h2>
+<section id="initial-comprehensive-prompt" class="level3">
+<h3 class="anchored" data-anchor-id="initial-comprehensive-prompt">Initial comprehensive prompt</h3>
+<blockquote class="blockquote">
+<p>I want to build a county-level panel dataset of mortgage lending in the US from 2007 to 2024 using HMDA (Home Mortgage Disclosure Act) data. The goal is to study the geographic expansion of fintech mortgage lenders over time.</p>
+<p>The data comes from two sources (I’ve verified both are accessible):</p>
+<ul>
+<li><strong>2007–2017</strong>: CFPB historic data at <code>https://files.consumerfinance.gov/hmda-historic-loan-data/hmda_{YEAR}_nationwide_all-records_codes.zip</code>. These are zipped CSVs with numeric codes and the old LAR column names.</li>
+<li><strong>2018–2024</strong>: CFPB Data Browser API at <code>https://ffiec.cfpb.gov/v2/data-browser-api/view/nationwide/csv?years={YEAR}</code>. These stream as CSV with 99 columns, string codes, and the new format (uses <code>lei</code> instead of <code>respondent_id</code>, different column names throughout).</li>
+</ul>
+<p>Each year is millions of rows. The full panel is 250M+ rows. This will not fit in pandas.</p>
+<p>Here’s what I’d like you to do:</p>
+<ol type="1">
+<li>Write a download script that pulls the full LAR files for 2007–2024 from the URLs above. Include resume capability in case downloads get interrupted. Use a proper User-Agent header.</li>
+<li>Convert each year’s CSV to parquet for efficient storage.</li>
+<li>Set up a DuckDB database. Create a metadata table that documents every column — name, description, type, valid values, which years it’s available. This metadata table is important: I want future sessions to be able to query it and immediately understand the dataset without me re-explaining anything.</li>
+</ol>
+<p>Important: the pre-2017 and post-2018 formats are very different — different column names, different coding schemes, different variable availability. You’ll need to figure out a crosswalk and harmonize into a consistent schema.</p>
+<p>Key variables I care about: year, lender ID, lender name, county FIPS, state FIPS, loan type, loan purpose, action taken (originated, denied, etc.), loan amount, applicant race, applicant income. Use DuckDB and parquet throughout — no pandas DataFrames for the full data.</p>
+</blockquote>
+</section>
+<section id="feasibility-inquiry" class="level3">
+<h3 class="anchored" data-anchor-id="feasibility-inquiry">Feasibility inquiry</h3>
+<blockquote class="blockquote">
+<p>I want to classify lenders as fintech or shadow banks versus traditional. Start with the lender classification from Fuster, Plosser, Schnabl and Vickery (2019). Tell me what it would take to do this task before you try anything complicated. Is this feasible? What might be missing?</p>
+</blockquote>
+</section>
+<section id="aggregate-table-request" class="level3">
+<h3 class="anchored" data-anchor-id="aggregate-table-request">Aggregate table request</h3>
+<blockquote class="blockquote">
+<p>I want to build an aggregate database: county by year, total originations, dollar value, number of active lenders, the HHI (Herfindahl-Hirschman Index) of lender market shares, the denial rate, and the median loan amount.</p>
+</blockquote>
+</section>
+<section id="visualization-request" class="level3">
+<h3 class="anchored" data-anchor-id="visualization-request">Visualization request</h3>
+<blockquote class="blockquote">
+<p>Please make a figure of the trend in fintech origination share over time in the dataset, using Kieran Healy stylings for plotting.</p>
+</blockquote>
+</section>
+</section>
+<section id="key-insights" class="level2">
+<h2 class="anchored" data-anchor-id="key-insights">Key Insights</h2>
+<p><strong>Metadata as context engineering.</strong> The metadata table acts as a form of “context engineering for data” — it stores column descriptions, valid values, and availability information directly inside the database. Future sessions can query the documentation without the human having to re-explain.</p>
+<p><strong>Right tools for big data.</strong> When data exceeds RAM, parquet and DuckDB are the right tools — pandas is the wrong tool.</p>
+<p><strong>Plan before coding.</strong> For complex pipelines, asking the model to scope the task before implementation pays off (the feasibility prompt above is a good example).</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The author argues that AI-assisted data engineering has fundamentally shifted the economics of research infrastructure. The bottleneck for empirical work has moved from <em>“can I build the infrastructure?”</em> to <em>“do I have a worthwhile research question?”</em></p>
+<p>Key takeaways:</p>
+<ul>
+<li>The fixed costs of professional data engineering have collapsed</li>
+<li>Large public datasets are more accessible than commonly assumed</li>
+<li>Embedding metadata in the database makes future work cheaper</li>
+<li>Planning matters more than coding speed</li>
+</ul>
+
+
+</section>
+
+ ]]></description>
+  <category>AI</category>
+  <category>data</category>
+  <category>economics</category>
+  <guid>https://imrenhe.github.io/blog/posts/large-datasets-and-structured-databases/</guid>
+  <pubDate>Sat, 09 May 2026 05:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
