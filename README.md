@@ -19,7 +19,10 @@ deployed to GitHub Pages at <https://imrenhe.github.io/>.
 │   ├── favicon.svg            # Browser tab icon (avocado emoji as SVG)
 │   ├── profile.jpeg           # Profile photo on the home page
 │   └── photo/                 # Photos shown on the photography page
-├── styles.css                 # Custom CSS (e.g. SDR limit on the profile photo)
+├── styles/
+│   ├── styles.css             # Custom CSS overrides (e.g. SDR limit on profile photo)
+│   ├── light.scss             # Light-theme SCSS (colors, fonts)
+│   └── dark.scss              # Dark-theme SCSS (colors, fonts)
 └── _site/                     # Build output (gitignored; pushed to gh-pages by quarto publish)
 ```
 
@@ -127,6 +130,6 @@ the chosen emoji using the OS's emoji font).
 
 - **Theme:** [`cosmo`](https://bootswatch.com/cosmo/) Bootswatch theme via Quarto.
   Change in `_quarto.yml` under `format.html.theme`.
-- **Custom CSS:** [styles.css](styles.css). Currently it limits the profile photo to
+- **Custom CSS:** [styles/styles.css](styles/styles.css). Currently it limits the profile photo to
   SDR (the source JPEG carries an HDR gain map) via `dynamic-range-limit: standard`
   on `.about-image`.

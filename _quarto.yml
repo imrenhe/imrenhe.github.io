@@ -6,10 +6,11 @@ website:
   title: "He Ren"
   site-url: https://imrenhe.github.io
   description: "Personal website of He Ren"
-  favicon: images/favicon.svg
+  favicon: images/acorn.svg
   navbar:
-    title: false
-    left:
+    logo: images/acorn.svg
+    title: He Ren
+    right:
       - href: index.qmd
         text: Home
       - href: teaching.qmd
@@ -21,19 +22,22 @@ website:
       - href: photography.qmd
         text: Photography
   page-footer:
-    left: "© 2026 He Ren. All rights reserved."
+    left: "© 2026 He Ren. All rights reserved. Made with [Quarto](https://quarto.org)"
     right:
       - icon: github
         href: https://github.com/imrenhe
       - icon: mortarboard-fill
         href: https://scholar.google.com/citations?user=POuWIfYAAAAJ&hl=en
-      - icon: grid-3x3-gap
-        href: https://www.worldcubeassociation.org/persons/2025RENH02
-
+     
 format:
   html:
     theme:
-      light: cosmo
-      dark: cyborg
-    css: styles.css
+      light: [cosmo, styles/light.scss]
+      dark: [cosmo, styles/dark.scss]
+    css: styles/styles.css
     toc: false
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@400;500;700&family=Red+Hat+Text:wght@400;500;700&family=B612+Mono&display=swap" rel="stylesheet">

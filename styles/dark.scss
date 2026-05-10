@@ -1,0 +1,72 @@
+/*-- scss:defaults --*/
+
+// Palette inspired by spcanelon/silvia (dark mode)
+$cream:               #fffbf2;
+$cream-warm:          #faf0e3;
+$navy-near-black:     #0e171e;
+$rust:                #a23e02;
+$rust-light:          #d96e34;
+
+// Bootstrap theme colors
+$primary:         $cream;
+$secondary:       $rust-light;
+
+// Body
+$body-color:      $cream-warm;
+$body-bg:         $navy-near-black;
+
+// Navbar — transparent so it blends into the body background
+$navbar-bg:       transparent;
+
+// Links
+$link-color:               $rust-light;
+$link-hover-color:         $rust;
+$link-decoration:          underline;
+$link-hover-decoration:    none;
+
+// Typography
+$font-family-sans-serif:   "Red Hat Text", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$headings-font-family:     "Petrona", Georgia, serif;
+$font-family-monospace:    "B612 Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$headings-font-weight:     500;
+
+// TOC
+$toc-color:                $link-color;
+$toc-active-border:        $toc-color;
+
+// Inline code
+$code-color:               $cream;
+$code-bg:                  $rust;
+
+/*-- scss:rules --*/
+
+// Force navbar to match body background even if cosmo overrides it
+.navbar {
+  background: $body-bg !important;
+}
+
+// Invert the navbar logo (acorn.svg is dark-colored, invisible on dark bg)
+.navbar-logo {
+  filter: invert(1);
+}
+
+// About-page link icons: strip the default button-like border/box,
+// color the bare icon with the same orange as inline links.
+.about-link {
+  border: none !important;
+  background: transparent !important;
+  padding: 0 0.4em !important;
+
+  i {
+    color: $link-color;
+    font-size: 1.4em;
+  }
+
+  &:hover {
+    background: transparent !important;
+
+    i {
+      color: $link-hover-color;
+    }
+  }
+}

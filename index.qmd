@@ -7,21 +7,18 @@ about:
   image-width: 15em
   links:
     - icon: github
-      text: GitHub
       href: https://github.com/imrenhe
+      aria-label: GitHub
     - icon: mortarboard-fill
-      text: Google Scholar
       href: https://scholar.google.com/citations?user=POuWIfYAAAAJ&hl=en
-    - icon: grid-3x3-gap
-      text: WCA Profile
-      href: https://www.worldcubeassociation.org/persons/2025RENH02
+      aria-label: Google Scholar
 ---
 
 ## Welcome
 
 Welcome! I'm an Assistant Professor of Finance whose research focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets. Feel free to explore my website to learn more about my teaching and research.
 
-Outside the classroom and my research, I'm also a Rubik's cube solver. You can check out my World Cube Association (WCA) profile to see my official results. I'm also passionate about photography. You can browse some of my favorite shots in the Photography section of this website.
+Outside the classroom and my research, I'm also a Rubik's cube solver. You can check out my <a href="https://www.worldcubeassociation.org/persons/2025RENH02" target="_blank" rel="noopener">World Cube Association (WCA) profile</a> to see my official results. I'm also passionate about photography. You can browse some of my favorite shots in the Photography section of this website.
 
 ## What you'll find here
 
