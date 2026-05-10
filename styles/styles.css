@@ -9,3 +9,12 @@
 body:has(.quarto-about-trestles) #title-block-header h1.title {
   font-size: 1.75rem;
 }
+
+/* Keep the about-page icon links on a single row at narrow widths.
+   Quarto's about-trestles flips the links container to column at < lg. */
+@media screen and (max-width: 991.98px) {
+  .about-entity .about-links {
+    flex-direction: row !important;
+    justify-content: center !important;
+  }
+}
