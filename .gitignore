@@ -17,4 +17,7 @@ Thumbs.db
 *.swp
 *.swo
 
+# Claude Code local settings (not part of the site)
+.claude/
+
 **/*.quarto_ipynb

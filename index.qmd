@@ -26,6 +26,7 @@ Outside the classroom and my research, I'm also a Rubik's cube solver. You can c
 ## What you'll find here
 
 - [**Teaching**](teaching.qmd) — courses I currently teach and have taught.
+- <a href="https://imrenhe.github.io/fin3053-business-finance-book/" target="_blank" rel="noopener"><strong>Business Finance Book</strong></a> — book used for Business Finance class.
 - [**Research**](research.qmd) — publications, working papers, and current interests.
 - [**Blog**](blog/index.qmd) — occasional writing.
 - [**Photography**](photography.qmd) — a gallery of photos.

@@ -36,4 +36,4 @@ format:
       light: cosmo
       dark: cyborg
     css: styles.css
-    toc: true
+    toc: false
