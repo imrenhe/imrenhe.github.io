@@ -3,26 +3,26 @@ project:
   output-dir: _site
 
 website:
-  title: "He Ren"
+  title: "HE REN"
   site-url: https://imrenhe.github.io
   description: "Personal website of He Ren"
   favicon: images/acorn.svg
   navbar:
     logo: images/acorn.svg
-    title: He Ren
+    title: HE REN
     right:
       - href: index.qmd
-        text: Home
+        text: HOME
       - href: teaching.qmd
-        text: Teaching
+        text: TEACHING
       - href: research.qmd
-        text: Research
+        text: RESEARCH
       - href: blog/index.qmd
-        text: Blog
+        text: BLOG
       - href: photography.qmd
-        text: Photography
+        text: PHOTOGRAPHY
   page-footer:
-    left: "© 2026 He Ren. All rights reserved. Made with [Quarto](https://quarto.org)"
+    left: "© 2026 He Ren. All rights reserved. Made with [Quarto](https://quarto.org)."
     right:
       - icon: github
         href: https://github.com/imrenhe

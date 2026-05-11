@@ -1,13 +1,16 @@
 ---
 title: "Blog"
+description: |
+  This is my blog where I practice sharing my curiosity about the world.
 listing:
   contents: posts
   sort: "date desc"
   type: default
-  categories: true
+  categories: false
   sort-ui: false
   filter-ui: false
   feed: true
+  fields: [title, author, categories, date, image, description]
 page-layout: full
 title-block-banner: false
 ---
