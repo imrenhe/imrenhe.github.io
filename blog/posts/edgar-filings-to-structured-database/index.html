@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="He Ren">
+<meta name="dcterms.date" content="2026-05-11">
+<meta name="description" content="A summary of Paul Goldsmith-Pinkham’s article on using Claude Code to build a 10-K Risk Factors dataset from SEC EDGAR.">
 
-<title>Teaching – HE REN</title>
+<title>Summary: From EDGAR Filings to a Structured Database – HE REN</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,28 +29,28 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/acorn.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea02be5fc9736d5e8f5ccf4f30b91c00.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-c8143b2d1f2b146070c8066d8497462a.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea02be5fc9736d5e8f5ccf4f30b91c00.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c9bde5fa88a6998081a2959fd191cdcc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-0ec83daf90dcb234d54368d0283687d2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-c9bde5fa88a6998081a2959fd191cdcc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../images/acorn.svg" rel="icon" type="image/svg+xml">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ea02be5fc9736d5e8f5ccf4f30b91c00.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-c8143b2d1f2b146070c8066d8497462a.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ea02be5fc9736d5e8f5ccf4f30b91c00.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-c9bde5fa88a6998081a2959fd191cdcc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-0ec83daf90dcb234d54368d0283687d2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-c9bde5fa88a6998081a2959fd191cdcc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@400;500;700&amp;family=Red+Hat+Text:wght@400;500;700&amp;family=B612+Mono&amp;display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="../../../styles/styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -252,11 +255,11 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./images/acorn.svg" alt="" class="navbar-logo light-content">
-    <img src="./images/acorn.svg" alt="" class="navbar-logo dark-content">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../images/acorn.svg" alt="" class="navbar-logo light-content">
+    <img src="../../../images/acorn.svg" alt="" class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">HE REN</span>
     </a>
   </div>
@@ -267,23 +270,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">HOME</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./teaching.html" aria-current="page"> 
+    <a class="nav-link" href="../../../teaching.html"> 
 <span class="menu-text">TEACHING</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="../../../research.html"> 
 <span class="menu-text">RESEARCH</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog/index.html"> 
+    <a class="nav-link" href="../../../blog/index.html"> 
 <span class="menu-text">BLOG</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./photography.html"> 
+    <a class="nav-link" href="../../../photography.html"> 
 <span class="menu-text">PHOTOGRAPHY</span></a>
   </li>  
 </ul>
@@ -305,14 +308,36 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Teaching</h1>
-</div>
+<h1 class="title">Summary: From EDGAR Filings to a Structured Database</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">AI</div>
+    <div class="quarto-category">data</div>
+    <div class="quarto-category">finance</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    A summary of Paul Goldsmith-Pinkham’s article on using Claude Code to build a 10-K Risk Factors dataset from SEC EDGAR.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>He Ren </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 11, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -322,28 +347,76 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="texas-womans-university" class="level2">
-<h2 class="anchored" data-anchor-id="texas-womans-university">Texas Woman’s University</h2>
-<p><em>Merrilee Alexander Kick College of Business and Entrepreneurship</em></p>
-<p><strong>Graduate</strong></p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p><em>A summary of <a href="https://paulgp.substack.com/p/from-edgar-filings-to-a-structured">Paul Goldsmith-Pinkham’s article</a>.</em></p>
+<p>This follow-up to the earlier HMDA post walks through a complete, end-to-end research pipeline built with Claude Code: pulling 10-K filings from SEC EDGAR, parsing out the Risk Factors section, and loading the results into a queryable database. The motivating research question is whether trade-exposed U.S. firms ramped up tariff-related language in their risk disclosures after the 2025 tariff escalation. The broader methodological point is that a researcher can go from a raw internet source to an analyzable dataset in roughly half an hour.</p>
+</section>
+<section id="the-pipeline" class="level2">
+<h2 class="anchored" data-anchor-id="the-pipeline">The Pipeline</h2>
+<p>The author builds the pipeline in phases, with Claude Code first entering “plan mode” to read EDGAR API documentation and propose an approach before writing any code. The phases:</p>
+<ol type="1">
+<li><strong>Research and planning.</strong> Claude reads EDGAR docs and proposes a design.</li>
+<li><strong>Design clarification.</strong> Claude asks the researcher to choose between DuckDB and SQLite, between simple keyword search and LLM classification, and what User-Agent string to use.</li>
+<li><strong>CIK lookup.</strong> Claude resolves Central Index Keys for 29 of 30 target firms. Gap Inc.&nbsp;fails because its ticker had changed (GPS → GAP).</li>
+<li><strong>Filing index queries.</strong> Claude hits the EDGAR API for each firm’s 10-Ks from 2022 to 2025.</li>
+<li><strong>Download.</strong> Raw HTML filings are downloaded with caching so reruns avoid redundant network calls.</li>
+<li><strong>Parsing.</strong> BeautifulSoup extracts Item 1A (Risk Factors), with regex tweaks for filings that split “Item 1A” and “Risk Factors” across lines.</li>
+<li><strong>Storage.</strong> Parsed text is loaded into DuckDB, alongside tariff keyword counts and context snippets.</li>
+<li><strong>Quality reports.</strong> An extraction-quality report flags parsing failures, which is how the author catches the Honeywell and Intel regex issue.</li>
+<li><strong>Querying.</strong> SQL queries against DuckDB produce the descriptive results.</li>
+</ol>
+<p>The final dataset covers 119 of 120 filings successfully parsed. Total code: roughly 480 lines of Python.</p>
+</section>
+<section id="the-original-prompts" class="level2">
+<h2 class="anchored" data-anchor-id="the-original-prompts">The Original Prompts</h2>
+<section id="initial-prompt" class="level3">
+<h3 class="anchored" data-anchor-id="initial-prompt">Initial prompt</h3>
+<blockquote class="blockquote">
+<p>I want to build a dataset of 10-K Risk Factors from SEC EDGAR to study how tariff-related risk disclosure changed 2022–2025. Here’s what I know about EDGAR:</p>
 <ul>
-<li>FIN 5753 — Foundations of Financial Management</li>
-<li>FIN 5243 — Managerial Finance</li>
+<li>Every company has a CIK (Central Index Key)</li>
+<li>The EDGAR filing API is at https://efts.sec.gov/LATEST/</li>
+<li>Rate limit: 10 requests/second, must include User-Agent header</li>
 </ul>
-<p><strong>Undergraduate</strong></p>
+<p>I want 10-Ks for ~30 trade-exposed firms — manufacturing, retail, tech hardware. Caterpillar, Nike, Apple, Deere, Ford, 3M, Intel…</p>
+</blockquote>
+</section>
+<section id="execution" class="level3">
+<h3 class="anchored" data-anchor-id="execution">Execution</h3>
+<blockquote class="blockquote">
+<p>Run it for the full list. Let’s see how it goes.</p>
+</blockquote>
+</section>
+<section id="querying-the-database" class="level3">
+<h3 class="anchored" data-anchor-id="querying-the-database">Querying the database</h3>
+<blockquote class="blockquote">
+<p>Which firms mentioned tariffs the most?</p>
+</blockquote>
+</section>
+</section>
+<section id="key-findings" class="level2">
+<h2 class="anchored" data-anchor-id="key-findings">Key Findings</h2>
+<p>The descriptive results aren’t the main point, but they validate the pipeline:</p>
 <ul>
-<li>FIN 3053 — Business Finance</li>
-<li>FIN 3133 — Investments</li>
-<li>FIN 4243 — Financial Management</li>
-<li>FIN 4253 — Financial Planning</li>
+<li><strong>John Deere</strong> had the highest tariff mention count, rising from three to four mentions over the period.</li>
+<li>The 2022–2025 sample produced 26–35 tariff-related paragraphs per year, compared to 25 total across 18 firms in a 2010 baseline.</li>
+<li>Language shifted from generic phrases like <em>“changes in trade policy”</em> to specific references — Section 301, particular product categories, “liberation day.”</li>
+<li><strong>Walmart</strong> did not mention tariffs until its 2025 filing.</li>
+<li>Retail firms mentioned tariffs less often than manufacturing or tech-hardware firms.</li>
 </ul>
 </section>
-<section id="university-of-north-texas" class="level2">
-<h2 class="anchored" data-anchor-id="university-of-north-texas">University of North Texas</h2>
-<p><em>G. Brint Ryan College of Business — Teaching Fellow / Instructor</em></p>
-<ul>
-<li>FINA 3770 — Introduction to Finance and Financial Management</li>
-</ul>
+<section id="lessons" class="level2">
+<h2 class="anchored" data-anchor-id="lessons">Lessons</h2>
+<p><strong>Front-load the scraping context.</strong> Specifying rate limits, headers, and API structure up front saves debugging rounds later.</p>
+<p><strong>Let Claude ask design questions.</strong> Instead of pre-specifying every detail, give Claude the high-level task and let it surface design choices (DuckDB vs.&nbsp;SQLite, keyword search vs.&nbsp;classification). The researcher’s job is to make the calls.</p>
+<p><strong>Build resume capability in.</strong> Network failures are common. Caching and idempotent scripts make reruns cheap — the Gap Inc.&nbsp;ticker fix required only four new downloads in 43 seconds, not a full re-pull.</p>
+<p><strong>Generate extraction-quality reports.</strong> They are how subtle parsing bugs get caught before they corrupt months of downstream analysis.</p>
+<p><strong>SQL beats CSVs for text-as-data.</strong> DuckDB gives zero-config deployment, SQL queryability, and relational structure without running a server.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The pipeline is small — one researcher, one afternoon, 480 lines of Python — but it shows how the per-project cost of building real research infrastructure has dropped. The interesting question is no longer whether the pipeline is feasible, but which research questions are worth pointing it at.</p>
 
 
 </section>
