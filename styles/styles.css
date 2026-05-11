@@ -10,6 +10,19 @@ body:has(.quarto-about-trestles) #title-block-header h1.title {
   font-size: 1.75rem;
 }
 
+/* Use the headings font (Petrona) for the about-page description/subtitle. */
+body:has(.quarto-about-trestles) #title-block-header .subtitle,
+body:has(.quarto-about-trestles) #title-block-header .lead,
+body:has(.quarto-about-trestles) #title-block-header .description {
+  font-family: "Petrona", Georgia, serif;
+}
+
+/* Use Petrona for the navbar title and navigation links. */
+.navbar .navbar-title,
+.navbar .nav-link {
+  font-family: "Petrona", Georgia, serif;
+}
+
 /* Keep the about-page icon links on a single row at narrow widths.
    Quarto's about-trestles flips the links container to column at < lg. */
 @media screen and (max-width: 991.98px) {

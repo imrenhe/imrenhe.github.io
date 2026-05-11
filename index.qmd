@@ -1,5 +1,10 @@
 ---
 title: "He Ren, PhD, CFA"
+description: "Assistant Professor of Finance"
+twitter-card:
+  card-style: summary_large_image
+  image: images/profile.jpeg
+  image-alt: "He Ren"
 about:
   template: trestles
   image: images/profile.jpeg
@@ -9,6 +14,9 @@ about:
     - icon: github
       href: https://github.com/imrenhe
       aria-label: GitHub
+    - icon: linkedin
+      href: https://www.linkedin.com/in/imrenhe/
+      aria-label: LinkedIn
     - icon: mortarboard-fill
       href: https://scholar.google.com/citations?user=POuWIfYAAAAJ&hl=en
       aria-label: Google Scholar

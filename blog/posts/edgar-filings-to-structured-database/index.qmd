@@ -1,0 +1,75 @@
+---
+title: "Summary: From EDGAR Filings to a Structured Database"
+description: "A summary of Paul Goldsmith-Pinkham's article on using Claude Code to build a 10-K Risk Factors dataset from SEC EDGAR."
+author: "He Ren"
+date: "2026-05-11"
+categories: [AI, data, finance]
+---
+
+## Overview
+
+*A summary of [Paul Goldsmith-Pinkham's article](https://paulgp.substack.com/p/from-edgar-filings-to-a-structured).*
+
+This follow-up to the earlier HMDA post walks through a complete, end-to-end research pipeline built with Claude Code: pulling 10-K filings from SEC EDGAR, parsing out the Risk Factors section, and loading the results into a queryable database. The motivating research question is whether trade-exposed U.S. firms ramped up tariff-related language in their risk disclosures after the 2025 tariff escalation. The broader methodological point is that a researcher can go from a raw internet source to an analyzable dataset in roughly half an hour.
+
+## The Pipeline
+
+The author builds the pipeline in phases, with Claude Code first entering "plan mode" to read EDGAR API documentation and propose an approach before writing any code. The phases:
+
+1. **Research and planning.** Claude reads EDGAR docs and proposes a design.
+2. **Design clarification.** Claude asks the researcher to choose between DuckDB and SQLite, between simple keyword search and LLM classification, and what User-Agent string to use.
+3. **CIK lookup.** Claude resolves Central Index Keys for 29 of 30 target firms. Gap Inc. fails because its ticker had changed (GPS → GAP).
+4. **Filing index queries.** Claude hits the EDGAR API for each firm's 10-Ks from 2022 to 2025.
+5. **Download.** Raw HTML filings are downloaded with caching so reruns avoid redundant network calls.
+6. **Parsing.** BeautifulSoup extracts Item 1A (Risk Factors), with regex tweaks for filings that split "Item 1A" and "Risk Factors" across lines.
+7. **Storage.** Parsed text is loaded into DuckDB, alongside tariff keyword counts and context snippets.
+8. **Quality reports.** An extraction-quality report flags parsing failures, which is how the author catches the Honeywell and Intel regex issue.
+9. **Querying.** SQL queries against DuckDB produce the descriptive results.
+
+The final dataset covers 119 of 120 filings successfully parsed. Total code: roughly 480 lines of Python.
+
+## The Original Prompts
+
+### Initial prompt
+
+> I want to build a dataset of 10-K Risk Factors from SEC EDGAR to study how tariff-related risk disclosure changed 2022–2025. Here's what I know about EDGAR:
+>
+> - Every company has a CIK (Central Index Key)
+> - The EDGAR filing API is at https://efts.sec.gov/LATEST/
+> - Rate limit: 10 requests/second, must include User-Agent header
+>
+> I want 10-Ks for ~30 trade-exposed firms — manufacturing, retail, tech hardware. Caterpillar, Nike, Apple, Deere, Ford, 3M, Intel...
+
+### Execution
+
+> Run it for the full list. Let's see how it goes.
+
+### Querying the database
+
+> Which firms mentioned tariffs the most?
+
+## Key Findings
+
+The descriptive results aren't the main point, but they validate the pipeline:
+
+- **John Deere** had the highest tariff mention count, rising from three to four mentions over the period.
+- The 2022–2025 sample produced 26–35 tariff-related paragraphs per year, compared to 25 total across 18 firms in a 2010 baseline.
+- Language shifted from generic phrases like *"changes in trade policy"* to specific references — Section 301, particular product categories, "liberation day."
+- **Walmart** did not mention tariffs until its 2025 filing.
+- Retail firms mentioned tariffs less often than manufacturing or tech-hardware firms.
+
+## Lessons
+
+**Front-load the scraping context.** Specifying rate limits, headers, and API structure up front saves debugging rounds later.
+
+**Let Claude ask design questions.** Instead of pre-specifying every detail, give Claude the high-level task and let it surface design choices (DuckDB vs. SQLite, keyword search vs. classification). The researcher's job is to make the calls.
+
+**Build resume capability in.** Network failures are common. Caching and idempotent scripts make reruns cheap — the Gap Inc. ticker fix required only four new downloads in 43 seconds, not a full re-pull.
+
+**Generate extraction-quality reports.** They are how subtle parsing bugs get caught before they corrupt months of downstream analysis.
+
+**SQL beats CSVs for text-as-data.** DuckDB gives zero-config deployment, SQL queryability, and relational structure without running a server.
+
+## Conclusion
+
+The pipeline is small — one researcher, one afternoon, 480 lines of Python — but it shows how the per-project cost of building real research infrastructure has dropped. The interesting question is no longer whether the pipeline is feasible, but which research questions are worth pointing it at.
