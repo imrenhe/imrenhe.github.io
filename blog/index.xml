@@ -5,10 +5,11 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>He Ren</title>
+<title>HE REN</title>
 <link>https://imrenhe.github.io/blog/</link>
 <atom:link href="https://imrenhe.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
-<description>Personal website of He Ren</description>
+<description>This is my blog where I practice sharing my curiosity about the world.
+</description>
 <generator>quarto-1.9.37</generator>
 <lastBuildDate>Sat, 09 May 2026 05:00:00 GMT</lastBuildDate>
 <item>
