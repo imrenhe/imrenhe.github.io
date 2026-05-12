@@ -1,10 +1,157 @@
 [
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "He Ren, PhD, CFA",
     "section": "",
-    "text": "Summary: From EDGAR Filings to a Structured Database\n\n\n\nAI\n\ndata\n\nfinance\n\n\n\nA summary of Paul Goldsmith-Pinkham’s article on using Claude Code to build a 10-K Risk Factors dataset from SEC EDGAR.\n\n\n\n\n\nMay 11, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nSummary: Large Datasets and Structured Databases\n\n\n\nAI\n\ndata\n\neconomics\n\n\n\nA summary of Paul Goldsmith-Pinkham’s article on AI-assisted data engineering for economists.\n\n\n\n\n\nMay 9, 2026\n\n\nHe Ren\n\n\n\n\n\nNo matching items"
+    "text": "I’m an Assistant Professor of Finance at Merrilee Alexander Kick College of Business and Entrepreneurship, Texas Woman’s University. My research interest focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets."
+  },
+  {
+    "objectID": "about.html#hi-im-happy-youre-here",
+    "href": "about.html#hi-im-happy-youre-here",
+    "title": "He Ren, PhD, CFA",
+    "section": "",
+    "text": "I’m an Assistant Professor of Finance at Merrilee Alexander Kick College of Business and Entrepreneurship, Texas Woman’s University. My research interest focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets."
+  },
+  {
+    "objectID": "about.html#outside-the-classroom",
+    "href": "about.html#outside-the-classroom",
+    "title": "He Ren, PhD, CFA",
+    "section": "Outside the classroom",
+    "text": "Outside the classroom\nOutside the classroom and my research, I’m also a Rubik’s cube solver. You can check out my World Cube Association (WCA) profile to see my official results. I’m also passionate about photography. You can browse some of my favorite shots in the Photography section of this website."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "He Ren, PhD, CFA",
+    "section": "Education",
+    "text": "Education\n\nPh.D. in Finance, University of North Texas, 2019\nM.B.A., University of Texas at Dallas, 2012\nM.S. in Finance, State University of New York at Buffalo, 2011\nB.S. in Economics, Shanghai University of International Business and Economics, 2010"
+  },
+  {
+    "objectID": "about.html#professional-certifications",
+    "href": "about.html#professional-certifications",
+    "title": "He Ren, PhD, CFA",
+    "section": "Professional Certifications",
+    "text": "Professional Certifications\n\nCFA Institute Sustainable Investing Certificate, 2023\nChartered Financial Analyst (CFA®), 2022\nFinancial Risk Manager (FRM®), 2022"
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "",
+    "text": "A summary of Paul Goldsmith-Pinkham’s article.\nThis follow-up to the earlier HMDA post walks through a complete, end-to-end research pipeline built with Claude Code: pulling 10-K filings from SEC EDGAR, parsing out the Risk Factors section, and loading the results into a queryable database. The motivating research question is whether trade-exposed U.S. firms ramped up tariff-related language in their risk disclosures after the 2025 tariff escalation. The broader methodological point is that a researcher can go from a raw internet source to an analyzable dataset in roughly half an hour."
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#overview",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html#overview",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "",
+    "text": "A summary of Paul Goldsmith-Pinkham’s article.\nThis follow-up to the earlier HMDA post walks through a complete, end-to-end research pipeline built with Claude Code: pulling 10-K filings from SEC EDGAR, parsing out the Risk Factors section, and loading the results into a queryable database. The motivating research question is whether trade-exposed U.S. firms ramped up tariff-related language in their risk disclosures after the 2025 tariff escalation. The broader methodological point is that a researcher can go from a raw internet source to an analyzable dataset in roughly half an hour."
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#the-pipeline",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html#the-pipeline",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "The Pipeline",
+    "text": "The Pipeline\nThe author builds the pipeline in phases, with Claude Code first entering “plan mode” to read EDGAR API documentation and propose an approach before writing any code. The phases:\n\nResearch and planning. Claude reads EDGAR docs and proposes a design.\nDesign clarification. Claude asks the researcher to choose between DuckDB and SQLite, between simple keyword search and LLM classification, and what User-Agent string to use.\nCIK lookup. Claude resolves Central Index Keys for 29 of 30 target firms. Gap Inc. fails because its ticker had changed (GPS → GAP).\nFiling index queries. Claude hits the EDGAR API for each firm’s 10-Ks from 2022 to 2025.\nDownload. Raw HTML filings are downloaded with caching so reruns avoid redundant network calls.\nParsing. BeautifulSoup extracts Item 1A (Risk Factors), with regex tweaks for filings that split “Item 1A” and “Risk Factors” across lines.\nStorage. Parsed text is loaded into DuckDB, alongside tariff keyword counts and context snippets.\nQuality reports. An extraction-quality report flags parsing failures, which is how the author catches the Honeywell and Intel regex issue.\nQuerying. SQL queries against DuckDB produce the descriptive results.\n\nThe final dataset covers 119 of 120 filings successfully parsed. Total code: roughly 480 lines of Python."
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#the-original-prompts",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html#the-original-prompts",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "The Original Prompts",
+    "text": "The Original Prompts\n\nInitial prompt\n\nI want to build a dataset of 10-K Risk Factors from SEC EDGAR to study how tariff-related risk disclosure changed 2022–2025. Here’s what I know about EDGAR:\n\nEvery company has a CIK (Central Index Key)\nThe EDGAR filing API is at https://efts.sec.gov/LATEST/\nRate limit: 10 requests/second, must include User-Agent header\n\nI want 10-Ks for ~30 trade-exposed firms — manufacturing, retail, tech hardware. Caterpillar, Nike, Apple, Deere, Ford, 3M, Intel…\n\n\n\nExecution\n\nRun it for the full list. Let’s see how it goes.\n\n\n\nQuerying the database\n\nWhich firms mentioned tariffs the most?"
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#key-findings",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html#key-findings",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "Key Findings",
+    "text": "Key Findings\nThe descriptive results aren’t the main point, but they validate the pipeline:\n\nJohn Deere had the highest tariff mention count, rising from three to four mentions over the period.\nThe 2022–2025 sample produced 26–35 tariff-related paragraphs per year, compared to 25 total across 18 firms in a 2010 baseline.\nLanguage shifted from generic phrases like “changes in trade policy” to specific references — Section 301, particular product categories, “liberation day.”\nWalmart did not mention tariffs until its 2025 filing.\nRetail firms mentioned tariffs less often than manufacturing or tech-hardware firms."
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#lessons",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html#lessons",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "Lessons",
+    "text": "Lessons\nFront-load the scraping context. Specifying rate limits, headers, and API structure up front saves debugging rounds later.\nLet Claude ask design questions. Instead of pre-specifying every detail, give Claude the high-level task and let it surface design choices (DuckDB vs. SQLite, keyword search vs. classification). The researcher’s job is to make the calls.\nBuild resume capability in. Network failures are common. Caching and idempotent scripts make reruns cheap — the Gap Inc. ticker fix required only four new downloads in 43 seconds, not a full re-pull.\nGenerate extraction-quality reports. They are how subtle parsing bugs get caught before they corrupt months of downstream analysis.\nSQL beats CSVs for text-as-data. DuckDB gives zero-config deployment, SQL queryability, and relational structure without running a server."
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#conclusion",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html#conclusion",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "Conclusion",
+    "text": "Conclusion\nThe pipeline is small — one researcher, one afternoon, 480 lines of Python — but it shows how the per-project cost of building real research infrastructure has dropped. The interesting question is no longer whether the pipeline is feasible, but which research questions are worth pointing it at."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "He Ren, PhD, CFA",
+    "section": "",
+    "text": "Assistant Professor of Finance"
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "He Ren, PhD, CFA",
+    "section": "Welcome",
+    "text": "Welcome\nWelcome! I’m an Assistant Professor of Finance whose research focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets. Feel free to explore my website to learn more about my teaching and research.\nOutside the classroom and my research, I’m also a Rubik’s cube solver. You can check out my World Cube Association (WCA) profile to see my official results. I’m also passionate about photography. You can browse some of my favorite shots in the Photography section of this website.\nLEARN MORE ABOUT ME →"
+  },
+  {
+    "objectID": "index.html#what-youll-find-here",
+    "href": "index.html#what-youll-find-here",
+    "title": "He Ren, PhD, CFA",
+    "section": "What you’ll find here",
+    "text": "What you’ll find here\n\nTeaching — courses I currently teach and have taught.\nBusiness Finance Book — book used for Business Finance class.\nResearch — publications, working papers, and current interests.\nBlog — occasional writing.\nPhotography — a gallery of photos."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Zheng, Y., & Ren, H. (2026). Does fintech and digitalization adoption impact employee performance efficiency? Evidence from a machine learning approach. The Quarterly Journal of Finance. World Scientific.\nZheng, Y., & Ren, H. (2024). COVID-19 vaccination and housing payments. Journal of Housing Economics, 64, 101992. Academic Press.\nChoi, S., Li, Z., Boonme, K., & Ren, H. (2024). Face-to-face, online or HyFlex instruction? The effects of self-directed learning on stress reduction and student satisfaction among emerging adults. Journal of International Education in Business, 17(3), 373–394. Emerald Publishing Limited.\nRen, H., & Zheng, Y. (2023). COVID-19 vaccination and household savings: An economic recovery channel. Finance Research Letters, 103711. Elsevier.\nMantecon, T., Almomen, A., Ren, H., & Zheng, Y. (2023). An analysis of the potential impact of heightened capital requirements on banks’ cost of capital. Journal of Financial Services Research. Springer Nature."
+  },
+  {
+    "objectID": "research.html#journal-articles",
+    "href": "research.html#journal-articles",
+    "title": "Research",
+    "section": "",
+    "text": "Zheng, Y., & Ren, H. (2026). Does fintech and digitalization adoption impact employee performance efficiency? Evidence from a machine learning approach. The Quarterly Journal of Finance. World Scientific.\nZheng, Y., & Ren, H. (2024). COVID-19 vaccination and housing payments. Journal of Housing Economics, 64, 101992. Academic Press.\nChoi, S., Li, Z., Boonme, K., & Ren, H. (2024). Face-to-face, online or HyFlex instruction? The effects of self-directed learning on stress reduction and student satisfaction among emerging adults. Journal of International Education in Business, 17(3), 373–394. Emerald Publishing Limited.\nRen, H., & Zheng, Y. (2023). COVID-19 vaccination and household savings: An economic recovery channel. Finance Research Letters, 103711. Elsevier.\nMantecon, T., Almomen, A., Ren, H., & Zheng, Y. (2023). An analysis of the potential impact of heightened capital requirements on banks’ cost of capital. Journal of Financial Services Research. Springer Nature."
+  },
+  {
+    "objectID": "research.html#working-papers",
+    "href": "research.html#working-papers",
+    "title": "Research",
+    "section": "Working Papers",
+    "text": "Working Papers\n\nLiu, Y., & Ren, H. (2019). Impact of market state on momentum portfolio risk and performance: A risk-based explanation."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Merrilee Alexander Kick College of Business and Entrepreneurship\nGraduate\n\nFIN 5753 — Foundations of Financial Management\nFIN 5243 — Managerial Finance\n\nUndergraduate\n\nFIN 3053 — Business Finance\nFIN 3133 — Investments\nFIN 4243 — Financial Management\nFIN 4253 — Financial Planning"
+  },
+  {
+    "objectID": "teaching.html#texas-womans-university",
+    "href": "teaching.html#texas-womans-university",
+    "title": "Teaching",
+    "section": "",
+    "text": "Merrilee Alexander Kick College of Business and Entrepreneurship\nGraduate\n\nFIN 5753 — Foundations of Financial Management\nFIN 5243 — Managerial Finance\n\nUndergraduate\n\nFIN 3053 — Business Finance\nFIN 3133 — Investments\nFIN 4243 — Financial Management\nFIN 4253 — Financial Planning"
+  },
+  {
+    "objectID": "teaching.html#university-of-north-texas",
+    "href": "teaching.html#university-of-north-texas",
+    "title": "Teaching",
+    "section": "University of North Texas",
+    "text": "University of North Texas\nG. Brint Ryan College of Business — Teaching Fellow / Instructor\n\nFINA 3770 — Introduction to Finance and Financial Management"
+  },
+  {
+    "objectID": "photography.html",
+    "href": "photography.html",
+    "title": "Photography",
+    "section": "",
+    "text": "Flying\n\n\n\n\n\n\n\nUnderwater\n\n\n\n\n\n\n\nSummer\n\n\n\n\n\n\n\n\n\nStar Trails\n\n\n\n\n\n\n\nDallas\n\n\n\n\n\n\n\nBird\n\n\n\n\n\n\n\n\n\nFilm\n\n\n\n\n\n\n\nChill"
   },
   {
     "objectID": "blog/posts/large-datasets-and-structured-databases/index.html",
@@ -56,122 +203,10 @@
     "text": "Conclusion\nThe author argues that AI-assisted data engineering has fundamentally shifted the economics of research infrastructure. The bottleneck for empirical work has moved from “can I build the infrastructure?” to “do I have a worthwhile research question?”\nKey takeaways:\n\nThe fixed costs of professional data engineering have collapsed\nLarge public datasets are more accessible than commonly assumed\nEmbedding metadata in the database makes future work cheaper\nPlanning matters more than coding speed"
   },
   {
-    "objectID": "photography.html",
-    "href": "photography.html",
-    "title": "Photography",
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
     "section": "",
-    "text": "Flying\n\n\n\n\n\n\n\nUnderwater\n\n\n\n\n\n\n\nSummer\n\n\n\n\n\n\n\n\n\nStar Trails\n\n\n\n\n\n\n\nDallas\n\n\n\n\n\n\n\nBird\n\n\n\n\n\n\n\n\n\nFilm\n\n\n\n\n\n\n\nChill"
-  },
-  {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "Merrilee Alexander Kick College of Business and Entrepreneurship\nGraduate\n\nFIN 5753 — Foundations of Financial Management\nFIN 5243 — Managerial Finance\n\nUndergraduate\n\nFIN 3053 — Business Finance\nFIN 3133 — Investments\nFIN 4243 — Financial Management\nFIN 4253 — Financial Planning"
-  },
-  {
-    "objectID": "teaching.html#texas-womans-university",
-    "href": "teaching.html#texas-womans-university",
-    "title": "Teaching",
-    "section": "",
-    "text": "Merrilee Alexander Kick College of Business and Entrepreneurship\nGraduate\n\nFIN 5753 — Foundations of Financial Management\nFIN 5243 — Managerial Finance\n\nUndergraduate\n\nFIN 3053 — Business Finance\nFIN 3133 — Investments\nFIN 4243 — Financial Management\nFIN 4253 — Financial Planning"
-  },
-  {
-    "objectID": "teaching.html#university-of-north-texas",
-    "href": "teaching.html#university-of-north-texas",
-    "title": "Teaching",
-    "section": "University of North Texas",
-    "text": "University of North Texas\nG. Brint Ryan College of Business — Teaching Fellow / Instructor\n\nFINA 3770 — Introduction to Finance and Financial Management"
-  },
-  {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
-    "section": "",
-    "text": "Zheng, Y., & Ren, H. (2026). Does fintech and digitalization adoption impact employee performance efficiency? Evidence from a machine learning approach. The Quarterly Journal of Finance. World Scientific.\nZheng, Y., & Ren, H. (2024). COVID-19 vaccination and housing payments. Journal of Housing Economics, 64, 101992. Academic Press.\nChoi, S., Li, Z., Boonme, K., & Ren, H. (2024). Face-to-face, online or HyFlex instruction? The effects of self-directed learning on stress reduction and student satisfaction among emerging adults. Journal of International Education in Business, 17(3), 373–394. Emerald Publishing Limited.\nRen, H., & Zheng, Y. (2023). COVID-19 vaccination and household savings: An economic recovery channel. Finance Research Letters, 103711. Elsevier.\nMantecon, T., Almomen, A., Ren, H., & Zheng, Y. (2023). An analysis of the potential impact of heightened capital requirements on banks’ cost of capital. Journal of Financial Services Research. Springer Nature."
-  },
-  {
-    "objectID": "research.html#journal-articles",
-    "href": "research.html#journal-articles",
-    "title": "Research",
-    "section": "",
-    "text": "Zheng, Y., & Ren, H. (2026). Does fintech and digitalization adoption impact employee performance efficiency? Evidence from a machine learning approach. The Quarterly Journal of Finance. World Scientific.\nZheng, Y., & Ren, H. (2024). COVID-19 vaccination and housing payments. Journal of Housing Economics, 64, 101992. Academic Press.\nChoi, S., Li, Z., Boonme, K., & Ren, H. (2024). Face-to-face, online or HyFlex instruction? The effects of self-directed learning on stress reduction and student satisfaction among emerging adults. Journal of International Education in Business, 17(3), 373–394. Emerald Publishing Limited.\nRen, H., & Zheng, Y. (2023). COVID-19 vaccination and household savings: An economic recovery channel. Finance Research Letters, 103711. Elsevier.\nMantecon, T., Almomen, A., Ren, H., & Zheng, Y. (2023). An analysis of the potential impact of heightened capital requirements on banks’ cost of capital. Journal of Financial Services Research. Springer Nature."
-  },
-  {
-    "objectID": "research.html#working-papers",
-    "href": "research.html#working-papers",
-    "title": "Research",
-    "section": "Working Papers",
-    "text": "Working Papers\n\nLiu, Y., & Ren, H. (2019). Impact of market state on momentum portfolio risk and performance: A risk-based explanation."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "He Ren, PhD, CFA",
-    "section": "",
-    "text": "Welcome! I’m an Assistant Professor of Finance whose research focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets. Feel free to explore my website to learn more about my teaching and research.\nOutside the classroom and my research, I’m also a Rubik’s cube solver. You can check out my World Cube Association (WCA) profile to see my official results. I’m also passionate about photography. You can browse some of my favorite shots in the Photography section of this website."
-  },
-  {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
-    "title": "He Ren, PhD, CFA",
-    "section": "",
-    "text": "Welcome! I’m an Assistant Professor of Finance whose research focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets. Feel free to explore my website to learn more about my teaching and research.\nOutside the classroom and my research, I’m also a Rubik’s cube solver. You can check out my World Cube Association (WCA) profile to see my official results. I’m also passionate about photography. You can browse some of my favorite shots in the Photography section of this website."
-  },
-  {
-    "objectID": "index.html#what-youll-find-here",
-    "href": "index.html#what-youll-find-here",
-    "title": "He Ren, PhD, CFA",
-    "section": "What you’ll find here",
-    "text": "What you’ll find here\n\nTeaching — courses I currently teach and have taught.\nBusiness Finance Book — book used for Business Finance class.\nResearch — publications, working papers, and current interests.\nBlog — occasional writing.\nPhotography — a gallery of photos."
-  },
-  {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
-    "section": "",
-    "text": "A summary of Paul Goldsmith-Pinkham’s article.\nThis follow-up to the earlier HMDA post walks through a complete, end-to-end research pipeline built with Claude Code: pulling 10-K filings from SEC EDGAR, parsing out the Risk Factors section, and loading the results into a queryable database. The motivating research question is whether trade-exposed U.S. firms ramped up tariff-related language in their risk disclosures after the 2025 tariff escalation. The broader methodological point is that a researcher can go from a raw internet source to an analyzable dataset in roughly half an hour."
-  },
-  {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#overview",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html#overview",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
-    "section": "",
-    "text": "A summary of Paul Goldsmith-Pinkham’s article.\nThis follow-up to the earlier HMDA post walks through a complete, end-to-end research pipeline built with Claude Code: pulling 10-K filings from SEC EDGAR, parsing out the Risk Factors section, and loading the results into a queryable database. The motivating research question is whether trade-exposed U.S. firms ramped up tariff-related language in their risk disclosures after the 2025 tariff escalation. The broader methodological point is that a researcher can go from a raw internet source to an analyzable dataset in roughly half an hour."
-  },
-  {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#the-pipeline",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html#the-pipeline",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
-    "section": "The Pipeline",
-    "text": "The Pipeline\nThe author builds the pipeline in phases, with Claude Code first entering “plan mode” to read EDGAR API documentation and propose an approach before writing any code. The phases:\n\nResearch and planning. Claude reads EDGAR docs and proposes a design.\nDesign clarification. Claude asks the researcher to choose between DuckDB and SQLite, between simple keyword search and LLM classification, and what User-Agent string to use.\nCIK lookup. Claude resolves Central Index Keys for 29 of 30 target firms. Gap Inc. fails because its ticker had changed (GPS → GAP).\nFiling index queries. Claude hits the EDGAR API for each firm’s 10-Ks from 2022 to 2025.\nDownload. Raw HTML filings are downloaded with caching so reruns avoid redundant network calls.\nParsing. BeautifulSoup extracts Item 1A (Risk Factors), with regex tweaks for filings that split “Item 1A” and “Risk Factors” across lines.\nStorage. Parsed text is loaded into DuckDB, alongside tariff keyword counts and context snippets.\nQuality reports. An extraction-quality report flags parsing failures, which is how the author catches the Honeywell and Intel regex issue.\nQuerying. SQL queries against DuckDB produce the descriptive results.\n\nThe final dataset covers 119 of 120 filings successfully parsed. Total code: roughly 480 lines of Python."
-  },
-  {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#the-original-prompts",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html#the-original-prompts",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
-    "section": "The Original Prompts",
-    "text": "The Original Prompts\n\nInitial prompt\n\nI want to build a dataset of 10-K Risk Factors from SEC EDGAR to study how tariff-related risk disclosure changed 2022–2025. Here’s what I know about EDGAR:\n\nEvery company has a CIK (Central Index Key)\nThe EDGAR filing API is at https://efts.sec.gov/LATEST/\nRate limit: 10 requests/second, must include User-Agent header\n\nI want 10-Ks for ~30 trade-exposed firms — manufacturing, retail, tech hardware. Caterpillar, Nike, Apple, Deere, Ford, 3M, Intel…\n\n\n\nExecution\n\nRun it for the full list. Let’s see how it goes.\n\n\n\nQuerying the database\n\nWhich firms mentioned tariffs the most?"
-  },
-  {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#key-findings",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html#key-findings",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
-    "section": "Key Findings",
-    "text": "Key Findings\nThe descriptive results aren’t the main point, but they validate the pipeline:\n\nJohn Deere had the highest tariff mention count, rising from three to four mentions over the period.\nThe 2022–2025 sample produced 26–35 tariff-related paragraphs per year, compared to 25 total across 18 firms in a 2010 baseline.\nLanguage shifted from generic phrases like “changes in trade policy” to specific references — Section 301, particular product categories, “liberation day.”\nWalmart did not mention tariffs until its 2025 filing.\nRetail firms mentioned tariffs less often than manufacturing or tech-hardware firms."
-  },
-  {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#lessons",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html#lessons",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
-    "section": "Lessons",
-    "text": "Lessons\nFront-load the scraping context. Specifying rate limits, headers, and API structure up front saves debugging rounds later.\nLet Claude ask design questions. Instead of pre-specifying every detail, give Claude the high-level task and let it surface design choices (DuckDB vs. SQLite, keyword search vs. classification). The researcher’s job is to make the calls.\nBuild resume capability in. Network failures are common. Caching and idempotent scripts make reruns cheap — the Gap Inc. ticker fix required only four new downloads in 43 seconds, not a full re-pull.\nGenerate extraction-quality reports. They are how subtle parsing bugs get caught before they corrupt months of downstream analysis.\nSQL beats CSVs for text-as-data. DuckDB gives zero-config deployment, SQL queryability, and relational structure without running a server."
-  },
-  {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#conclusion",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html#conclusion",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
-    "section": "Conclusion",
-    "text": "Conclusion\nThe pipeline is small — one researcher, one afternoon, 480 lines of Python — but it shows how the per-project cost of building real research infrastructure has dropped. The interesting question is no longer whether the pipeline is feasible, but which research questions are worth pointing it at."
+    "text": "Summary: From EDGAR Filings to a Structured Database\n\n\n\nAI\n\ndata\n\nfinance\n\n\n\nA summary of Paul Goldsmith-Pinkham’s article on using Claude Code to build a 10-K Risk Factors dataset from SEC EDGAR.\n\n\n\n\n\nMay 11, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nSummary: Large Datasets and Structured Databases\n\n\n\nAI\n\ndata\n\neconomics\n\n\n\nA summary of Paul Goldsmith-Pinkham’s article on AI-assisted data engineering for economists.\n\n\n\n\n\nMay 9, 2026\n\n\nHe Ren\n\n\n\n\n\nNo matching items"
   }
 ]

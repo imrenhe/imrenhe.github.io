@@ -10,17 +10,49 @@ body:has(.quarto-about-trestles) #title-block-header h1.title {
   font-size: 1.75rem;
 }
 
-/* Use the headings font (Petrona) for the about-page description/subtitle. */
-body:has(.quarto-about-trestles) #title-block-header .subtitle,
-body:has(.quarto-about-trestles) #title-block-header .lead,
-body:has(.quarto-about-trestles) #title-block-header .description {
+/* Use the headings font (Petrona) for page descriptions/subtitles. */
+#title-block-header .subtitle,
+#title-block-header .lead,
+#title-block-header .description,
+.homepage-intro .lead {
   font-family: "Petrona", Georgia, serif;
+}
+
+/* Homepage hero: title, description, and social icons stacked. */
+.homepage-intro h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+
+.homepage-intro .lead {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.homepage-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.1rem;
+  margin-top: 0.5rem;
+}
+
+.homepage-links .about-link i,
+.about-entity .about-link i {
+  font-size: 1.3em;
 }
 
 /* Use Petrona for the navbar title and navigation links. */
 .navbar .navbar-title,
+.navbar .navbar-brand,
 .navbar .nav-link {
   font-family: "Petrona", Georgia, serif;
+}
+
+.navbar .navbar-title {
+  font-weight: 700;
 }
 
 /* Keep the about-page icon links on a single row at narrow widths.
