@@ -6,9 +6,9 @@ website:
   title: "HE REN"
   site-url: https://imrenhe.github.io
   description: "Personal website of He Ren"
-  favicon: images/acorn.svg
+  favicon: images/stock-2.svg
   navbar:
-    logo: images/acorn.svg
+    logo: images/stock-2.svg
     title: HE REN
     right:
       - href: index.qmd

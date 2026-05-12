@@ -1,0 +1,21 @@
+---
+title: "Page Not Found"
+pagetitle: "404 — Page Not Found"
+description: ""
+page-layout: article
+title-block-banner: false
+sidebar: false
+toc: false
+search: false
+---
+
+The page you're looking for doesn't exist or has moved. It may have been renamed, or the link might be incorrect.
+
+Try one of these instead:
+
+- [**Home**](/) — start over from the homepage.
+- [**Teaching**](/teaching.html) — courses I currently teach and have taught.
+- [**Research**](/research.html) — publications and working papers.
+- [**Blog**](/blog/) — occasional writing.
+- [**Photography**](/photography.html) — a gallery of photos.
+- [**About**](/about.html) — more about me.

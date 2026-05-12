@@ -9,14 +9,16 @@ deployed to GitHub Pages at <https://imrenhe.github.io/>.
 .
 ├── _quarto.yml                # Site configuration (navbar, theme, footer, favicon)
 ├── index.qmd                  # Home page (about-trestles bio + links)
+├── about.qmd                  # About page (bio, education, certifications)
 ├── teaching.qmd               # Teaching (courses by institution)
 ├── research.qmd               # Research (interests, journal articles, working papers)
 ├── photography.qmd            # Photo gallery (layout-ncol grid)
+├── 404.qmd                    # Custom 404 page (rendered to 404.html for GitHub Pages)
 ├── blog/
 │   ├── index.qmd              # Blog listing page (auto-generated from posts/)
 │   └── posts/<slug>/index.qmd # One folder per post
 ├── images/
-│   ├── favicon.svg            # Browser tab icon (avocado emoji as SVG)
+│   ├── stock-2.svg            # Favicon and navbar logo
 │   ├── profile.jpeg           # Profile photo on the home page
 │   └── photo/                 # Photos shown on the photography page
 ├── styles/
@@ -123,8 +125,8 @@ Replace `images/profile.jpeg` (referenced by [index.qmd](index.qmd)).
 
 ### Favicon
 
-Edit the emoji inside [images/favicon.svg](images/favicon.svg) (the SVG renders
-the chosen emoji using the OS's emoji font).
+Replace [images/stock-2.svg](images/stock-2.svg), or point `favicon:` and
+`navbar.logo:` in [_quarto.yml](_quarto.yml) at a different SVG.
 
 ## Theme & styling
 
