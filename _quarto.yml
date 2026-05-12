@@ -21,6 +21,8 @@ website:
         text: BLOG
       - href: photography.qmd
         text: PHOTOGRAPHY
+      - href: about.qmd
+        text: ABOUT
   page-footer:
     left: "© 2026 He Ren. All rights reserved. Made with [Quarto](https://quarto.org)."
     right:

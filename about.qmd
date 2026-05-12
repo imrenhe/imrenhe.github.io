@@ -1,0 +1,40 @@
+---
+title: "He Ren, PhD, CFA"
+pagetitle: "About Me"
+about:
+  template: trestles
+  image: images/profile.jpeg
+  image-shape: rectangle
+  image-width: 15em
+  links:
+    - icon: github
+      href: https://github.com/imrenhe
+      aria-label: GitHub
+    - icon: linkedin
+      href: https://www.linkedin.com/in/imrenhe/
+      aria-label: LinkedIn
+    - icon: mortarboard-fill
+      href: https://scholar.google.com/citations?user=POuWIfYAAAAJ&hl=en
+      aria-label: Google Scholar
+---
+
+## Hi, I'm happy you're here
+
+I'm an Assistant Professor of Finance at [Merrilee Alexander Kick College of Business and Entrepreneurship, Texas Woman's University](https://twu.edu/business/). My research interest focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets.
+
+## Outside the classroom
+
+Outside the classroom and my research, I'm also a Rubik's cube solver. You can check out my <a href="https://www.worldcubeassociation.org/persons/2025RENH02" target="_blank" rel="noopener">World Cube Association (WCA) profile</a> to see my official results. I'm also passionate about photography. You can browse some of my favorite shots in the Photography section of this website.
+
+## Education
+
+- **Ph.D. in Finance**, University of North Texas, 2019
+- **M.B.A.**, University of Texas at Dallas, 2012
+- **M.S. in Finance**, State University of New York at Buffalo, 2011
+- **B.S. in Economics**, Shanghai University of International Business and Economics, 2010
+
+## Professional Certifications
+
+- CFA Institute Sustainable Investing Certificate, 2023
+- Chartered Financial Analyst (CFA®), 2022
+- Financial Risk Manager (FRM®), 2022
