@@ -27,7 +27,7 @@ body:has(.quarto-about-trestles) #title-block-header h1.title {
 
 .homepage-intro .lead {
   margin-top: 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .homepage-links {
