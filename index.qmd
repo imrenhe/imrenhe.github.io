@@ -1,5 +1,5 @@
 ---
-pagetitle: "He Ren, PhD, CFA"
+pagetitle: "Home"
 description: "Assistant Professor of Finance"
 twitter-card:
   title: "He Ren, PhD, CFA"
@@ -28,11 +28,3 @@ Welcome! I'm an Assistant Professor of Finance whose research focuses on investm
 Outside the classroom and my research, I'm also a Rubik's cube solver. You can check out my <a href="https://www.worldcubeassociation.org/persons/2025RENH02" target="_blank" rel="noopener">World Cube Association (WCA) profile</a> to see my official results. I'm also passionate about photography. You can browse some of my favorite shots in the Photography section of this website.
 
 [LEARN MORE ABOUT ME →](about.qmd)
-
-## What you'll find here
-
-- [**Teaching**](teaching.qmd) — courses I currently teach and have taught.
-- <a href="https://imrenhe.github.io/fin3053-business-finance-book/" target="_blank" rel="noopener"><strong>Business Finance Book</strong></a> — book used for Business Finance class.
-- [**Research**](research.qmd) — publications and working papers.
-- [**Blog**](blog/index.qmd) — occasional writing.
-- [**Photography**](photography.qmd) — a gallery of photos.
