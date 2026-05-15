@@ -42,116 +42,74 @@
     "text": "Professional Certifications\n\nCFA Institute Sustainable Investing Certificate, 2023\nChartered Financial Analyst (CFA®), 2022\nFinancial Risk Manager (FRM®), 2022"
   },
   {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "objectID": "blog/posts/tvm-ba-ii-plus-and-excel/index.html",
+    "href": "blog/posts/tvm-ba-ii-plus-and-excel/index.html",
+    "title": "Time Value of Money on the BA II Plus and in Excel",
     "section": "",
-    "text": "A summary of Paul Goldsmith-Pinkham’s article.\nThis follow-up to the earlier HMDA post walks through a complete, end-to-end research pipeline built with Claude Code: pulling 10-K filings from SEC EDGAR, parsing out the Risk Factors section, and loading the results into a queryable database. The motivating research question is whether trade-exposed U.S. firms ramped up tariff-related language in their risk disclosures after the 2025 tariff escalation. The broader methodological point is that a researcher can go from a raw internet source to an analyzable dataset in roughly half an hour."
+    "text": "Most introductory finance problems can be cracked two ways: on a TI BA II Plus financial calculator or in a spreadsheet. The calculator is what you bring to an exam; Excel is what you use at work. They give the same answer, but the workflow is different — the calculator stores one problem in memory, while Excel makes inputs visible and easy to tweak.\nThis post is a practical walkthrough for an undergraduate finance student. We start with calculator setup, move through the core TVM problems, and finish with NPV and IRR for uneven cash flows. Every example shows both the calculator keystrokes and the Excel formula."
   },
   {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#overview",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html#overview",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "objectID": "blog/posts/tvm-ba-ii-plus-and-excel/index.html#why-two-tools",
+    "href": "blog/posts/tvm-ba-ii-plus-and-excel/index.html#why-two-tools",
+    "title": "Time Value of Money on the BA II Plus and in Excel",
     "section": "",
-    "text": "A summary of Paul Goldsmith-Pinkham’s article.\nThis follow-up to the earlier HMDA post walks through a complete, end-to-end research pipeline built with Claude Code: pulling 10-K filings from SEC EDGAR, parsing out the Risk Factors section, and loading the results into a queryable database. The motivating research question is whether trade-exposed U.S. firms ramped up tariff-related language in their risk disclosures after the 2025 tariff escalation. The broader methodological point is that a researcher can go from a raw internet source to an analyzable dataset in roughly half an hour."
+    "text": "Most introductory finance problems can be cracked two ways: on a TI BA II Plus financial calculator or in a spreadsheet. The calculator is what you bring to an exam; Excel is what you use at work. They give the same answer, but the workflow is different — the calculator stores one problem in memory, while Excel makes inputs visible and easy to tweak.\nThis post is a practical walkthrough for an undergraduate finance student. We start with calculator setup, move through the core TVM problems, and finish with NPV and IRR for uneven cash flows. Every example shows both the calculator keystrokes and the Excel formula."
   },
   {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#the-pipeline",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html#the-pipeline",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
-    "section": "The Pipeline",
-    "text": "The Pipeline\nThe author builds the pipeline in phases, with Claude Code first entering “plan mode” to read EDGAR API documentation and propose an approach before writing any code. The phases:\n\nResearch and planning. Claude reads EDGAR docs and proposes a design.\nDesign clarification. Claude asks the researcher to choose between DuckDB and SQLite, between simple keyword search and LLM classification, and what User-Agent string to use.\nCIK lookup. Claude resolves Central Index Keys for 29 of 30 target firms. Gap Inc. fails because its ticker had changed (GPS → GAP).\nFiling index queries. Claude hits the EDGAR API for each firm’s 10-Ks from 2022 to 2025.\nDownload. Raw HTML filings are downloaded with caching so reruns avoid redundant network calls.\nParsing. BeautifulSoup extracts Item 1A (Risk Factors), with regex tweaks for filings that split “Item 1A” and “Risk Factors” across lines.\nStorage. Parsed text is loaded into DuckDB, alongside tariff keyword counts and context snippets.\nQuality reports. An extraction-quality report flags parsing failures, which is how the author catches the Honeywell and Intel regex issue.\nQuerying. SQL queries against DuckDB produce the descriptive results.\n\nThe final dataset covers 119 of 120 filings successfully parsed. Total code: roughly 480 lines of Python."
+    "objectID": "blog/posts/tvm-ba-ii-plus-and-excel/index.html#setting-up-the-ba-ii-plus",
+    "href": "blog/posts/tvm-ba-ii-plus-and-excel/index.html#setting-up-the-ba-ii-plus",
+    "title": "Time Value of Money on the BA II Plus and in Excel",
+    "section": "Setting Up the BA II Plus",
+    "text": "Setting Up the BA II Plus\nOut of the box, the BA II Plus has two defaults that trip up students. Fix them once.\n1. Set decimal places to 4 (or more). Press 2nd → FORMAT → enter 4 → ENTER → 2nd → QUIT.\n2. Set payments per year to 1. Press 2nd → P/Y → enter 1 → ENTER → 2nd → QUIT. This is the safer default. When you have monthly compounding, you can either change P/Y to 12 or leave P/Y at 1 and enter the periodic rate manually (e.g., 0.5 for 6% / 12). I recommend the second approach — fewer hidden settings to forget.\n3. Confirm END mode (not BGN). Most problems use end-of-period cash flows. Press 2nd → BGN. If it says END, press 2nd → QUIT. If it says BGN, press 2nd → SET → 2nd → QUIT.\n4. Clear the TVM registers before every new problem. Press 2nd → CLR TVM. The calculator remembers your last problem; failing to clear is the #1 source of wrong answers on exams.\n\n\n\n\n\n\nTipSign convention\n\n\n\nThe BA II Plus uses cash flow signs. Money you pay out is negative; money you receive is positive. If PV and FV have the same sign, the calculator returns an error. This convention matches Excel."
   },
   {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#the-original-prompts",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html#the-original-prompts",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
-    "section": "The Original Prompts",
-    "text": "The Original Prompts\n\nInitial prompt\n\nI want to build a dataset of 10-K Risk Factors from SEC EDGAR to study how tariff-related risk disclosure changed 2022–2025. Here’s what I know about EDGAR:\n\nEvery company has a CIK (Central Index Key)\nThe EDGAR filing API is at https://efts.sec.gov/LATEST/\nRate limit: 10 requests/second, must include User-Agent header\n\nI want 10-Ks for ~30 trade-exposed firms — manufacturing, retail, tech hardware. Caterpillar, Nike, Apple, Deere, Ford, 3M, Intel…\n\n\n\nExecution\n\nRun it for the full list. Let’s see how it goes.\n\n\n\nQuerying the database\n\nWhich firms mentioned tariffs the most?"
+    "objectID": "blog/posts/tvm-ba-ii-plus-and-excel/index.html#the-five-tvm-keys",
+    "href": "blog/posts/tvm-ba-ii-plus-and-excel/index.html#the-five-tvm-keys",
+    "title": "Time Value of Money on the BA II Plus and in Excel",
+    "section": "The Five TVM Keys",
+    "text": "The Five TVM Keys\nEvery basic time value problem uses some subset of five variables, four of which you know and one you solve for.\n\n\n\n\n\n\n\n\nKey\nMeaning\nExcel argument\n\n\n\n\nN\nNumber of periods\nnper\n\n\nI/Y\nInterest rate per period (as a percent)\nrate\n\n\nPV\nPresent value (lump sum today)\npv\n\n\nPMT\nRecurring payment each period\npmt\n\n\nFV\nFuture value (lump sum at the end)\nfv\n\n\n\nOne pitfall: in the BA II Plus, you enter I/Y as a percent (5 means 5%), but Excel’s rate argument wants a decimal (0.05). Forgetting this is the #2 source of wrong answers.\nThe next four examples walk through solving for each of the lump-sum unknowns — FV, PV, N, and I/Y — one at a time.\n\nExample 1 — Solving for FV (future value of a lump sum)\n\nYou deposit $1,000 today in an account earning 5% per year. What is the balance in 10 years?\n\nBA II Plus:\n\n\n\nStep\nKeystrokes\nDisplay\n\n\n\n\n1\n2nd CLR TVM\n0\n\n\n2\n10 N\nN = 10\n\n\n3\n5 I/Y\nI/Y = 5\n\n\n4\n1000 +/− PV\nPV = −1,000\n\n\n5\n0 PMT\nPMT = 0\n\n\n6\nCPT FV\nFV = 1,628.89\n\n\n\nExcel: =FV(0.05, 10, 0, -1000) → 1,628.89\n\n\nExample 2 — Solving for PV (present value of a lump sum)\n\nYou’d like to have $50,000 saved for a down payment in 5 years. Your savings earn 6% per year. How much do you need to deposit today?\n\nBA II Plus:\n\n\n\nStep\nKeystrokes\nDisplay\n\n\n\n\n1\n2nd CLR TVM\n0\n\n\n2\n5 N\nN = 5\n\n\n3\n6 I/Y\nI/Y = 6\n\n\n4\n0 PMT\nPMT = 0\n\n\n5\n50000 FV\nFV = 50,000\n\n\n6\nCPT PV\nPV = −37,362.91\n\n\n\nThe negative sign means it’s an outflow today — you pay $37,362.91 now to receive $50,000 in five years.\nExcel: =PV(0.06, 5, 0, 50000) → −37,362.91\n\n\nExample 3 — Solving for N (how long?)\n\nYou invest $5,000 today at 8% per year. How many years until it doubles to $10,000?\n\nBA II Plus:\n\n\n\nStep\nKeystrokes\nDisplay\n\n\n\n\n1\n2nd CLR TVM\n0\n\n\n2\n8 I/Y\nI/Y = 8\n\n\n3\n5000 +/− PV\nPV = −5,000\n\n\n4\n0 PMT\nPMT = 0\n\n\n5\n10000 FV\nFV = 10,000\n\n\n6\nCPT N\nN = 9.0065\n\n\n\nSo it takes a little over nine years. (This is a quick check on the “Rule of 72”: 72 / 8 = 9 years, which is close.)\nExcel: =NPER(0.08, 0, -5000, 10000) → 9.0065\n\n\nExample 4 — Solving for I/Y (what rate did I earn?)\n\nA friend tells you they bought a stock for $1,000 six years ago and just sold it for $1,500. What annualized rate of return did they earn?\n\nBA II Plus:\n\n\n\nStep\nKeystrokes\nDisplay\n\n\n\n\n1\n2nd CLR TVM\n0\n\n\n2\n6 N\nN = 6\n\n\n3\n1000 +/− PV\nPV = −1,000\n\n\n4\n0 PMT\nPMT = 0\n\n\n5\n1500 FV\nFV = 1,500\n\n\n6\nCPT I/Y\nI/Y = 6.9913\n\n\n\nRoughly 6.99% per year.\nExcel: =RATE(6, 0, -1000, 1500) → 0.069913\n\n\nExample 5 — Future value of an annuity (monthly contributions)\nNow add PMT to the mix.\n\nYou save $300 at the end of every month for 30 years in an account earning 7% APR compounded monthly. What’s the balance at the end?\n\nThe trick: convert annual quantities to monthly before you enter them. Periodic rate = 7% / 12 ≈ 0.5833%. Number of periods = 30 × 12 = 360.\nBA II Plus:\n\n\n\nStep\nKeystrokes\nDisplay\n\n\n\n\n1\n2nd CLR TVM\n0\n\n\n2\n360 N\nN = 360\n\n\n3\n7 ÷ 12 = I/Y\nI/Y = 0.5833\n\n\n4\n0 PV\nPV = 0\n\n\n5\n300 +/− PMT\nPMT = −300\n\n\n6\nCPT FV\nFV = 365,990.62\n\n\n\nExcel: =FV(0.07/12, 360, -300, 0) → 365,990.62"
   },
   {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#key-findings",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html#key-findings",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
-    "section": "Key Findings",
-    "text": "Key Findings\nThe descriptive results aren’t the main point, but they validate the pipeline:\n\nJohn Deere had the highest tariff mention count, rising from three to four mentions over the period.\nThe 2022–2025 sample produced 26–35 tariff-related paragraphs per year, compared to 25 total across 18 firms in a 2010 baseline.\nLanguage shifted from generic phrases like “changes in trade policy” to specific references — Section 301, particular product categories, “liberation day.”\nWalmart did not mention tariffs until its 2025 filing.\nRetail firms mentioned tariffs less often than manufacturing or tech-hardware firms."
+    "objectID": "blog/posts/tvm-ba-ii-plus-and-excel/index.html#apr-vs-ear",
+    "href": "blog/posts/tvm-ba-ii-plus-and-excel/index.html#apr-vs-ear",
+    "title": "Time Value of Money on the BA II Plus and in Excel",
+    "section": "APR vs EAR",
+    "text": "APR vs EAR\nThe annual percentage rate (APR) is the stated, nominal rate. The effective annual rate (EAR) is what you actually earn or pay once compounding is accounted for. For any compounding frequency above 1, EAR &gt; APR.\n\nExample 6 — Converting APR to EAR\n\nA credit card charges 18% APR compounded monthly. What’s the EAR?\n\nBA II Plus: the ICONV worksheet does this in three keystrokes.\n\n\n\nStep\nKeystrokes\nDisplay\n\n\n\n\n1\n2nd ICONV\nNOM =\n\n\n2\n18 ENTER ↓\nC/Y =\n\n\n3\n12 ENTER ↑ CPT\nEFF = 19.5618\n\n\n\nExcel: =EFFECT(0.18, 12) → 0.195618\nGoing the other way — from EAR to APR — use NOMINAL: =NOMINAL(0.195618, 12) → 0.18"
   },
   {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#lessons",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html#lessons",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
-    "section": "Lessons",
-    "text": "Lessons\nFront-load the scraping context. Specifying rate limits, headers, and API structure up front saves debugging rounds later.\nLet Claude ask design questions. Instead of pre-specifying every detail, give Claude the high-level task and let it surface design choices (DuckDB vs. SQLite, keyword search vs. classification). The researcher’s job is to make the calls.\nBuild resume capability in. Network failures are common. Caching and idempotent scripts make reruns cheap — the Gap Inc. ticker fix required only four new downloads in 43 seconds, not a full re-pull.\nGenerate extraction-quality reports. They are how subtle parsing bugs get caught before they corrupt months of downstream analysis.\nSQL beats CSVs for text-as-data. DuckDB gives zero-config deployment, SQL queryability, and relational structure without running a server."
+    "objectID": "blog/posts/tvm-ba-ii-plus-and-excel/index.html#mortgages",
+    "href": "blog/posts/tvm-ba-ii-plus-and-excel/index.html#mortgages",
+    "title": "Time Value of Money on the BA II Plus and in Excel",
+    "section": "Mortgages",
+    "text": "Mortgages\nA mortgage is just a present-value annuity problem in disguise. The bank lends you the present value; you repay with level monthly payments that include both principal and interest.\n\nExample 7 — Monthly payment\n\nYou borrow $400,000 on a 30-year mortgage at 6.5% APR (compounded monthly). What’s the monthly payment?\n\nBA II Plus:\n\n\n\nStep\nKeystrokes\nDisplay\n\n\n\n\n1\n2nd CLR TVM\n0\n\n\n2\n360 N\nN = 360\n\n\n3\n6.5 ÷ 12 = I/Y\nI/Y = 0.5417\n\n\n4\n400000 PV\nPV = 400,000\n\n\n5\n0 FV\nFV = 0\n\n\n6\nCPT PMT\nPMT = −2,528.27\n\n\n\nThe negative sign means you’re paying out each month.\nExcel: =PMT(0.065/12, 360, 400000) → −2,528.27\nEach monthly payment is split between interest (charged on the outstanding balance) and principal (which reduces that balance). Early on, the balance is huge, so almost all of the payment is interest. Late in the loan, the balance is small, and most of the payment goes to principal. Excel exposes this split directly: IPMT returns the interest portion of a given payment and PPMT returns the principal portion. For month 1 of this loan:\n\n=IPMT(0.065/12, 1, 360, 400000) → −2,166.67\n=PPMT(0.065/12, 1, 360, 400000) → −361.60\n\nTogether they sum to the full payment. By month 360, the proportions are reversed."
   },
   {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#conclusion",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html#conclusion",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
-    "section": "Conclusion",
-    "text": "Conclusion\nThe pipeline is small — one researcher, one afternoon, 480 lines of Python — but it shows how the per-project cost of building real research infrastructure has dropped. The interesting question is no longer whether the pipeline is feasible, but which research questions are worth pointing it at."
+    "objectID": "blog/posts/tvm-ba-ii-plus-and-excel/index.html#uneven-cash-flows-npv",
+    "href": "blog/posts/tvm-ba-ii-plus-and-excel/index.html#uneven-cash-flows-npv",
+    "title": "Time Value of Money on the BA II Plus and in Excel",
+    "section": "Uneven Cash Flows: NPV",
+    "text": "Uneven Cash Flows: NPV\nWhen the cash flows aren’t level, the basic TVM keys aren’t enough — you discount each cash flow on its own and add them up. On the BA II Plus, this is the CF (cash flow) worksheet.\n\nExample 8 — NPV of a project\n\nA project costs $10,000 today. It pays $2,000 at the end of year 1, $3,000 in year 2, $4,000 in year 3, and $5,000 in year 4. The discount rate is 10%. What’s the NPV?\n\nBA II Plus: the CF worksheet stores cash flows by period.\n\n\n\nStep\nKeystrokes\nDisplay\n\n\n\n\n1\nCF 2nd CLR WORK\nCF0 = 0\n\n\n2\n10000 +/− ENTER ↓\nCF0 = −10,000\n\n\n3\n2000 ENTER ↓ ↓\nC01 = 2,000\n\n\n4\n3000 ENTER ↓ ↓\nC02 = 3,000\n\n\n5\n4000 ENTER ↓ ↓\nC03 = 4,000\n\n\n6\n5000 ENTER ↓ ↓\nC04 = 5,000\n\n\n7\nNPV 10 ENTER ↓ CPT\nNPV = 717.85\n\n\n\nThe ↓ ↓ between cash flows skips past the “frequency” prompt (F01, F02, …). If you have the same cash flow repeated several years in a row, you can enter the value once and set the frequency instead of typing it multiple times.\nExcel: Excel’s NPV function discounts the first cash flow back one period, so you have to add the time-zero outflow separately.\n=NPV(0.10, 2000, 3000, 4000, 5000) - 10000 → 717.85\n\n\n\n\n\n\nWarningThe =NPV gotcha\n\n\n\nExcel’s NPV assumes the first argument is one period away. The time-zero cash flow goes outside the function. Many wrong answers come from including -10000 inside the NPV parentheses."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "He Ren, PhD, CFA",
-    "section": "",
-    "text": "Assistant Professor of Finance"
+    "objectID": "blog/posts/tvm-ba-ii-plus-and-excel/index.html#irr",
+    "href": "blog/posts/tvm-ba-ii-plus-and-excel/index.html#irr",
+    "title": "Time Value of Money on the BA II Plus and in Excel",
+    "section": "IRR",
+    "text": "IRR\nThe internal rate of return is the discount rate that makes NPV exactly zero. It’s the project’s break-even rate.\n\nExample 9 — IRR of the same project\nBA II Plus: with the cash flows from Example 8 still loaded, just press:\nIRR CPT → IRR = 12.8258\nExcel: put the cash flows in a column (including the −10,000 at time zero) and call:\n=IRR(A1:A5) → 0.128258\nBecause the IRR (12.83%) is greater than the 10% discount rate used in Example 8, the project’s NPV is positive — exactly what we found. In general, accept a project when IRR &gt; the required rate of return.\n\n\n\n\n\n\nNoteWhen IRR misleads\n\n\n\nIRR can have multiple solutions when cash flows change sign more than once (e.g., −, +, +, −). For mutually exclusive projects, IRR can also rank projects differently than NPV. NPV is the safer decision rule; IRR is the more intuitive one to communicate."
   },
   {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
-    "title": "He Ren, PhD, CFA",
-    "section": "Welcome",
-    "text": "Welcome\nWelcome! I’m an Assistant Professor of Finance whose research focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets. Feel free to explore my website to learn more about my teaching and research.\nOutside the classroom and my research, I’m also a Rubik’s cube solver. You can check out my World Cube Association (WCA) profile to see my official results. I’m also passionate about photography. You can browse some of my favorite shots in the Photography section of this website.\nLEARN MORE ABOUT ME →"
+    "objectID": "blog/posts/tvm-ba-ii-plus-and-excel/index.html#cheat-sheet",
+    "href": "blog/posts/tvm-ba-ii-plus-and-excel/index.html#cheat-sheet",
+    "title": "Time Value of Money on the BA II Plus and in Excel",
+    "section": "Cheat Sheet",
+    "text": "Cheat Sheet\n\n\n\n\n\n\n\n\nTask\nBA II Plus\nExcel\n\n\n\n\nFuture value of lump sum\nN I/Y PV 0 PMT CPT FV\n=FV(rate, nper, 0, -pv)\n\n\nPresent value of lump sum\nN I/Y FV 0 PMT CPT PV\n=PV(rate, nper, 0, -fv)\n\n\nNumber of periods\nI/Y PV PMT FV CPT N\n=NPER(rate, pmt, pv, fv)\n\n\nPeriodic rate\nN PV PMT FV CPT I/Y\n=RATE(nper, pmt, pv, fv)\n\n\nAnnuity payment\nN I/Y PV FV CPT PMT\n=PMT(rate, nper, pv, fv)\n\n\nAPR → EAR\n2nd ICONV, enter NOM and C/Y, CPT EFF\n=EFFECT(apr, m)\n\n\nEAR → APR\n2nd ICONV, enter EFF and C/Y, CPT NOM\n=NOMINAL(ear, m)\n\n\nNPV (uneven cash flows)\nCF worksheet, then NPV rate ENTER ↓ CPT\n=NPV(rate, cf1:cfn) + cf0\n\n\nIRR\nCF worksheet, then IRR CPT\n=IRR(cf0:cfn)\n\n\nInterest portion of payment\n(Calculate manually from balance × rate)\n=IPMT(rate, period, nper, pv)\n\n\nPrincipal portion of payment\n(Payment minus interest portion)\n=PPMT(rate, period, nper, pv)"
   },
   {
-    "objectID": "photography.html",
-    "href": "photography.html",
-    "title": "Photography",
-    "section": "",
-    "text": "Flying\n\n\n\n\n\n\n\nUnderwater\n\n\n\n\n\n\n\nSummer\n\n\n\n\n\n\n\n\n\nStar Trails\n\n\n\n\n\n\n\nDallas\n\n\n\n\n\n\n\nBird\n\n\n\n\n\n\n\n\n\nFilm\n\n\n\n\n\n\n\nChill"
-  },
-  {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "Merrilee Alexander Kick College of Business and Entrepreneurship\nGraduate\n\nFIN 5753 — Foundations of Financial Management\nFIN 5243 — Managerial Finance\n\nUndergraduate\n\nFIN 3053 — Business Finance\nFIN 3133 — Investments\nFIN 4243 — Financial Management\nFIN 4253 — Financial Planning"
-  },
-  {
-    "objectID": "teaching.html#texas-womans-university",
-    "href": "teaching.html#texas-womans-university",
-    "title": "Teaching",
-    "section": "",
-    "text": "Merrilee Alexander Kick College of Business and Entrepreneurship\nGraduate\n\nFIN 5753 — Foundations of Financial Management\nFIN 5243 — Managerial Finance\n\nUndergraduate\n\nFIN 3053 — Business Finance\nFIN 3133 — Investments\nFIN 4243 — Financial Management\nFIN 4253 — Financial Planning"
-  },
-  {
-    "objectID": "teaching.html#university-of-north-texas",
-    "href": "teaching.html#university-of-north-texas",
-    "title": "Teaching",
-    "section": "University of North Texas",
-    "text": "University of North Texas\nG. Brint Ryan College of Business — Teaching Fellow / Instructor\n\nFINA 3770 — Introduction to Finance and Financial Management"
-  },
-  {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
-    "section": "",
-    "text": "Zheng, Y., & Ren, H. (2026). Does fintech and digitalization adoption impact employee performance efficiency? Evidence from a machine learning approach. The Quarterly Journal of Finance. World Scientific.\nZheng, Y., & Ren, H. (2024). COVID-19 vaccination and housing payments. Journal of Housing Economics, 64, 101992. Academic Press.\nChoi, S., Li, Z., Boonme, K., & Ren, H. (2024). Face-to-face, online or HyFlex instruction? The effects of self-directed learning on stress reduction and student satisfaction among emerging adults. Journal of International Education in Business, 17(3), 373–394. Emerald Publishing Limited.\nRen, H., & Zheng, Y. (2023). COVID-19 vaccination and household savings: An economic recovery channel. Finance Research Letters, 103711. Elsevier.\nMantecon, T., Almomen, A., Ren, H., & Zheng, Y. (2023). An analysis of the potential impact of heightened capital requirements on banks’ cost of capital. Journal of Financial Services Research. Springer Nature."
-  },
-  {
-    "objectID": "research.html#journal-articles",
-    "href": "research.html#journal-articles",
-    "title": "Research",
-    "section": "",
-    "text": "Zheng, Y., & Ren, H. (2026). Does fintech and digitalization adoption impact employee performance efficiency? Evidence from a machine learning approach. The Quarterly Journal of Finance. World Scientific.\nZheng, Y., & Ren, H. (2024). COVID-19 vaccination and housing payments. Journal of Housing Economics, 64, 101992. Academic Press.\nChoi, S., Li, Z., Boonme, K., & Ren, H. (2024). Face-to-face, online or HyFlex instruction? The effects of self-directed learning on stress reduction and student satisfaction among emerging adults. Journal of International Education in Business, 17(3), 373–394. Emerald Publishing Limited.\nRen, H., & Zheng, Y. (2023). COVID-19 vaccination and household savings: An economic recovery channel. Finance Research Letters, 103711. Elsevier.\nMantecon, T., Almomen, A., Ren, H., & Zheng, Y. (2023). An analysis of the potential impact of heightened capital requirements on banks’ cost of capital. Journal of Financial Services Research. Springer Nature."
-  },
-  {
-    "objectID": "research.html#working-papers",
-    "href": "research.html#working-papers",
-    "title": "Research",
-    "section": "Working Papers",
-    "text": "Working Papers\n\nLiu, Y., & Ren, H. (2019). Impact of market state on momentum portfolio risk and performance: A risk-based explanation."
+    "objectID": "blog/posts/tvm-ba-ii-plus-and-excel/index.html#closing-thoughts",
+    "href": "blog/posts/tvm-ba-ii-plus-and-excel/index.html#closing-thoughts",
+    "title": "Time Value of Money on the BA II Plus and in Excel",
+    "section": "Closing Thoughts",
+    "text": "Closing Thoughts\nThree habits will save you in this class:\n\nAlways clear the calculator (2nd CLR TVM for TVM keys, 2nd CLR WORK inside CF) before starting a new problem.\nMatch the period. If the problem is monthly, your N, I/Y, and PMT all need to be monthly. Mixing annual and monthly is the most common error.\nWatch the signs. If you put money in (a loan, an investment), it’s negative. If you take money out (a withdrawal, a repayment), it’s positive. Excel and the BA II Plus follow the same rule.\n\nWhen you graduate, you’ll do almost everything in Excel — once a problem is bigger than the five TVM keys, the spreadsheet wins. But knowing both makes you faster, and it gives you a sanity check: if the calculator and the spreadsheet disagree, you’ve made a setup mistake somewhere, and you’ll catch it before turning it in."
   },
   {
     "objectID": "blog/posts/large-datasets-and-structured-databases/index.html",
@@ -203,10 +161,122 @@
     "text": "Conclusion\nThe author argues that AI-assisted data engineering has fundamentally shifted the economics of research infrastructure. The bottleneck for empirical work has moved from “can I build the infrastructure?” to “do I have a worthwhile research question?”\nKey takeaways:\n\nThe fixed costs of professional data engineering have collapsed\nLarge public datasets are more accessible than commonly assumed\nEmbedding metadata in the database makes future work cheaper\nPlanning matters more than coding speed"
   },
   {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Zheng, Y., & Ren, H. (2026). Does fintech and digitalization adoption impact employee performance efficiency? Evidence from a machine learning approach. The Quarterly Journal of Finance. World Scientific.\nZheng, Y., & Ren, H. (2024). COVID-19 vaccination and housing payments. Journal of Housing Economics, 64, 101992. Academic Press.\nChoi, S., Li, Z., Boonme, K., & Ren, H. (2024). Face-to-face, online or HyFlex instruction? The effects of self-directed learning on stress reduction and student satisfaction among emerging adults. Journal of International Education in Business, 17(3), 373–394. Emerald Publishing Limited.\nRen, H., & Zheng, Y. (2023). COVID-19 vaccination and household savings: An economic recovery channel. Finance Research Letters, 103711. Elsevier.\nMantecon, T., Almomen, A., Ren, H., & Zheng, Y. (2023). An analysis of the potential impact of heightened capital requirements on banks’ cost of capital. Journal of Financial Services Research. Springer Nature."
+  },
+  {
+    "objectID": "research.html#journal-articles",
+    "href": "research.html#journal-articles",
+    "title": "Research",
+    "section": "",
+    "text": "Zheng, Y., & Ren, H. (2026). Does fintech and digitalization adoption impact employee performance efficiency? Evidence from a machine learning approach. The Quarterly Journal of Finance. World Scientific.\nZheng, Y., & Ren, H. (2024). COVID-19 vaccination and housing payments. Journal of Housing Economics, 64, 101992. Academic Press.\nChoi, S., Li, Z., Boonme, K., & Ren, H. (2024). Face-to-face, online or HyFlex instruction? The effects of self-directed learning on stress reduction and student satisfaction among emerging adults. Journal of International Education in Business, 17(3), 373–394. Emerald Publishing Limited.\nRen, H., & Zheng, Y. (2023). COVID-19 vaccination and household savings: An economic recovery channel. Finance Research Letters, 103711. Elsevier.\nMantecon, T., Almomen, A., Ren, H., & Zheng, Y. (2023). An analysis of the potential impact of heightened capital requirements on banks’ cost of capital. Journal of Financial Services Research. Springer Nature."
+  },
+  {
+    "objectID": "research.html#working-papers",
+    "href": "research.html#working-papers",
+    "title": "Research",
+    "section": "Working Papers",
+    "text": "Working Papers\n\nLiu, Y., & Ren, H. (2019). Impact of market state on momentum portfolio risk and performance: A risk-based explanation."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Merrilee Alexander Kick College of Business and Entrepreneurship\nGraduate\n\nFIN 5753 — Foundations of Financial Management\nFIN 5243 — Managerial Finance\n\nUndergraduate\n\nFIN 3053 — Business Finance\nFIN 3133 — Investments\nFIN 4243 — Financial Management\nFIN 4253 — Financial Planning"
+  },
+  {
+    "objectID": "teaching.html#texas-womans-university",
+    "href": "teaching.html#texas-womans-university",
+    "title": "Teaching",
+    "section": "",
+    "text": "Merrilee Alexander Kick College of Business and Entrepreneurship\nGraduate\n\nFIN 5753 — Foundations of Financial Management\nFIN 5243 — Managerial Finance\n\nUndergraduate\n\nFIN 3053 — Business Finance\nFIN 3133 — Investments\nFIN 4243 — Financial Management\nFIN 4253 — Financial Planning"
+  },
+  {
+    "objectID": "teaching.html#university-of-north-texas",
+    "href": "teaching.html#university-of-north-texas",
+    "title": "Teaching",
+    "section": "University of North Texas",
+    "text": "University of North Texas\nG. Brint Ryan College of Business — Teaching Fellow / Instructor\n\nFINA 3770 — Introduction to Finance and Financial Management"
+  },
+  {
+    "objectID": "photography.html",
+    "href": "photography.html",
+    "title": "Photography",
+    "section": "",
+    "text": "Flying\n\n\n\n\n\n\n\nUnderwater\n\n\n\n\n\n\n\nSummer\n\n\n\n\n\n\n\n\n\nStar Trails\n\n\n\n\n\n\n\nDallas\n\n\n\n\n\n\n\nBird\n\n\n\n\n\n\n\n\n\nFilm\n\n\n\n\n\n\n\nChill"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "He Ren, PhD, CFA",
+    "section": "",
+    "text": "Assistant Professor of Finance"
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "He Ren, PhD, CFA",
+    "section": "Welcome",
+    "text": "Welcome\nWelcome! I’m an Assistant Professor of Finance whose research focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets. Feel free to explore my website to learn more about my teaching and research.\nOutside the classroom and my research, I’m also a Rubik’s cube solver. You can check out my World Cube Association (WCA) profile to see my official results. I’m also passionate about photography. You can browse some of my favorite shots in the Photography section of this website.\nLEARN MORE ABOUT ME →"
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "",
+    "text": "A summary of Paul Goldsmith-Pinkham’s article.\nThis follow-up to the earlier HMDA post walks through a complete, end-to-end research pipeline built with Claude Code: pulling 10-K filings from SEC EDGAR, parsing out the Risk Factors section, and loading the results into a queryable database. The motivating research question is whether trade-exposed U.S. firms ramped up tariff-related language in their risk disclosures after the 2025 tariff escalation. The broader methodological point is that a researcher can go from a raw internet source to an analyzable dataset in roughly half an hour."
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#overview",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html#overview",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "",
+    "text": "A summary of Paul Goldsmith-Pinkham’s article.\nThis follow-up to the earlier HMDA post walks through a complete, end-to-end research pipeline built with Claude Code: pulling 10-K filings from SEC EDGAR, parsing out the Risk Factors section, and loading the results into a queryable database. The motivating research question is whether trade-exposed U.S. firms ramped up tariff-related language in their risk disclosures after the 2025 tariff escalation. The broader methodological point is that a researcher can go from a raw internet source to an analyzable dataset in roughly half an hour."
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#the-pipeline",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html#the-pipeline",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "The Pipeline",
+    "text": "The Pipeline\nThe author builds the pipeline in phases, with Claude Code first entering “plan mode” to read EDGAR API documentation and propose an approach before writing any code. The phases:\n\nResearch and planning. Claude reads EDGAR docs and proposes a design.\nDesign clarification. Claude asks the researcher to choose between DuckDB and SQLite, between simple keyword search and LLM classification, and what User-Agent string to use.\nCIK lookup. Claude resolves Central Index Keys for 29 of 30 target firms. Gap Inc. fails because its ticker had changed (GPS → GAP).\nFiling index queries. Claude hits the EDGAR API for each firm’s 10-Ks from 2022 to 2025.\nDownload. Raw HTML filings are downloaded with caching so reruns avoid redundant network calls.\nParsing. BeautifulSoup extracts Item 1A (Risk Factors), with regex tweaks for filings that split “Item 1A” and “Risk Factors” across lines.\nStorage. Parsed text is loaded into DuckDB, alongside tariff keyword counts and context snippets.\nQuality reports. An extraction-quality report flags parsing failures, which is how the author catches the Honeywell and Intel regex issue.\nQuerying. SQL queries against DuckDB produce the descriptive results.\n\nThe final dataset covers 119 of 120 filings successfully parsed. Total code: roughly 480 lines of Python."
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#the-original-prompts",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html#the-original-prompts",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "The Original Prompts",
+    "text": "The Original Prompts\n\nInitial prompt\n\nI want to build a dataset of 10-K Risk Factors from SEC EDGAR to study how tariff-related risk disclosure changed 2022–2025. Here’s what I know about EDGAR:\n\nEvery company has a CIK (Central Index Key)\nThe EDGAR filing API is at https://efts.sec.gov/LATEST/\nRate limit: 10 requests/second, must include User-Agent header\n\nI want 10-Ks for ~30 trade-exposed firms — manufacturing, retail, tech hardware. Caterpillar, Nike, Apple, Deere, Ford, 3M, Intel…\n\n\n\nExecution\n\nRun it for the full list. Let’s see how it goes.\n\n\n\nQuerying the database\n\nWhich firms mentioned tariffs the most?"
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#key-findings",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html#key-findings",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "Key Findings",
+    "text": "Key Findings\nThe descriptive results aren’t the main point, but they validate the pipeline:\n\nJohn Deere had the highest tariff mention count, rising from three to four mentions over the period.\nThe 2022–2025 sample produced 26–35 tariff-related paragraphs per year, compared to 25 total across 18 firms in a 2010 baseline.\nLanguage shifted from generic phrases like “changes in trade policy” to specific references — Section 301, particular product categories, “liberation day.”\nWalmart did not mention tariffs until its 2025 filing.\nRetail firms mentioned tariffs less often than manufacturing or tech-hardware firms."
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#lessons",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html#lessons",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "Lessons",
+    "text": "Lessons\nFront-load the scraping context. Specifying rate limits, headers, and API structure up front saves debugging rounds later.\nLet Claude ask design questions. Instead of pre-specifying every detail, give Claude the high-level task and let it surface design choices (DuckDB vs. SQLite, keyword search vs. classification). The researcher’s job is to make the calls.\nBuild resume capability in. Network failures are common. Caching and idempotent scripts make reruns cheap — the Gap Inc. ticker fix required only four new downloads in 43 seconds, not a full re-pull.\nGenerate extraction-quality reports. They are how subtle parsing bugs get caught before they corrupt months of downstream analysis.\nSQL beats CSVs for text-as-data. DuckDB gives zero-config deployment, SQL queryability, and relational structure without running a server."
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#conclusion",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html#conclusion",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "Conclusion",
+    "text": "Conclusion\nThe pipeline is small — one researcher, one afternoon, 480 lines of Python — but it shows how the per-project cost of building real research infrastructure has dropped. The interesting question is no longer whether the pipeline is feasible, but which research questions are worth pointing it at."
+  },
+  {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Summary: From EDGAR Filings to a Structured Database\n\n\n\nAI\n\ndata\n\nfinance\n\n\n\nA summary of Paul Goldsmith-Pinkham’s article on using Claude Code to build a 10-K Risk Factors dataset from SEC EDGAR.\n\n\n\n\n\nMay 11, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nSummary: Large Datasets and Structured Databases\n\n\n\nAI\n\ndata\n\neconomics\n\n\n\nA summary of Paul Goldsmith-Pinkham’s article on AI-assisted data engineering for economists.\n\n\n\n\n\nMay 9, 2026\n\n\nHe Ren\n\n\n\n\n\nNo matching items"
+    "text": "Time Value of Money on the BA II Plus and in Excel\n\n\n\nfinance\n\nteaching\n\n\n\nA side-by-side undergraduate guide to solving TVM problems with the TI BA II Plus calculator and Microsoft Excel — from setup to mortgages, NPV, and IRR.\n\n\n\n\n\nMay 15, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nSummary: From EDGAR Filings to a Structured Database\n\n\n\nAI\n\ndata\n\nfinance\n\n\n\nA summary of Paul Goldsmith-Pinkham’s article on using Claude Code to build a 10-K Risk Factors dataset from SEC EDGAR.\n\n\n\n\n\nMay 11, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nSummary: Large Datasets and Structured Databases\n\n\n\nAI\n\ndata\n\neconomics\n\n\n\nA summary of Paul Goldsmith-Pinkham’s article on AI-assisted data engineering for economists.\n\n\n\n\n\nMay 9, 2026\n\n\nHe Ren\n\n\n\n\n\nNo matching items"
   }
 ]

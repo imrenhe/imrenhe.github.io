@@ -11,7 +11,630 @@
 <description>This is my blog where I practice sharing my curiosity about the world.
 </description>
 <generator>quarto-1.9.37</generator>
-<lastBuildDate>Mon, 11 May 2026 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 15 May 2026 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Time Value of Money on the BA II Plus and in Excel</title>
+  <dc:creator>He Ren</dc:creator>
+  <link>https://imrenhe.github.io/blog/posts/tvm-ba-ii-plus-and-excel/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="why-two-tools" class="level2">
+<h2 class="anchored" data-anchor-id="why-two-tools">Why Two Tools?</h2>
+<p>Most introductory finance problems can be cracked two ways: on a TI BA II Plus financial calculator or in a spreadsheet. The calculator is what you bring to an exam; Excel is what you use at work. They give the same answer, but the workflow is different — the calculator stores one problem in memory, while Excel makes inputs visible and easy to tweak.</p>
+<p>This post is a practical walkthrough for an undergraduate finance student. We start with calculator setup, move through the core TVM problems, and finish with NPV and IRR for uneven cash flows. Every example shows both the calculator keystrokes and the Excel formula.</p>
+</section>
+<section id="setting-up-the-ba-ii-plus" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-the-ba-ii-plus">Setting Up the BA II Plus</h2>
+<p>Out of the box, the BA II Plus has two defaults that trip up students. Fix them once.</p>
+<p><strong>1. Set decimal places to 4 (or more).</strong> Press <code>2nd</code> → <code>FORMAT</code> → enter <code>4</code> → <code>ENTER</code> → <code>2nd</code> → <code>QUIT</code>.</p>
+<p><strong>2. Set payments per year to 1.</strong> Press <code>2nd</code> → <code>P/Y</code> → enter <code>1</code> → <code>ENTER</code> → <code>2nd</code> → <code>QUIT</code>. This is the safer default. When you have monthly compounding, you can either change <code>P/Y</code> to 12 <em>or</em> leave <code>P/Y</code> at 1 and enter the periodic rate manually (e.g., <code>0.5</code> for 6% / 12). I recommend the second approach — fewer hidden settings to forget.</p>
+<p><strong>3. Confirm END mode (not BGN).</strong> Most problems use end-of-period cash flows. Press <code>2nd</code> → <code>BGN</code>. If it says <code>END</code>, press <code>2nd</code> → <code>QUIT</code>. If it says <code>BGN</code>, press <code>2nd</code> → <code>SET</code> → <code>2nd</code> → <code>QUIT</code>.</p>
+<p><strong>4. Clear the TVM registers before every new problem.</strong> Press <code>2nd</code> → <code>CLR TVM</code>. The calculator remembers your last problem; failing to clear is the #1 source of wrong answers on exams.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Sign convention
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The BA II Plus uses <strong>cash flow signs</strong>. Money you <em>pay out</em> is negative; money you <em>receive</em> is positive. If <code>PV</code> and <code>FV</code> have the same sign, the calculator returns an error. This convention matches Excel.</p>
+</div>
+</div>
+</section>
+<section id="the-five-tvm-keys" class="level2">
+<h2 class="anchored" data-anchor-id="the-five-tvm-keys">The Five TVM Keys</h2>
+<p>Every basic time value problem uses some subset of five variables, four of which you know and one you solve for.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 72%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Key</th>
+<th>Meaning</th>
+<th>Excel argument</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>N</code></td>
+<td>Number of periods</td>
+<td><code>nper</code></td>
+</tr>
+<tr class="even">
+<td><code>I/Y</code></td>
+<td>Interest rate per period (as a percent)</td>
+<td><code>rate</code></td>
+</tr>
+<tr class="odd">
+<td><code>PV</code></td>
+<td>Present value (lump sum today)</td>
+<td><code>pv</code></td>
+</tr>
+<tr class="even">
+<td><code>PMT</code></td>
+<td>Recurring payment each period</td>
+<td><code>pmt</code></td>
+</tr>
+<tr class="odd">
+<td><code>FV</code></td>
+<td>Future value (lump sum at the end)</td>
+<td><code>fv</code></td>
+</tr>
+</tbody>
+</table>
+<p>One pitfall: in the BA II Plus, you enter <code>I/Y</code> as a <em>percent</em> (5 means 5%), but Excel’s <code>rate</code> argument wants a <em>decimal</em> (0.05). Forgetting this is the #2 source of wrong answers.</p>
+<p>The next four examples walk through solving for each of the lump-sum unknowns — <code>FV</code>, <code>PV</code>, <code>N</code>, and <code>I/Y</code> — one at a time.</p>
+<section id="example-1-solving-for-fv-future-value-of-a-lump-sum" class="level3">
+<h3 class="anchored" data-anchor-id="example-1-solving-for-fv-future-value-of-a-lump-sum">Example 1 — Solving for FV (future value of a lump sum)</h3>
+<blockquote class="blockquote">
+<p>You deposit $1,000 today in an account earning 5% per year. What is the balance in 10 years?</p>
+</blockquote>
+<p><strong>BA II Plus:</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Keystrokes</th>
+<th>Display</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><code>2nd CLR TVM</code></td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><code>10</code> <code>N</code></td>
+<td>N = 10</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><code>5</code> <code>I/Y</code></td>
+<td>I/Y = 5</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><code>1000</code> <code>+/−</code> <code>PV</code></td>
+<td>PV = −1,000</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><code>0</code> <code>PMT</code></td>
+<td>PMT = 0</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><code>CPT</code> <code>FV</code></td>
+<td><strong>FV = 1,628.89</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Excel:</strong> <code>=FV(0.05, 10, 0, -1000)</code> → <strong>1,628.89</strong></p>
+</section>
+<section id="example-2-solving-for-pv-present-value-of-a-lump-sum" class="level3">
+<h3 class="anchored" data-anchor-id="example-2-solving-for-pv-present-value-of-a-lump-sum">Example 2 — Solving for PV (present value of a lump sum)</h3>
+<blockquote class="blockquote">
+<p>You’d like to have $50,000 saved for a down payment in 5 years. Your savings earn 6% per year. How much do you need to deposit today?</p>
+</blockquote>
+<p><strong>BA II Plus:</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Keystrokes</th>
+<th>Display</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><code>2nd CLR TVM</code></td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><code>5</code> <code>N</code></td>
+<td>N = 5</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><code>6</code> <code>I/Y</code></td>
+<td>I/Y = 6</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><code>0</code> <code>PMT</code></td>
+<td>PMT = 0</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><code>50000</code> <code>FV</code></td>
+<td>FV = 50,000</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><code>CPT</code> <code>PV</code></td>
+<td><strong>PV = −37,362.91</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The negative sign means it’s an outflow today — you pay $37,362.91 now to receive $50,000 in five years.</p>
+<p><strong>Excel:</strong> <code>=PV(0.06, 5, 0, 50000)</code> → <strong>−37,362.91</strong></p>
+</section>
+<section id="example-3-solving-for-n-how-long" class="level3">
+<h3 class="anchored" data-anchor-id="example-3-solving-for-n-how-long">Example 3 — Solving for N (how long?)</h3>
+<blockquote class="blockquote">
+<p>You invest $5,000 today at 8% per year. How many years until it doubles to $10,000?</p>
+</blockquote>
+<p><strong>BA II Plus:</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Keystrokes</th>
+<th>Display</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><code>2nd CLR TVM</code></td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><code>8</code> <code>I/Y</code></td>
+<td>I/Y = 8</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><code>5000</code> <code>+/−</code> <code>PV</code></td>
+<td>PV = −5,000</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><code>0</code> <code>PMT</code></td>
+<td>PMT = 0</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><code>10000</code> <code>FV</code></td>
+<td>FV = 10,000</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><code>CPT</code> <code>N</code></td>
+<td><strong>N = 9.0065</strong></td>
+</tr>
+</tbody>
+</table>
+<p>So it takes a little over nine years. (This is a quick check on the “Rule of 72”: 72 / 8 = 9 years, which is close.)</p>
+<p><strong>Excel:</strong> <code>=NPER(0.08, 0, -5000, 10000)</code> → <strong>9.0065</strong></p>
+</section>
+<section id="example-4-solving-for-iy-what-rate-did-i-earn" class="level3">
+<h3 class="anchored" data-anchor-id="example-4-solving-for-iy-what-rate-did-i-earn">Example 4 — Solving for I/Y (what rate did I earn?)</h3>
+<blockquote class="blockquote">
+<p>A friend tells you they bought a stock for $1,000 six years ago and just sold it for $1,500. What annualized rate of return did they earn?</p>
+</blockquote>
+<p><strong>BA II Plus:</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Keystrokes</th>
+<th>Display</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><code>2nd CLR TVM</code></td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><code>6</code> <code>N</code></td>
+<td>N = 6</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><code>1000</code> <code>+/−</code> <code>PV</code></td>
+<td>PV = −1,000</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><code>0</code> <code>PMT</code></td>
+<td>PMT = 0</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><code>1500</code> <code>FV</code></td>
+<td>FV = 1,500</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><code>CPT</code> <code>I/Y</code></td>
+<td><strong>I/Y = 6.9913</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Roughly 6.99% per year.</p>
+<p><strong>Excel:</strong> <code>=RATE(6, 0, -1000, 1500)</code> → <strong>0.069913</strong></p>
+</section>
+<section id="example-5-future-value-of-an-annuity-monthly-contributions" class="level3">
+<h3 class="anchored" data-anchor-id="example-5-future-value-of-an-annuity-monthly-contributions">Example 5 — Future value of an annuity (monthly contributions)</h3>
+<p>Now add <code>PMT</code> to the mix.</p>
+<blockquote class="blockquote">
+<p>You save $300 at the end of every month for 30 years in an account earning 7% APR compounded monthly. What’s the balance at the end?</p>
+</blockquote>
+<p>The trick: convert annual quantities to monthly <em>before</em> you enter them. Periodic rate = 7% / 12 ≈ 0.5833%. Number of periods = 30 × 12 = 360.</p>
+<p><strong>BA II Plus:</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Keystrokes</th>
+<th>Display</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><code>2nd CLR TVM</code></td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><code>360</code> <code>N</code></td>
+<td>N = 360</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><code>7 ÷ 12 =</code> <code>I/Y</code></td>
+<td>I/Y = 0.5833</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><code>0</code> <code>PV</code></td>
+<td>PV = 0</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><code>300</code> <code>+/−</code> <code>PMT</code></td>
+<td>PMT = −300</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><code>CPT</code> <code>FV</code></td>
+<td><strong>FV = 365,990.62</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Excel:</strong> <code>=FV(0.07/12, 360, -300, 0)</code> → <strong>365,990.62</strong></p>
+</section>
+</section>
+<section id="apr-vs-ear" class="level2">
+<h2 class="anchored" data-anchor-id="apr-vs-ear">APR vs EAR</h2>
+<p>The <strong>annual percentage rate (APR)</strong> is the stated, nominal rate. The <strong>effective annual rate (EAR)</strong> is what you actually earn or pay once compounding is accounted for. For any compounding frequency above 1, EAR &gt; APR.</p>
+<section id="example-6-converting-apr-to-ear" class="level3">
+<h3 class="anchored" data-anchor-id="example-6-converting-apr-to-ear">Example 6 — Converting APR to EAR</h3>
+<blockquote class="blockquote">
+<p>A credit card charges 18% APR compounded monthly. What’s the EAR?</p>
+</blockquote>
+<p><strong>BA II Plus:</strong> the <code>ICONV</code> worksheet does this in three keystrokes.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Keystrokes</th>
+<th>Display</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><code>2nd</code> <code>ICONV</code></td>
+<td>NOM =</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><code>18</code> <code>ENTER</code> <code>↓</code></td>
+<td>C/Y =</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><code>12</code> <code>ENTER</code> <code>↑</code> <code>CPT</code></td>
+<td><strong>EFF = 19.5618</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Excel:</strong> <code>=EFFECT(0.18, 12)</code> → <strong>0.195618</strong></p>
+<p>Going the other way — from EAR to APR — use <code>NOMINAL</code>: <code>=NOMINAL(0.195618, 12)</code> → <strong>0.18</strong></p>
+</section>
+</section>
+<section id="mortgages" class="level2">
+<h2 class="anchored" data-anchor-id="mortgages">Mortgages</h2>
+<p>A mortgage is just a present-value annuity problem in disguise. The bank lends you the present value; you repay with level monthly payments that include both principal and interest.</p>
+<section id="example-7-monthly-payment" class="level3">
+<h3 class="anchored" data-anchor-id="example-7-monthly-payment">Example 7 — Monthly payment</h3>
+<blockquote class="blockquote">
+<p>You borrow $400,000 on a 30-year mortgage at 6.5% APR (compounded monthly). What’s the monthly payment?</p>
+</blockquote>
+<p><strong>BA II Plus:</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Keystrokes</th>
+<th>Display</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><code>2nd CLR TVM</code></td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><code>360</code> <code>N</code></td>
+<td>N = 360</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><code>6.5 ÷ 12 =</code> <code>I/Y</code></td>
+<td>I/Y = 0.5417</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><code>400000</code> <code>PV</code></td>
+<td>PV = 400,000</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><code>0</code> <code>FV</code></td>
+<td>FV = 0</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><code>CPT</code> <code>PMT</code></td>
+<td><strong>PMT = −2,528.27</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The negative sign means you’re paying out each month.</p>
+<p><strong>Excel:</strong> <code>=PMT(0.065/12, 360, 400000)</code> → <strong>−2,528.27</strong></p>
+<p>Each monthly payment is split between interest (charged on the outstanding balance) and principal (which reduces that balance). Early on, the balance is huge, so almost all of the payment is interest. Late in the loan, the balance is small, and most of the payment goes to principal. Excel exposes this split directly: <code>IPMT</code> returns the interest portion of a given payment and <code>PPMT</code> returns the principal portion. For month 1 of this loan:</p>
+<ul>
+<li><code>=IPMT(0.065/12, 1, 360, 400000)</code> → <strong>−2,166.67</strong></li>
+<li><code>=PPMT(0.065/12, 1, 360, 400000)</code> → <strong>−361.60</strong></li>
+</ul>
+<p>Together they sum to the full payment. By month 360, the proportions are reversed.</p>
+</section>
+</section>
+<section id="uneven-cash-flows-npv" class="level2">
+<h2 class="anchored" data-anchor-id="uneven-cash-flows-npv">Uneven Cash Flows: NPV</h2>
+<p>When the cash flows aren’t level, the basic TVM keys aren’t enough — you discount each cash flow on its own and add them up. On the BA II Plus, this is the <code>CF</code> (cash flow) worksheet.</p>
+<section id="example-8-npv-of-a-project" class="level3">
+<h3 class="anchored" data-anchor-id="example-8-npv-of-a-project">Example 8 — NPV of a project</h3>
+<blockquote class="blockquote">
+<p>A project costs $10,000 today. It pays $2,000 at the end of year 1, $3,000 in year 2, $4,000 in year 3, and $5,000 in year 4. The discount rate is 10%. What’s the NPV?</p>
+</blockquote>
+<p><strong>BA II Plus:</strong> the <code>CF</code> worksheet stores cash flows by period.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Keystrokes</th>
+<th>Display</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><code>CF</code> <code>2nd CLR WORK</code></td>
+<td>CF0 = 0</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><code>10000</code> <code>+/−</code> <code>ENTER</code> <code>↓</code></td>
+<td>CF0 = −10,000</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><code>2000</code> <code>ENTER</code> <code>↓</code> <code>↓</code></td>
+<td>C01 = 2,000</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><code>3000</code> <code>ENTER</code> <code>↓</code> <code>↓</code></td>
+<td>C02 = 3,000</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><code>4000</code> <code>ENTER</code> <code>↓</code> <code>↓</code></td>
+<td>C03 = 4,000</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><code>5000</code> <code>ENTER</code> <code>↓</code> <code>↓</code></td>
+<td>C04 = 5,000</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td><code>NPV</code> <code>10</code> <code>ENTER</code> <code>↓</code> <code>CPT</code></td>
+<td><strong>NPV = 717.85</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The <code>↓ ↓</code> between cash flows skips past the “frequency” prompt (F01, F02, …). If you have the same cash flow repeated several years in a row, you can enter the value once and set the frequency instead of typing it multiple times.</p>
+<p><strong>Excel:</strong> Excel’s <code>NPV</code> function discounts the <em>first</em> cash flow back one period, so you have to add the time-zero outflow separately.</p>
+<p><code>=NPV(0.10, 2000, 3000, 4000, 5000) - 10000</code> → <strong>717.85</strong></p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>The <code>=NPV</code> gotcha
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Excel’s <code>NPV</code> assumes the first argument is one period away. The time-zero cash flow goes <em>outside</em> the function. Many wrong answers come from including <code>-10000</code> inside the <code>NPV</code> parentheses.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="irr" class="level2">
+<h2 class="anchored" data-anchor-id="irr">IRR</h2>
+<p>The internal rate of return is the discount rate that makes NPV exactly zero. It’s the project’s break-even rate.</p>
+<section id="example-9-irr-of-the-same-project" class="level3">
+<h3 class="anchored" data-anchor-id="example-9-irr-of-the-same-project">Example 9 — IRR of the same project</h3>
+<p><strong>BA II Plus:</strong> with the cash flows from Example 8 still loaded, just press:</p>
+<p><code>IRR</code> <code>CPT</code> → <strong>IRR = 12.8258</strong></p>
+<p><strong>Excel:</strong> put the cash flows in a column (including the −10,000 at time zero) and call:</p>
+<p><code>=IRR(A1:A5)</code> → <strong>0.128258</strong></p>
+<p>Because the IRR (12.83%) is greater than the 10% discount rate used in Example 8, the project’s NPV is positive — exactly what we found. In general, accept a project when IRR &gt; the required rate of return.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>When IRR misleads
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>IRR can have multiple solutions when cash flows change sign more than once (e.g., −, +, +, −). For mutually exclusive projects, IRR can also rank projects differently than NPV. NPV is the safer decision rule; IRR is the more intuitive one to communicate.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="cheat-sheet" class="level2">
+<h2 class="anchored" data-anchor-id="cheat-sheet">Cheat Sheet</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 46%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Task</th>
+<th>BA II Plus</th>
+<th>Excel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Future value of lump sum</td>
+<td><code>N</code> <code>I/Y</code> <code>PV</code> <code>0 PMT</code> <code>CPT FV</code></td>
+<td><code>=FV(rate, nper, 0, -pv)</code></td>
+</tr>
+<tr class="even">
+<td>Present value of lump sum</td>
+<td><code>N</code> <code>I/Y</code> <code>FV</code> <code>0 PMT</code> <code>CPT PV</code></td>
+<td><code>=PV(rate, nper, 0, -fv)</code></td>
+</tr>
+<tr class="odd">
+<td>Number of periods</td>
+<td><code>I/Y</code> <code>PV</code> <code>PMT</code> <code>FV</code> <code>CPT N</code></td>
+<td><code>=NPER(rate, pmt, pv, fv)</code></td>
+</tr>
+<tr class="even">
+<td>Periodic rate</td>
+<td><code>N</code> <code>PV</code> <code>PMT</code> <code>FV</code> <code>CPT I/Y</code></td>
+<td><code>=RATE(nper, pmt, pv, fv)</code></td>
+</tr>
+<tr class="odd">
+<td>Annuity payment</td>
+<td><code>N</code> <code>I/Y</code> <code>PV</code> <code>FV</code> <code>CPT PMT</code></td>
+<td><code>=PMT(rate, nper, pv, fv)</code></td>
+</tr>
+<tr class="even">
+<td>APR → EAR</td>
+<td><code>2nd ICONV</code>, enter NOM and C/Y, <code>CPT EFF</code></td>
+<td><code>=EFFECT(apr, m)</code></td>
+</tr>
+<tr class="odd">
+<td>EAR → APR</td>
+<td><code>2nd ICONV</code>, enter EFF and C/Y, <code>CPT NOM</code></td>
+<td><code>=NOMINAL(ear, m)</code></td>
+</tr>
+<tr class="even">
+<td>NPV (uneven cash flows)</td>
+<td><code>CF</code> worksheet, then <code>NPV</code> <code>rate</code> <code>ENTER</code> <code>↓ CPT</code></td>
+<td><code>=NPV(rate, cf1:cfn) + cf0</code></td>
+</tr>
+<tr class="odd">
+<td>IRR</td>
+<td><code>CF</code> worksheet, then <code>IRR CPT</code></td>
+<td><code>=IRR(cf0:cfn)</code></td>
+</tr>
+<tr class="even">
+<td>Interest portion of payment</td>
+<td>(Calculate manually from balance × rate)</td>
+<td><code>=IPMT(rate, period, nper, pv)</code></td>
+</tr>
+<tr class="odd">
+<td>Principal portion of payment</td>
+<td>(Payment minus interest portion)</td>
+<td><code>=PPMT(rate, period, nper, pv)</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="closing-thoughts" class="level2">
+<h2 class="anchored" data-anchor-id="closing-thoughts">Closing Thoughts</h2>
+<p>Three habits will save you in this class:</p>
+<ol type="1">
+<li><strong>Always clear the calculator</strong> (<code>2nd CLR TVM</code> for TVM keys, <code>2nd CLR WORK</code> inside <code>CF</code>) before starting a new problem.</li>
+<li><strong>Match the period.</strong> If the problem is monthly, your <code>N</code>, <code>I/Y</code>, and <code>PMT</code> all need to be monthly. Mixing annual and monthly is the most common error.</li>
+<li><strong>Watch the signs.</strong> If you put money in (a loan, an investment), it’s negative. If you take money out (a withdrawal, a repayment), it’s positive. Excel and the BA II Plus follow the same rule.</li>
+</ol>
+<p>When you graduate, you’ll do almost everything in Excel — once a problem is bigger than the five TVM keys, the spreadsheet wins. But knowing both makes you faster, and it gives you a sanity check: if the calculator and the spreadsheet disagree, you’ve made a setup mistake somewhere, and you’ll catch it before turning it in.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>finance</category>
+  <category>teaching</category>
+  <guid>https://imrenhe.github.io/blog/posts/tvm-ba-ii-plus-and-excel/</guid>
+  <pubDate>Fri, 15 May 2026 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Summary: From EDGAR Filings to a Structured Database</title>
   <dc:creator>He Ren</dc:creator>

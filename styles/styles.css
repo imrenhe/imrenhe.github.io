@@ -18,6 +18,12 @@ body:has(.quarto-about-trestles) #title-block-header h1.title {
   font-family: "Petrona", Georgia, serif;
 }
 
+/* Give page descriptions in the title block more breathing room and a larger font. */
+#title-block-header .description {
+  margin-top: 1.25rem;
+  font-size: 1.3rem;
+}
+
 /* Homepage hero: title, description, and social icons stacked. */
 .homepage-intro h1 {
   margin-top: 0;

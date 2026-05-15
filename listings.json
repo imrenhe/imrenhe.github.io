@@ -2,6 +2,7 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/blog/posts/tvm-ba-ii-plus-and-excel/index.html",
       "/blog/posts/edgar-filings-to-structured-database/index.html",
       "/blog/posts/large-datasets-and-structured-databases/index.html"
     ]
