@@ -1,0 +1,275 @@
+---
+title: "Time Value of Money on the BA II Plus and in Excel"
+description: "A side-by-side undergraduate guide to solving TVM problems with the TI BA II Plus calculator and Microsoft Excel — from setup to mortgages, NPV, and IRR."
+author: "He Ren"
+date: "2026-05-15"
+categories: [finance, teaching]
+---
+
+## Why Two Tools?
+
+Most introductory finance problems can be cracked two ways: on a TI BA II Plus financial calculator or in a spreadsheet. The calculator is what you bring to an exam; Excel is what you use at work. They give the same answer, but the workflow is different — the calculator stores one problem in memory, while Excel makes inputs visible and easy to tweak.
+
+This post is a practical walkthrough for an undergraduate finance student. We start with calculator setup, move through the core TVM problems, and finish with NPV and IRR for uneven cash flows. Every example shows both the calculator keystrokes and the Excel formula.
+
+## Setting Up the BA II Plus
+
+Out of the box, the BA II Plus has two defaults that trip up students. Fix them once.
+
+**1. Set decimal places to 4 (or more).**
+Press `2nd` → `FORMAT` → enter `4` → `ENTER` → `2nd` → `QUIT`.
+
+**2. Set payments per year to 1.**
+Press `2nd` → `P/Y` → enter `1` → `ENTER` → `2nd` → `QUIT`.
+This is the safer default. When you have monthly compounding, you can either change `P/Y` to 12 *or* leave `P/Y` at 1 and enter the periodic rate manually (e.g., `0.5` for 6% / 12). I recommend the second approach — fewer hidden settings to forget.
+
+**3. Confirm END mode (not BGN).**
+Most problems use end-of-period cash flows. Press `2nd` → `BGN`. If it says `END`, press `2nd` → `QUIT`. If it says `BGN`, press `2nd` → `SET` → `2nd` → `QUIT`.
+
+**4. Clear the TVM registers before every new problem.**
+Press `2nd` → `CLR TVM`. The calculator remembers your last problem; failing to clear is the #1 source of wrong answers on exams.
+
+::: {.callout-tip}
+## Sign convention
+The BA II Plus uses **cash flow signs**. Money you *pay out* is negative; money you *receive* is positive. If `PV` and `FV` have the same sign, the calculator returns an error. This convention matches Excel.
+:::
+
+## The Five TVM Keys
+
+Every basic time value problem uses some subset of five variables, four of which you know and one you solve for.
+
+| Key   | Meaning                                            | Excel argument |
+| ----- | -------------------------------------------------- | -------------- |
+| `N`   | Number of periods                                  | `nper`         |
+| `I/Y` | Interest rate per period (as a percent)            | `rate`         |
+| `PV`  | Present value (lump sum today)                     | `pv`           |
+| `PMT` | Recurring payment each period                      | `pmt`          |
+| `FV`  | Future value (lump sum at the end)                 | `fv`           |
+
+One pitfall: in the BA II Plus, you enter `I/Y` as a *percent* (5 means 5%), but Excel's `rate` argument wants a *decimal* (0.05). Forgetting this is the #2 source of wrong answers.
+
+The next four examples walk through solving for each of the lump-sum unknowns — `FV`, `PV`, `N`, and `I/Y` — one at a time.
+
+### Example 1 — Solving for FV (future value of a lump sum)
+
+> You deposit \$1,000 today in an account earning 5% per year. What is the balance in 10 years?
+
+**BA II Plus:**
+
+| Step | Keystrokes        | Display |
+| ---- | ----------------- | ------- |
+| 1    | `2nd CLR TVM`     | 0       |
+| 2    | `10` `N`          | N = 10  |
+| 3    | `5` `I/Y`         | I/Y = 5 |
+| 4    | `1000` `+/−` `PV` | PV = −1,000 |
+| 5    | `0` `PMT`         | PMT = 0 |
+| 6    | `CPT` `FV`        | **FV = 1,628.89** |
+
+**Excel:** `=FV(0.05, 10, 0, -1000)` → **1,628.89**
+
+### Example 2 — Solving for PV (present value of a lump sum)
+
+> You'd like to have \$50,000 saved for a down payment in 5 years. Your savings earn 6% per year. How much do you need to deposit today?
+
+**BA II Plus:**
+
+| Step | Keystrokes        | Display |
+| ---- | ----------------- | ------- |
+| 1    | `2nd CLR TVM`     | 0       |
+| 2    | `5` `N`           | N = 5   |
+| 3    | `6` `I/Y`         | I/Y = 6 |
+| 4    | `0` `PMT`         | PMT = 0 |
+| 5    | `50000` `FV`      | FV = 50,000 |
+| 6    | `CPT` `PV`        | **PV = −37,362.91** |
+
+The negative sign means it's an outflow today — you pay \$37,362.91 now to receive \$50,000 in five years.
+
+**Excel:** `=PV(0.06, 5, 0, 50000)` → **−37,362.91**
+
+### Example 3 — Solving for N (how long?)
+
+> You invest \$5,000 today at 8% per year. How many years until it doubles to \$10,000?
+
+**BA II Plus:**
+
+| Step | Keystrokes        | Display |
+| ---- | ----------------- | ------- |
+| 1    | `2nd CLR TVM`     | 0       |
+| 2    | `8` `I/Y`         | I/Y = 8 |
+| 3    | `5000` `+/−` `PV` | PV = −5,000 |
+| 4    | `0` `PMT`         | PMT = 0 |
+| 5    | `10000` `FV`      | FV = 10,000 |
+| 6    | `CPT` `N`         | **N = 9.0065** |
+
+So it takes a little over nine years. (This is a quick check on the "Rule of 72": 72 / 8 = 9 years, which is close.)
+
+**Excel:** `=NPER(0.08, 0, -5000, 10000)` → **9.0065**
+
+### Example 4 — Solving for I/Y (what rate did I earn?)
+
+> A friend tells you they bought a stock for \$1,000 six years ago and just sold it for \$1,500. What annualized rate of return did they earn?
+
+**BA II Plus:**
+
+| Step | Keystrokes        | Display |
+| ---- | ----------------- | ------- |
+| 1    | `2nd CLR TVM`     | 0       |
+| 2    | `6` `N`           | N = 6   |
+| 3    | `1000` `+/−` `PV` | PV = −1,000 |
+| 4    | `0` `PMT`         | PMT = 0 |
+| 5    | `1500` `FV`       | FV = 1,500 |
+| 6    | `CPT` `I/Y`       | **I/Y = 6.9913** |
+
+Roughly 6.99% per year.
+
+**Excel:** `=RATE(6, 0, -1000, 1500)` → **0.069913**
+
+### Example 5 — Future value of an annuity (monthly contributions)
+
+Now add `PMT` to the mix.
+
+> You save \$300 at the end of every month for 30 years in an account earning 7% APR compounded monthly. What's the balance at the end?
+
+The trick: convert annual quantities to monthly *before* you enter them. Periodic rate = 7% / 12 ≈ 0.5833%. Number of periods = 30 × 12 = 360.
+
+**BA II Plus:**
+
+| Step | Keystrokes                | Display          |
+| ---- | ------------------------- | ---------------- |
+| 1    | `2nd CLR TVM`             | 0                |
+| 2    | `360` `N`                 | N = 360          |
+| 3    | `7 ÷ 12 =` `I/Y`          | I/Y = 0.5833     |
+| 4    | `0` `PV`                  | PV = 0           |
+| 5    | `300` `+/−` `PMT`         | PMT = −300       |
+| 6    | `CPT` `FV`                | **FV = 365,990.62** |
+
+**Excel:** `=FV(0.07/12, 360, -300, 0)` → **365,990.62**
+
+## APR vs EAR
+
+The **annual percentage rate (APR)** is the stated, nominal rate. The **effective annual rate (EAR)** is what you actually earn or pay once compounding is accounted for. For any compounding frequency above 1, EAR > APR.
+
+### Example 6 — Converting APR to EAR
+
+> A credit card charges 18% APR compounded monthly. What's the EAR?
+
+**BA II Plus:** the `ICONV` worksheet does this in three keystrokes.
+
+| Step | Keystrokes              | Display |
+| ---- | ----------------------- | ------- |
+| 1    | `2nd` `ICONV`           | NOM =   |
+| 2    | `18` `ENTER` `↓`        | C/Y =   |
+| 3    | `12` `ENTER` `↑` `CPT`  | **EFF = 19.5618** |
+
+**Excel:** `=EFFECT(0.18, 12)` → **0.195618**
+
+Going the other way — from EAR to APR — use `NOMINAL`:
+`=NOMINAL(0.195618, 12)` → **0.18**
+
+## Mortgages
+
+A mortgage is just a present-value annuity problem in disguise. The bank lends you the present value; you repay with level monthly payments that include both principal and interest.
+
+### Example 7 — Monthly payment
+
+> You borrow \$400,000 on a 30-year mortgage at 6.5% APR (compounded monthly). What's the monthly payment?
+
+**BA II Plus:**
+
+| Step | Keystrokes        | Display    |
+| ---- | ----------------- | ---------- |
+| 1    | `2nd CLR TVM`     | 0          |
+| 2    | `360` `N`         | N = 360    |
+| 3    | `6.5 ÷ 12 =` `I/Y`| I/Y = 0.5417 |
+| 4    | `400000` `PV`     | PV = 400,000 |
+| 5    | `0` `FV`          | FV = 0     |
+| 6    | `CPT` `PMT`       | **PMT = −2,528.27** |
+
+The negative sign means you're paying out each month.
+
+**Excel:** `=PMT(0.065/12, 360, 400000)` → **−2,528.27**
+
+Each monthly payment is split between interest (charged on the outstanding balance) and principal (which reduces that balance). Early on, the balance is huge, so almost all of the payment is interest. Late in the loan, the balance is small, and most of the payment goes to principal. Excel exposes this split directly: `IPMT` returns the interest portion of a given payment and `PPMT` returns the principal portion. For month 1 of this loan:
+
+- `=IPMT(0.065/12, 1, 360, 400000)` → **−2,166.67**
+- `=PPMT(0.065/12, 1, 360, 400000)` → **−361.60**
+
+Together they sum to the full payment. By month 360, the proportions are reversed.
+
+## Uneven Cash Flows: NPV
+
+When the cash flows aren't level, the basic TVM keys aren't enough — you discount each cash flow on its own and add them up. On the BA II Plus, this is the `CF` (cash flow) worksheet.
+
+### Example 8 — NPV of a project
+
+> A project costs \$10,000 today. It pays \$2,000 at the end of year 1, \$3,000 in year 2, \$4,000 in year 3, and \$5,000 in year 4. The discount rate is 10%. What's the NPV?
+
+**BA II Plus:** the `CF` worksheet stores cash flows by period.
+
+| Step | Keystrokes                            | Display          |
+| ---- | ------------------------------------- | ---------------- |
+| 1    | `CF` `2nd CLR WORK`                   | CF0 = 0          |
+| 2    | `10000` `+/−` `ENTER` `↓`             | CF0 = −10,000    |
+| 3    | `2000` `ENTER` `↓` `↓`                | C01 = 2,000      |
+| 4    | `3000` `ENTER` `↓` `↓`                | C02 = 3,000      |
+| 5    | `4000` `ENTER` `↓` `↓`                | C03 = 4,000      |
+| 6    | `5000` `ENTER` `↓` `↓`                | C04 = 5,000      |
+| 7    | `NPV` `10` `ENTER` `↓` `CPT`          | **NPV = 717.85** |
+
+The `↓ ↓` between cash flows skips past the "frequency" prompt (F01, F02, ...). If you have the same cash flow repeated several years in a row, you can enter the value once and set the frequency instead of typing it multiple times.
+
+**Excel:** Excel's `NPV` function discounts the *first* cash flow back one period, so you have to add the time-zero outflow separately.
+
+`=NPV(0.10, 2000, 3000, 4000, 5000) - 10000` → **717.85**
+
+::: {.callout-warning}
+## The `=NPV` gotcha
+Excel's `NPV` assumes the first argument is one period away. The time-zero cash flow goes *outside* the function. Many wrong answers come from including `-10000` inside the `NPV` parentheses.
+:::
+
+## IRR
+
+The internal rate of return is the discount rate that makes NPV exactly zero. It's the project's break-even rate.
+
+### Example 9 — IRR of the same project
+
+**BA II Plus:** with the cash flows from Example 8 still loaded, just press:
+
+`IRR` `CPT` → **IRR = 12.8258**
+
+**Excel:** put the cash flows in a column (including the −10,000 at time zero) and call:
+
+`=IRR(A1:A5)` → **0.128258**
+
+Because the IRR (12.83%) is greater than the 10% discount rate used in Example 8, the project's NPV is positive — exactly what we found. In general, accept a project when IRR > the required rate of return.
+
+::: {.callout-note}
+## When IRR misleads
+IRR can have multiple solutions when cash flows change sign more than once (e.g., −, +, +, −). For mutually exclusive projects, IRR can also rank projects differently than NPV. NPV is the safer decision rule; IRR is the more intuitive one to communicate.
+:::
+
+## Cheat Sheet
+
+| Task                       | BA II Plus                                              | Excel                                  |
+| -------------------------- | ------------------------------------------------------- | -------------------------------------- |
+| Future value of lump sum   | `N` `I/Y` `PV` `0 PMT` `CPT FV`                         | `=FV(rate, nper, 0, -pv)`              |
+| Present value of lump sum  | `N` `I/Y` `FV` `0 PMT` `CPT PV`                         | `=PV(rate, nper, 0, -fv)`              |
+| Number of periods          | `I/Y` `PV` `PMT` `FV` `CPT N`                           | `=NPER(rate, pmt, pv, fv)`             |
+| Periodic rate              | `N` `PV` `PMT` `FV` `CPT I/Y`                           | `=RATE(nper, pmt, pv, fv)`             |
+| Annuity payment            | `N` `I/Y` `PV` `FV` `CPT PMT`                           | `=PMT(rate, nper, pv, fv)`             |
+| APR → EAR                  | `2nd ICONV`, enter NOM and C/Y, `CPT EFF`               | `=EFFECT(apr, m)`                      |
+| EAR → APR                  | `2nd ICONV`, enter EFF and C/Y, `CPT NOM`               | `=NOMINAL(ear, m)`                     |
+| NPV (uneven cash flows)    | `CF` worksheet, then `NPV` `rate` `ENTER` `↓ CPT`       | `=NPV(rate, cf1:cfn) + cf0`            |
+| IRR                        | `CF` worksheet, then `IRR CPT`                          | `=IRR(cf0:cfn)`                        |
+| Interest portion of payment| (Calculate manually from balance × rate)                | `=IPMT(rate, period, nper, pv)`        |
+| Principal portion of payment| (Payment minus interest portion)                       | `=PPMT(rate, period, nper, pv)`        |
+
+## Closing Thoughts
+
+Three habits will save you in this class:
+
+1. **Always clear the calculator** (`2nd CLR TVM` for TVM keys, `2nd CLR WORK` inside `CF`) before starting a new problem.
+2. **Match the period.** If the problem is monthly, your `N`, `I/Y`, and `PMT` all need to be monthly. Mixing annual and monthly is the most common error.
+3. **Watch the signs.** If you put money in (a loan, an investment), it's negative. If you take money out (a withdrawal, a repayment), it's positive. Excel and the BA II Plus follow the same rule.
+
+When you graduate, you'll do almost everything in Excel — once a problem is bigger than the five TVM keys, the spreadsheet wins. But knowing both makes you faster, and it gives you a sanity check: if the calculator and the spreadsheet disagree, you've made a setup mistake somewhere, and you'll catch it before turning it in.
