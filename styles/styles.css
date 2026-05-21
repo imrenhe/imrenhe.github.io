@@ -24,6 +24,22 @@ body:has(.quarto-about-trestles) #title-block-header h1.title {
   font-size: 1.3rem;
 }
 
+/* Show the entire preview image in blog listings (letterbox tall/wide images
+   instead of cropping them). Background fills the unused space. */
+.quarto-listing-default .thumbnail-image,
+.quarto-grid-item .thumbnail-image,
+.thumbnail-image {
+  object-fit: contain !important;
+  background-color: #0a0a0a;
+}
+
+/* Leave more space between each blog post's preview image and the horizontal
+   separator line below it. Quarto's default is padding-bottom: 1em; this
+   adds room *inside* each listing item, above the divider. */
+.quarto-listing-default .quarto-post {
+  padding-bottom: 1.2rem;
+}
+
 /* Homepage hero: title, description, and social icons stacked. */
 .homepage-intro h1 {
   margin-top: 0;
