@@ -1,45 +1,31 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "He Ren, PhD, CFA",
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
     "section": "",
-    "text": "I’m an Assistant Professor of Finance at Merrilee Alexander Kick College of Business and Entrepreneurship, Texas Woman’s University. My research interest focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets."
+    "text": "Merrilee Alexander Kick College of Business and Entrepreneurship\nGraduate\n\nFIN 5753 — Foundations of Financial Management\nFIN 5243 — Managerial Finance\n\nUndergraduate\n\nFIN 3053 — Business Finance\nFIN 3133 — Investments\nFIN 4243 — Financial Management\nFIN 4253 — Financial Planning"
   },
   {
-    "objectID": "about.html#hi-im-happy-youre-here",
-    "href": "about.html#hi-im-happy-youre-here",
-    "title": "He Ren, PhD, CFA",
+    "objectID": "teaching.html#texas-womans-university",
+    "href": "teaching.html#texas-womans-university",
+    "title": "Teaching",
     "section": "",
-    "text": "I’m an Assistant Professor of Finance at Merrilee Alexander Kick College of Business and Entrepreneurship, Texas Woman’s University. My research interest focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets."
+    "text": "Merrilee Alexander Kick College of Business and Entrepreneurship\nGraduate\n\nFIN 5753 — Foundations of Financial Management\nFIN 5243 — Managerial Finance\n\nUndergraduate\n\nFIN 3053 — Business Finance\nFIN 3133 — Investments\nFIN 4243 — Financial Management\nFIN 4253 — Financial Planning"
   },
   {
-    "objectID": "about.html#outside-the-classroom",
-    "href": "about.html#outside-the-classroom",
-    "title": "He Ren, PhD, CFA",
-    "section": "Outside the classroom",
-    "text": "Outside the classroom\nOutside the classroom and my research, I’m also a Rubik’s cube solver. You can check out my World Cube Association (WCA) profile to see my official results. I’m also passionate about photography. You can browse some of my favorite shots in the Photography section of this website."
+    "objectID": "teaching.html#university-of-north-texas",
+    "href": "teaching.html#university-of-north-texas",
+    "title": "Teaching",
+    "section": "University of North Texas",
+    "text": "University of North Texas\nG. Brint Ryan College of Business — Teaching Fellow / Instructor\n\nFINA 3770 — Introduction to Finance and Financial Management"
   },
   {
-    "objectID": "about.html#what-youll-find-here",
-    "href": "about.html#what-youll-find-here",
-    "title": "He Ren, PhD, CFA",
-    "section": "What you’ll find here",
-    "text": "What you’ll find here\n\nTeaching — courses I currently teach and have taught.\nBusiness Finance Book — book used for Business Finance class, work in progress.\nResearch — publications and working papers.\nBlog — occasional writing.\nPhotography — a gallery of photos."
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "He Ren, PhD, CFA",
-    "section": "Education",
-    "text": "Education\n\nPh.D. in Finance, University of North Texas, 2019\nM.B.A., University of Texas at Dallas, 2014\nM.S. in Finance, State University of New York at Buffalo, 2011\nB.S. in Economics, Shanghai University of International Business and Economics, 2010"
-  },
-  {
-    "objectID": "about.html#professional-certifications",
-    "href": "about.html#professional-certifications",
-    "title": "He Ren, PhD, CFA",
-    "section": "Professional Certifications",
-    "text": "Professional Certifications\n\nCFA Institute Sustainable Investing Certificate, 2023\nChartered Financial Analyst (CFA®), 2022\nFinancial Risk Manager (FRM®), 2022"
+    "objectID": "photography.html",
+    "href": "photography.html",
+    "title": "Photography",
+    "section": "",
+    "text": "Flying\n\n\n\n\n\n\n\nUnderwater\n\n\n\n\n\n\n\nSummer\n\n\n\n\n\n\n\n\n\nStar Trails\n\n\n\n\n\n\n\nDallas\n\n\n\n\n\n\n\nBird\n\n\n\n\n\n\n\n\n\nFilm\n\n\n\n\n\n\n\nChill"
   },
   {
     "objectID": "blog/posts/tvm-ba-ii-plus-and-excel/index.html",
@@ -161,67 +147,53 @@
     "text": "Conclusion\nThe author argues that AI-assisted data engineering has fundamentally shifted the economics of research infrastructure. The bottleneck for empirical work has moved from “can I build the infrastructure?” to “do I have a worthwhile research question?”\nKey takeaways:\n\nThe fixed costs of professional data engineering have collapsed\nLarge public datasets are more accessible than commonly assumed\nEmbedding metadata in the database makes future work cheaper\nPlanning matters more than coding speed"
   },
   {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
     "section": "",
-    "text": "Zheng, Y., & Ren, H. (2026). Does fintech and digitalization adoption impact employee performance efficiency? Evidence from a machine learning approach. The Quarterly Journal of Finance. World Scientific.\nZheng, Y., & Ren, H. (2024). COVID-19 vaccination and housing payments. Journal of Housing Economics, 64, 101992. Academic Press.\nChoi, S., Li, Z., Boonme, K., & Ren, H. (2024). Face-to-face, online or HyFlex instruction? The effects of self-directed learning on stress reduction and student satisfaction among emerging adults. Journal of International Education in Business, 17(3), 373–394. Emerald Publishing Limited.\nRen, H., & Zheng, Y. (2023). COVID-19 vaccination and household savings: An economic recovery channel. Finance Research Letters, 103711. Elsevier.\nMantecon, T., Almomen, A., Ren, H., & Zheng, Y. (2023). An analysis of the potential impact of heightened capital requirements on banks’ cost of capital. Journal of Financial Services Research. Springer Nature."
+    "text": "SpaceX Filed an S-1. It Reads Like a Magazine.\n\n\n\nfinance\n\nIPO\n\nAI\n\n\n\nSpaceX filed an S-1 that reads like a magazine — Mars on the cover, Anthropic paying Elon $15 billion a year, and a Risk Factors page that’s literally a photo of a rocket on fire. Notes on what’s inside.\n\n\n\n\n\nMay 20, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nTime Value of Money on the BA II Plus and in Excel\n\n\n\nfinance\n\nteaching\n\n\n\nA side-by-side undergraduate guide to solving TVM problems with the TI BA II Plus calculator and Microsoft Excel — from setup to mortgages, NPV, and IRR.\n\n\n\n\n\nMay 15, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nSummary: From EDGAR Filings to a Structured Database\n\n\n\nAI\n\ndata\n\nfinance\n\n\n\nA summary of Paul Goldsmith-Pinkham’s article on using Claude Code to build a 10-K Risk Factors dataset from SEC EDGAR.\n\n\n\n\n\nMay 11, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nSummary: Large Datasets and Structured Databases\n\n\n\nAI\n\ndata\n\neconomics\n\n\n\nA summary of Paul Goldsmith-Pinkham’s article on AI-assisted data engineering for economists.\n\n\n\n\n\nMay 9, 2026\n\n\nHe Ren\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "research.html#journal-articles",
-    "href": "research.html#journal-articles",
-    "title": "Research",
-    "section": "",
-    "text": "Zheng, Y., & Ren, H. (2026). Does fintech and digitalization adoption impact employee performance efficiency? Evidence from a machine learning approach. The Quarterly Journal of Finance. World Scientific.\nZheng, Y., & Ren, H. (2024). COVID-19 vaccination and housing payments. Journal of Housing Economics, 64, 101992. Academic Press.\nChoi, S., Li, Z., Boonme, K., & Ren, H. (2024). Face-to-face, online or HyFlex instruction? The effects of self-directed learning on stress reduction and student satisfaction among emerging adults. Journal of International Education in Business, 17(3), 373–394. Emerald Publishing Limited.\nRen, H., & Zheng, Y. (2023). COVID-19 vaccination and household savings: An economic recovery channel. Finance Research Letters, 103711. Elsevier.\nMantecon, T., Almomen, A., Ren, H., & Zheng, Y. (2023). An analysis of the potential impact of heightened capital requirements on banks’ cost of capital. Journal of Financial Services Research. Springer Nature."
-  },
-  {
-    "objectID": "research.html#working-papers",
-    "href": "research.html#working-papers",
-    "title": "Research",
-    "section": "Working Papers",
-    "text": "Working Papers\n\nLiu, Y., & Ren, H. (2019). Impact of market state on momentum portfolio risk and performance: A risk-based explanation."
-  },
-  {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
-    "section": "",
-    "text": "Merrilee Alexander Kick College of Business and Entrepreneurship\nGraduate\n\nFIN 5753 — Foundations of Financial Management\nFIN 5243 — Managerial Finance\n\nUndergraduate\n\nFIN 3053 — Business Finance\nFIN 3133 — Investments\nFIN 4243 — Financial Management\nFIN 4253 — Financial Planning"
-  },
-  {
-    "objectID": "teaching.html#texas-womans-university",
-    "href": "teaching.html#texas-womans-university",
-    "title": "Teaching",
-    "section": "",
-    "text": "Merrilee Alexander Kick College of Business and Entrepreneurship\nGraduate\n\nFIN 5753 — Foundations of Financial Management\nFIN 5243 — Managerial Finance\n\nUndergraduate\n\nFIN 3053 — Business Finance\nFIN 3133 — Investments\nFIN 4243 — Financial Management\nFIN 4253 — Financial Planning"
-  },
-  {
-    "objectID": "teaching.html#university-of-north-texas",
-    "href": "teaching.html#university-of-north-texas",
-    "title": "Teaching",
-    "section": "University of North Texas",
-    "text": "University of North Texas\nG. Brint Ryan College of Business — Teaching Fellow / Instructor\n\nFINA 3770 — Introduction to Finance and Financial Management"
-  },
-  {
-    "objectID": "photography.html",
-    "href": "photography.html",
-    "title": "Photography",
-    "section": "",
-    "text": "Flying\n\n\n\n\n\n\n\nUnderwater\n\n\n\n\n\n\n\nSummer\n\n\n\n\n\n\n\n\n\nStar Trails\n\n\n\n\n\n\n\nDallas\n\n\n\n\n\n\n\nBird\n\n\n\n\n\n\n\n\n\nFilm\n\n\n\n\n\n\n\nChill"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "about.html",
+    "href": "about.html",
     "title": "He Ren, PhD, CFA",
     "section": "",
-    "text": "Assistant Professor of Finance"
+    "text": "I’m an Associate Professor of Finance at Merrilee Alexander Kick College of Business and Entrepreneurship, Texas Woman’s University. My research interest focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets."
   },
   {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
+    "objectID": "about.html#hi-im-happy-youre-here",
+    "href": "about.html#hi-im-happy-youre-here",
     "title": "He Ren, PhD, CFA",
-    "section": "Welcome",
-    "text": "Welcome\nWelcome! I’m an Assistant Professor of Finance whose research focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets. Feel free to explore my website to learn more about my teaching and research.\nOutside the classroom and my research, I’m also a Rubik’s cube solver. You can check out my World Cube Association (WCA) profile to see my official results. I’m also passionate about photography. You can browse some of my favorite shots in the Photography section of this website.\nLEARN MORE ABOUT ME →"
+    "section": "",
+    "text": "I’m an Associate Professor of Finance at Merrilee Alexander Kick College of Business and Entrepreneurship, Texas Woman’s University. My research interest focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets."
+  },
+  {
+    "objectID": "about.html#outside-the-classroom",
+    "href": "about.html#outside-the-classroom",
+    "title": "He Ren, PhD, CFA",
+    "section": "Outside the classroom",
+    "text": "Outside the classroom\nOutside the classroom and my research, I’m also a Rubik’s cube solver. You can check out my World Cube Association (WCA) profile to see my official results. I’m also passionate about photography. You can browse some of my favorite shots in the Photography section of this website."
+  },
+  {
+    "objectID": "about.html#what-youll-find-here",
+    "href": "about.html#what-youll-find-here",
+    "title": "He Ren, PhD, CFA",
+    "section": "What you’ll find here",
+    "text": "What you’ll find here\n\nTeaching — courses I currently teach and have taught.\nBusiness Finance Lecture Notes — lecture notes used for Business Finance class, work in progress.\nResearch — publications and working papers.\nBlog — occasional writing.\nPhotography — a gallery of photos."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "He Ren, PhD, CFA",
+    "section": "Education",
+    "text": "Education\n\nPh.D. in Finance, University of North Texas, 2019\nM.B.A., University of Texas at Dallas, 2014\nM.S. in Finance, State University of New York at Buffalo, 2011\nB.S. in Economics, Shanghai University of International Business and Economics, 2010"
+  },
+  {
+    "objectID": "about.html#professional-certifications",
+    "href": "about.html#professional-certifications",
+    "title": "He Ren, PhD, CFA",
+    "section": "Professional Certifications",
+    "text": "Professional Certifications\n\nCFA Institute Sustainable Investing Certificate, 2023\nChartered Financial Analyst (CFA®), 2022\nFinancial Risk Manager (FRM®), 2022"
   },
   {
     "objectID": "blog/posts/edgar-filings-to-structured-database/index.html",
@@ -273,10 +245,101 @@
     "text": "Conclusion\nThe pipeline is small — one researcher, one afternoon, 480 lines of Python — but it shows how the per-project cost of building real research infrastructure has dropped. The interesting question is no longer whether the pipeline is feasible, but which research questions are worth pointing it at."
   },
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
+    "objectID": "blog/posts/spacex-s1-magazine/index.html",
+    "href": "blog/posts/spacex-s1-magazine/index.html",
+    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
     "section": "",
-    "text": "Time Value of Money on the BA II Plus and in Excel\n\n\n\nfinance\n\nteaching\n\n\n\nA side-by-side undergraduate guide to solving TVM problems with the TI BA II Plus calculator and Microsoft Excel — from setup to mortgages, NPV, and IRR.\n\n\n\n\n\nMay 15, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nSummary: From EDGAR Filings to a Structured Database\n\n\n\nAI\n\ndata\n\nfinance\n\n\n\nA summary of Paul Goldsmith-Pinkham’s article on using Claude Code to build a 10-K Risk Factors dataset from SEC EDGAR.\n\n\n\n\n\nMay 11, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nSummary: Large Datasets and Structured Databases\n\n\n\nAI\n\ndata\n\neconomics\n\n\n\nA summary of Paul Goldsmith-Pinkham’s article on AI-assisted data engineering for economists.\n\n\n\n\n\nMay 9, 2026\n\n\nHe Ren\n\n\n\n\n\nNo matching items"
+    "text": "Normally, when a company files for an IPO, the document looks like a tax form. Times New Roman. Gray boxes. 280 pages of legalese designed to make your eyes glaze over before page 12.\nSpaceX’s S-1, filed May 20, 2026, is not that.\nWithin the first few pages is a full-bleed photograph of Mars. From there on, the document is sprinkled with dozens more embedded images — full-bleed launch photos, Elon pull-quote posters, glossy product spec sheets for every rocket in the fleet, and a “RISK FACTORS” section opener that is, no exaggeration, a photograph of a rocket on fire. (We’ll get to that one.)\nThe whole thing reads more like a coffee-table magazine than an SEC filing. Which sets the tone — and signals the next several billion dollars they want from you. Let’s walk through it."
+  },
+  {
+    "objectID": "blog/posts/spacex-s1-magazine/index.html#what-was-filed",
+    "href": "blog/posts/spacex-s1-magazine/index.html#what-was-filed",
+    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
+    "section": "What Was Filed",
+    "text": "What Was Filed\nThe company is Space Exploration Technologies Corp., headquartered at 1 Rocket Road, Starbase, Texas. (Yes, “Starbase” is now an actual incorporated town. No, I am not making that up.)\nThe ticker will be SPCX, dual-listed on Nasdaq and the brand-new Nasdaq Texas exchange — because when your CEO is in Texas, your rockets launch from Texas, and your headquarters is in Texas, you may as well list on the Texas exchange too. Goldman Sachs is the lead bank, with Morgan Stanley, BofA, Citi, JPMorgan, and Barclays just behind. Then seventeen more banks pile in underneath, presumably for moral support.\nThe price isn’t in the document yet — they fill that in closer to the roadshow — but reporting around the filing puts it at roughly $1.75 trillion valuation, a ~$75 billion raise, and a June 12 listing, with an indicative price of $525–530 per share (TradingKey; NBC News).\nFor reference: $1.75T puts SpaceX between Amazon and Alphabet in market cap on day one. The IPO alone would make Musk a trillionaire on paper. No pressure."
+  },
+  {
+    "objectID": "blog/posts/spacex-s1-magazine/index.html#the-company-is-now-three-businesses-not-one",
+    "href": "blog/posts/spacex-s1-magazine/index.html#the-company-is-now-three-businesses-not-one",
+    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
+    "section": "The Company Is Now Three Businesses, Not One",
+    "text": "The Company Is Now Three Businesses, Not One\nThe fact most people haven’t fully absorbed yet: SpaceX quietly absorbed xAI on February 2, 2026, in what the lawyers call a “transaction between entities under common control.” Translation: Musk owned both, so he merged them. The company you’re buying into is no longer just a rocket company. It’s a rocket company, an internet company, and an AI company, stapled together by the same controlling shareholder.\nThe three businesses make money in extremely different ways. One mints cash. One spends a fortune on the next rocket. One spends a fortune on, well, chips.\n\nAll figures FY 2025, in USD billions.\n\n\nSegment\nRevenue\nOp result\nCapex\n\n\n\n\nSpace (Falcon, Dragon, Starship)\n4.1\n(0.7)\n3.8\n\n\nConnectivity (Starlink)\n11.4\n4.4\n4.2\n\n\nAI (xAI, Grok, X)\n3.2\n(6.4)\n12.7\n\n\nTotal\n18.7\n(2.6)\n20.7\n\n\n\nThree quick takeaways:\n\nStarlink is the engine. Revenue grew 50% year over year. Operating income grew 120%. It’s the only segment making real money, and it’s making a lot of it.\nSpace looks like a loser, but it isn’t really. Starship development swallowed $3 billion of 2025 spend. Strip that out and the launch business — Falcon 9, Falcon Heavy, Dragon — is comfortably profitable. The headline loss is because Musk is building the next rocket.\nAI is the hungry one. $12.7 billion in capex in 2025, plus another $7.7 billion in Q1 2026 alone, against $3.2 billion of revenue. AI is the bet that lives downstream of Starlink’s cash flow.\n\nIn one sentence: you are buying a satellite internet company that happens to own a rocket factory and a giant warehouse full of GPUs.\n\n\n\nOne of the segment-opener pages from the prospectus. This is what ‘Space’ looks like, formatted like a magazine. Source: SEC filing."
+  },
+  {
+    "objectID": "blog/posts/spacex-s1-magazine/index.html#two-classes-of-stock-one-person-in-charge",
+    "href": "blog/posts/spacex-s1-magazine/index.html#two-classes-of-stock-one-person-in-charge",
+    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
+    "section": "Two Classes of Stock, One Person in Charge",
+    "text": "Two Classes of Stock, One Person in Charge\nThe cap structure section is short, important, and a little spicy.\nAfter the IPO, there will be two classes of stock:\n\nClass A — what you buy on the open market. One vote per share.\nClass B — held by Musk. Ten votes per share. And the kicker: Class B holders, voting as a class, elect a majority of the board on their own.\n\nThe S-1 spells it out plainly. Musk will control the outcome of anything that requires a shareholder vote, and SpaceX will use the “controlled company” exemption from a bunch of Nasdaq governance rules — including the one that usually requires a majority of independent directors on the board.\nIf you’ve followed Google, Meta, or Snap IPOs, you’ve seen this movie. Founder-controlled tech companies do it all the time. What’s a little different here is that Musk doesn’t even need to win a Class A vote. Class B alone elects a majority of the board. You’re buying the cash flows. Musk keeps the steering wheel.\nFor passive investors, this matters in one specific way: index providers have been getting increasingly grumpy about super-voting structures, and the prospectus itself lists “exclusion from certain stock indices” as a risk factor. Even at $1.75 trillion, S&P 500 admission on day one is not guaranteed."
+  },
+  {
+    "objectID": "blog/posts/spacex-s1-magazine/index.html#the-1.25-billion-a-month-anthropic-contract",
+    "href": "blog/posts/spacex-s1-magazine/index.html#the-1.25-billion-a-month-anthropic-contract",
+    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
+    "section": "The $1.25 Billion-a-Month Anthropic Contract",
+    "text": "The $1.25 Billion-a-Month Anthropic Contract\nNow we get to the section that made me re-read the filing to make sure I wasn’t hallucinating.\nOn May 3, 2026, SpaceX (using the data centers it inherited from xAI) signed a Cloud Services Agreement with Anthropic — the AI lab founded by former OpenAI researchers, makers of Claude. The terms:\n\nPursuant to these agreements, the customer has agreed to pay us $1.25 billion per month through May 2029.\n\nThat’s $15 billion a year. For three years. From Anthropic. To Elon Musk’s company.\nLet’s appreciate this for a second. Anthropic was founded by people who left OpenAI. OpenAI was co-founded by Elon Musk before he stormed out and started xAI. Now Anthropic is renting GPUs from Musk’s xAI to train Claude, the model that competes most directly with ChatGPT.\nIt’s the corporate equivalent of buying batteries from your ex.\nThe strategy actually makes sense for both sides, despite the optics:\n\nAnthropic has more money than it can spend on chips. They just raised $30B at a $380B valuation (Forge). What they don’t have is electricity. xAI’s Memphis data centers came online in 122 days flat — a terrestrial speedrun — and have capacity to spare. Anthropic rents what they need.\nxAI/SpaceX gets to fund its own AI lab by selling compute to its biggest model competitor. This is exactly what OpenAI did to Microsoft in 2019. Except now SpaceX is playing the Microsoft role.\n\nThe optics are funny. The strategic logic is solid.\n\n\n\nOne of the dozens of pull-quote pages in the prospectus, set against a glamour shot of Starship S38. Source: SEC filing."
+  },
+  {
+    "objectID": "blog/posts/spacex-s1-magazine/index.html#the-60-billion-option-on-cursor",
+    "href": "blog/posts/spacex-s1-magazine/index.html#the-60-billion-option-on-cursor",
+    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
+    "section": "The $60 Billion Option on Cursor",
+    "text": "The $60 Billion Option on Cursor\nThe Anthropic deal is the big one. The Cursor deal is the weird one.\nIn April 2026, SpaceX signed a “compute and option agreement” with Cursor — yes, that Cursor, the AI-powered code editor that every software engineer you know is currently using. The terms:\n\nSpaceX gives Cursor GPU capacity to run their product.\nSpaceX has the option to buy Cursor at an implied equity value of $60 billion, payable in SPCX stock.\nIf SpaceX walks away, they owe Cursor $10 billion in pre-baked break-up fees ($1.5B option termination + $8.5B deferred compute services).\n\nWhy would a rocket company want to buy a code editor? The S-1 is fairly honest about it. Cursor’s millions of developers generate “context-rich, verifiable data” about how humans actually write code — exactly the kind of training fuel that improves an AI model. You’re not buying a code editor. You’re buying a giant pipeline of human coding behavior, which happens to come wrapped inside a code editor.\nThis structure is genuinely new. It’s the same compute-today-equity-tomorrow dance Microsoft did with OpenAI and Amazon did with Anthropic, but now applied one layer higher — at the application layer instead of the model layer. If it works, expect to see more of it. The next twelve months will probably involve a lot of AI startups being offered “free” compute that comes with a $40 billion option attached."
+  },
+  {
+    "objectID": "blog/posts/spacex-s1-magazine/index.html#openai-the-two-sentence-mention-that-should-have-been-much-longer",
+    "href": "blog/posts/spacex-s1-magazine/index.html#openai-the-two-sentence-mention-that-should-have-been-much-longer",
+    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
+    "section": "OpenAI: The Two-Sentence Mention That Should Have Been Much Longer",
+    "text": "OpenAI: The Two-Sentence Mention That Should Have Been Much Longer\nThe full S-1 mentions OpenAI exactly twice, both in routine “we have competitors” boilerplate. There is no mention of the lawsuit Musk filed in 2024 trying to block OpenAI’s for-profit conversion and force out Sam Altman.\nWhy? Because two days before this S-1 was filed, a federal jury in California threw the lawsuit out.\nThe verdict landed on May 18, 2026. The jurors deliberated for less than two hours (NPR; Axios; NBC News). They didn’t even rule on the merits — they decided Musk had simply waited too long to sue. Statute of limitations. Game over. Musk’s related claim against Microsoft was dismissed on the same grounds.\nMusk’s lawyer told reporters: “This one is not over. I can sum it up in one word: appeal.” Sure.\nBut the timing is impossible to ignore. Filing a $75 billion IPO the same week your big-ticket lawsuit against your biggest AI rival gets dismissed in two hours is — let’s say — convenient. The cloud that would have hung over SPCX’s risk factors evaporated three trading days before the prospectus went public.\nAnd in case you thought OpenAI was just going to sit there and watch Musk go public alone: on the same day this prospectus dropped, multiple outlets reported that OpenAI is preparing to confidentially file its own S-1, with the same lead banks (Goldman Sachs and Morgan Stanley), targeting a fall debut at a valuation that “exceeds $1 trillion” (Bloomberg; Axios; CNBC).\nSo: in one week, Musk’s lawsuit against OpenAI dies, SpaceX files publicly, and OpenAI files confidentially. None of that is quite planets-aligning, but it’s close."
+  },
+  {
+    "objectID": "blog/posts/spacex-s1-magazine/index.html#three-giants-in-twelve-months",
+    "href": "blog/posts/spacex-s1-magazine/index.html#three-giants-in-twelve-months",
+    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
+    "section": "Three Giants in Twelve Months",
+    "text": "Three Giants in Twelve Months\nThree of the largest IPOs in the history of public markets are about to hit within roughly one calendar year:\n\n\n\n\n\n\n\n\n\n\nCompany\nFiling status\nTarget listing\nIndicative size / valuation\nLead banks\n\n\n\n\nSpaceX\nS-1 public, May 20, 2026\nJune 12, 2026\n~$75B raise / ~$1.75T\nGoldman, Morgan Stanley\n\n\nOpenAI\nConfidential S-1 imminent\nFall 2026 (~September)\n&gt;$1T valuation\nGoldman, Morgan Stanley\n\n\nAnthropic\nNot filed; ~Q4 2026 expected\nMore likely 2027\n~$60B+ raise / $380B+\nNot announced\n\n\n\nA few notes:\nThe same two banks are running two of these deals. Goldman Sachs and Morgan Stanley are leading both SpaceX and OpenAI. For deals this big and this competitively sensitive, that’s unusual — normally the banks would split clients. The same teams will pitch Musk’s company in June and Altman’s company in September. The “Chinese walls” inside investment banks (the rules that supposedly stop one client’s confidential info from leaking to another) are about to get a real-world stress test.\nThe flow event is going to be loud. SPCX at $1.75T would be a top-10 weight in any major US index that admits it. If OpenAI joins in the fall at $1T+, you’d have two of the five biggest companies in the world IPO’ing within five months. Every S&P 500 fund and Nasdaq-100 fund on Earth would need to buy a lot of stock, all on the same admission day. Quant desks have been modeling this for a quarter.\nAnthropic gets to wait. They have $30B of run-rate revenue, just raised $30B, and have the cleanest equity story of the three — no founder-control questions, no rival lawsuits, no for-profit-conversion drama. Their stated plan is a 2027 listing. Filing third may turn out to be the best slot of the three."
+  },
+  {
+    "objectID": "blog/posts/spacex-s1-magazine/index.html#one-more-thing-possibly-the-first-s-1-with-posters",
+    "href": "blog/posts/spacex-s1-magazine/index.html#one-more-thing-possibly-the-first-s-1-with-posters",
+    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
+    "section": "One More Thing: Possibly the First S-1 With Posters",
+    "text": "One More Thing: Possibly the First S-1 With Posters\nWhich brings us back to the cover.\nA typical S-1 has exactly one image: the company logo, on page one. The ratio of text to pictures is roughly that of the IRS Form 1040 instructions.\nSpaceX’s S-1 has dozens of embedded images. Among them:\n\nA full-bleed photograph of Mars from orbit.\nMultiple full-page Musk pull-quotes set against glamour shots of Starship in flight.\nA “SPACE — ACTIVATED 2002 — FIRSTS” infographic with launch counts, reused-booster percentages, and crewmembers flown.\nA photograph of Starman (the spacesuit mannequin SpaceX launched on a Tesla Roadster in 2018, currently floating somewhere between Mars and the asteroid belt).\nGlossy spec sheets for Falcon 9, Falcon Heavy, Dragon, Starship, and Starlink V3.\nA “RISK FACTORS” section opener that is, literally, a photograph of a rocket surrounded by fire.\n\nThat last one is not metaphorical:\n\n\n\nThe actual title page for the Risk Factors section of the S-1. Source: SEC filing.\n\n\nThe page where the company discusses what could go horribly wrong with the business is, in the prospectus itself, illustrated by an image of their main product on fire.\nCoinbase, Airbnb, and Roblox were the previous gold-standard for “S-1 with design sense” — branded color blocks, full-bleed photos, the occasional pull quote. None of them put a photograph of their core product on actual fire as the masthead of their risk factors. SpaceX may be the first.\nThere’s a real argument that this is part of the offering. When you’re trying to convince public-market investors to buy into a controlled company with an AI segment burning $12B a year and a CEO with a non-zero probability of any given Tuesday being interesting, “trust us, the vibes are great” is a legitimate strategy. The prospectus isn’t selling a document. It’s selling a feeling.\nIt’s also, in fairness, the only S-1 you can read twice without falling asleep. That might be worth a few basis points all by itself.\n\nFinancial figures and contract terms come from Space Exploration Technologies Corp.’s Form S-1, filed with the SEC on May 20, 2026. Images shown are downsampled reproductions of figures in the same filing. External reporting cited inline."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "He Ren, PhD, CFA",
+    "section": "",
+    "text": "Associate Professor of Finance"
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "He Ren, PhD, CFA",
+    "section": "Welcome",
+    "text": "Welcome\nWelcome! I’m an Associate Professor of Finance whose research focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets. Feel free to explore my website to learn more about my teaching and research.\nOutside the classroom and my research, I’m also a Rubik’s cube solver. You can check out my World Cube Association (WCA) profile to see my official results. I’m also passionate about photography. You can browse some of my favorite shots in the Photography section of this website.\nLEARN MORE ABOUT ME →"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Zheng, Y., & Ren, H. (2026). Does fintech and digitalization adoption impact employee performance efficiency? Evidence from a machine learning approach. The Quarterly Journal of Finance. World Scientific.\nZheng, Y., & Ren, H. (2024). COVID-19 vaccination and housing payments. Journal of Housing Economics, 64, 101992. Academic Press.\nChoi, S., Li, Z., Boonme, K., & Ren, H. (2024). Face-to-face, online or HyFlex instruction? The effects of self-directed learning on stress reduction and student satisfaction among emerging adults. Journal of International Education in Business, 17(3), 373–394. Emerald Publishing Limited.\nRen, H., & Zheng, Y. (2023). COVID-19 vaccination and household savings: An economic recovery channel. Finance Research Letters, 103711. Elsevier.\nMantecon, T., Almomen, A., Ren, H., & Zheng, Y. (2023). An analysis of the potential impact of heightened capital requirements on banks’ cost of capital. Journal of Financial Services Research. Springer Nature."
+  },
+  {
+    "objectID": "research.html#journal-articles",
+    "href": "research.html#journal-articles",
+    "title": "Research",
+    "section": "",
+    "text": "Zheng, Y., & Ren, H. (2026). Does fintech and digitalization adoption impact employee performance efficiency? Evidence from a machine learning approach. The Quarterly Journal of Finance. World Scientific.\nZheng, Y., & Ren, H. (2024). COVID-19 vaccination and housing payments. Journal of Housing Economics, 64, 101992. Academic Press.\nChoi, S., Li, Z., Boonme, K., & Ren, H. (2024). Face-to-face, online or HyFlex instruction? The effects of self-directed learning on stress reduction and student satisfaction among emerging adults. Journal of International Education in Business, 17(3), 373–394. Emerald Publishing Limited.\nRen, H., & Zheng, Y. (2023). COVID-19 vaccination and household savings: An economic recovery channel. Finance Research Letters, 103711. Elsevier.\nMantecon, T., Almomen, A., Ren, H., & Zheng, Y. (2023). An analysis of the potential impact of heightened capital requirements on banks’ cost of capital. Journal of Financial Services Research. Springer Nature."
+  },
+  {
+    "objectID": "research.html#working-papers",
+    "href": "research.html#working-papers",
+    "title": "Research",
+    "section": "Working Papers",
+    "text": "Working Papers\n\nLiu, Y., & Ren, H. (2019). Impact of market state on momentum portfolio risk and performance: A risk-based explanation."
   }
 ]
