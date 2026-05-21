@@ -20,4 +20,7 @@ Thumbs.db
 # Claude Code local settings (not part of the site)
 .claude/
 
+# Local prompt drafts (not part of the site)
+/prompt/
+
 **/*.quarto_ipynb
