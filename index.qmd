@@ -1,9 +1,9 @@
 ---
 pagetitle: "Home"
-description: "Assistant Professor of Finance"
+description: "Associate Professor of Finance"
 twitter-card:
   title: "He Ren, PhD, CFA"
-  description: "Assistant Professor of Finance"
+  description: "Associate Professor of Finance"
   card-style: summary_large_image
   image: images/profile.jpeg
   image-alt: "He Ren"
@@ -12,7 +12,7 @@ twitter-card:
 ::: {.homepage-intro}
 # He Ren, PhD, CFA
 
-[Assistant Professor of Finance]{.lead}
+[Associate Professor of Finance]{.lead}
 
 <div class="about-links homepage-links">
   <a href="https://github.com/imrenhe" class="about-link" aria-label="GitHub" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
@@ -23,7 +23,7 @@ twitter-card:
 
 ## Welcome
 
-Welcome! I'm an Assistant Professor of Finance whose research focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets. Feel free to explore my website to learn more about my teaching and research.
+Welcome! I'm an Associate Professor of Finance whose research focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets. Feel free to explore my website to learn more about my teaching and research.
 
 Outside the classroom and my research, I'm also a Rubik's cube solver. You can check out my <a href="https://www.worldcubeassociation.org/persons/2025RENH02" target="_blank" rel="noopener">World Cube Association (WCA) profile</a> to see my official results. I'm also passionate about photography. You can browse some of my favorite shots in the Photography section of this website.
 

@@ -20,7 +20,7 @@ about:
 
 ## Hi, I'm happy you're here
 
-I'm an Assistant Professor of Finance at [Merrilee Alexander Kick College of Business and Entrepreneurship, Texas Woman's University](https://twu.edu/business/). My research interest focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets.
+I'm an Associate Professor of Finance at [Merrilee Alexander Kick College of Business and Entrepreneurship, Texas Woman's University](https://twu.edu/business/). My research interest focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets.
 
 ## Outside the classroom
 
@@ -29,7 +29,7 @@ Outside the classroom and my research, I'm also a Rubik's cube solver. You can c
 ## What you'll find here
 
 - [**Teaching**](teaching.qmd) — courses I currently teach and have taught.
-- <a href="https://imrenhe.github.io/fin3053-business-finance-book/" target="_blank" rel="noopener"><strong>Business Finance Book</strong></a> — book used for Business Finance class, work in progress.
+- <a href="https://imrenhe.github.io/fin3053-business-finance-book/" target="_blank" rel="noopener"><strong>Business Finance Lecture Notes</strong></a> — lecture notes used for Business Finance class, work in progress.
 - [**Research**](research.qmd) — publications and working papers.
 - [**Blog**](blog/index.qmd) — occasional writing.
 - [**Photography**](photography.qmd) — a gallery of photos.
