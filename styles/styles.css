@@ -40,6 +40,15 @@ body:has(.quarto-about-trestles) #title-block-header h1.title {
   padding-bottom: 1.2rem;
 }
 
+/* On narrow screens (phones), let figure images use the full width
+   regardless of any inline width set via {width=NN%} in the .qmd source. */
+@media (max-width: 767.98px) {
+  .figure-img {
+    width: 100% !important;
+    max-width: 100%;
+  }
+}
+
 /* Homepage hero: title, description, and social icons stacked. */
 .homepage-intro h1 {
   margin-top: 0;
