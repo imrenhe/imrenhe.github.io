@@ -21,6 +21,8 @@ website:
         text: TEACHING
       - href: research.qmd
         text: RESEARCH
+      - href: books.qmd
+        text: BOOKS
       - href: blog/index.qmd
         text: BLOG
       - href: photography.qmd
