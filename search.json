@@ -32,14 +32,21 @@
     "href": "books.html",
     "title": "Books",
     "section": "",
-    "text": "I’m writing two open, web-based textbooks for the undergraduate finance courses I teach. Both are works in progress, freely available online, and updated as the courses evolve."
+    "text": "I’m writing three open, web-based textbooks for the undergraduate finance courses I teach. All are works in progress, freely available online, and updated as the courses evolve."
   },
   {
     "objectID": "books.html#business-finance",
     "href": "books.html#business-finance",
     "title": "Books",
     "section": "Business Finance",
-    "text": "Business Finance\n\n\nRead online →\nAn introduction to corporate finance for students with no prior finance background, written for FIN 3053. The book is organized around a single unifying idea — that the value of anything is the size, timing, and risk of the cash it will produce in the future — and follows a fictional company throughout to show how the pieces fit together. It covers financial statements, the time value of money, bond and stock valuation, capital budgeting, and risk and return. The approach emphasizes intuition over memorization, with worked examples shown three ways: by formula, by financial calculator, and in Excel."
+    "text": "Business Finance\n\n\nRead online →\nAn introduction to corporate finance for students with no prior finance background, written for FIN 3053. The whole book rests on one idea — that the value of anything is the size, timing, and risk of the cash it will produce in the future — so you always know why you’re doing a calculation, not just how. It builds every concept from the ground up, assuming no math beyond algebra: reading financial statements and ratios, the time value of money and interest rates, valuing bonds and stocks, and then the corporate decisions — cost of capital, capital budgeting, cash flows and risk, and how risk and return are priced. A fictional company, Summit Outdoor Gear, runs through the entire book with one consistent set of numbers, and every quantitative problem is worked three ways: by formula, on the TI BA II Plus calculator, and in Excel."
+  },
+  {
+    "objectID": "books.html#financial-management",
+    "href": "books.html#financial-management",
+    "title": "Books",
+    "section": "Financial Management",
+    "text": "Financial Management\n\n\nRead online →\nThe sequel to Business Finance, written for FIN 4243. Where the first course teaches you to value things, this one is about the decisions that create value: how much debt to carry, whether to pay a dividend or buy back stock, whether to lease or borrow, when to acquire a rival or hedge a currency, and how to manage risk and even failure. Every decision is judged by a single test — does it increase the intrinsic value of the firm? A fictional company, Cascade Robotics, runs through all twelve chapters with one consistent set of numbers, and every quantitative method is shown by formula and worked in Excel, most with a downloadable spreadsheet template. The book assumes the toolkit from Business Finance and keeps the math at the level of algebra and present-value arithmetic."
   },
   {
     "objectID": "books.html#investments",
