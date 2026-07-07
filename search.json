@@ -119,6 +119,111 @@
     "text": "One More Thing: Possibly the First S-1 With Posters\nWhich brings us back to the cover.\nA typical S-1 has exactly one image: the company logo, on page one. The ratio of text to pictures is roughly that of the IRS Form 1040 instructions.\nSpaceX’s S-1 has dozens of embedded images. Among them:\n\nA full-bleed photograph of Mars from orbit.\nMultiple full-page Musk pull-quotes set against glamour shots of Starship in flight.\nA “SPACE — ACTIVATED 2002 — FIRSTS” infographic with launch counts, reused-booster percentages, and crewmembers flown.\nA photograph of Starman (the spacesuit mannequin SpaceX launched on a Tesla Roadster in 2018, currently floating somewhere between Mars and the asteroid belt).\nGlossy spec sheets for Falcon 9, Falcon Heavy, Dragon, Starship, and Starlink V3.\nA “RISK FACTORS” section opener that is, literally, a photograph of a rocket surrounded by fire.\n\nThat last one is not metaphorical:\n\n\n\nThe actual title page for the Risk Factors section of the S-1. Source: SEC filing.\n\n\nThe page where the company discusses what could go horribly wrong with the business is, in the prospectus itself, illustrated by an image of their main product on fire.\nCoinbase, Airbnb, and Roblox were the previous gold-standard for “S-1 with design sense” — branded color blocks, full-bleed photos, the occasional pull quote. None of them put a photograph of their core product on actual fire as the masthead of their risk factors. SpaceX may be the first.\nThere’s a real argument that this is part of the offering. When you’re trying to convince public-market investors to buy into a controlled company with an AI segment burning $12B a year and a CEO with a non-zero probability of any given Tuesday being interesting, “trust us, the vibes are great” is a legitimate strategy. The prospectus isn’t selling a document. It’s selling a feeling.\nIt’s also, in fairness, the only S-1 you can read twice without falling asleep. That might be worth a few basis points all by itself.\n\nFinancial figures and contract terms come from Space Exploration Technologies Corp.’s Form S-1, filed with the SEC on May 20, 2026. Images shown are downsampled reproductions of figures in the same filing. External reporting cited inline."
   },
   {
+    "objectID": "blog/posts/fifa-hydration-break-economics/index.html",
+    "href": "blog/posts/fifa-hydration-break-economics/index.html",
+    "title": "FIFA Discovered the Commercial Break",
+    "section": "",
+    "text": "American sports fans have spent their whole lives being trained to expect a break. The NFL has the two-minute warning and roughly a hundred stoppages. The NBA has quarters, timeouts, and a coach’s challenge that exists mostly so the network can sell you a truck. Soccer, famously, has none of this. Ninety minutes, two halves, one clock that never stops and never lies. You cannot cut to a car commercial mid-move, because there is no mid-move — the ball is always live.\nThis has always been a small tragedy for the people who sell advertising.\nAt the 2026 World Cup, that tragedy quietly ended. FIFA introduced a mandatory three-minute hydration break in each half of every match — around the 22nd minute and again around the 67th — regardless of the weather (FIFA). The stated reason is player welfare, and in the summer heat of Kansas City and Dallas, that reason is real. But if you squint at the timing, the structure, and the money, something else comes into focus: FIFA just gave the world’s most-watched sport its first built-in commercial break — and handed broadcasters a new pile of inventory to sell.\nLet me walk through where FIFA’s money actually comes from, why television is the tail that wags the entire dog, and how a water break becomes a billion-dollar idea."
+  },
+  {
+    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#where-fifas-money-actually-comes-from",
+    "href": "blog/posts/fifa-hydration-break-economics/index.html#where-fifas-money-actually-comes-from",
+    "title": "FIFA Discovered the Commercial Break",
+    "section": "Where FIFA’s Money Actually Comes From",
+    "text": "Where FIFA’s Money Actually Comes From\nFirst, a myth to dispose of: FIFA does not primarily make its money from ticket sales, or from that overpriced beer at the stadium, or from selling jerseys. FIFA makes its money from selling the right to broadcast the World Cup, and secondarily from selling the right to associate your brand with the World Cup. Everything else is a rounding error by comparison.\nHere is the budgeted revenue for the 2023–2026 cycle, which is how FIFA keeps its books (it thinks in four-year chunks anchored on a World Cup, not calendar years):\n\n\n\nFIFA’s own budget for the 2023–26 cycle. TV rights are the single biggest line — and, as we’ll see, the one the hydration breaks quietly inflate. Source: FIFA Annual Report 2022.\n\n\n\nFIFA budgeted $11.0B for the 2023–26 cycle and has since revised its internal target upward toward ~$13B. Source: FIFA Annual Report 2022.\n\n\nRevenue source\n2023–26 budget\nShare\n\n\n\n\nTV broadcasting rights\n$4.26B\n39%\n\n\nHospitality & ticketing\n$3.10B\n28%\n\n\nMarketing (sponsorship)\n$2.69B\n24%\n\n\nLicensing rights\n$0.67B\n6%\n\n\nOther\n$0.28B\n3%\n\n\nTotal\n$11.00B\n100%\n\n\n\nTwo lines do almost two-thirds of the work: television and sponsorship. And these two are not independent — they are joined at the hip. A sponsor pays FIFA to put its logo where a billion people will see it, and the reason a billion people see it is television. Broadcasters pay for the audience; sponsors pay for access to that same audience. TV is the product, and everything else is priced off it.\nWhich is why the most important number on FIFA’s income statement is the one at the top — and why FIFA spends so much energy making that number bigger."
+  },
+  {
+    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#the-number-that-never-stops-climbing",
+    "href": "blog/posts/fifa-hydration-break-economics/index.html#the-number-that-never-stops-climbing",
+    "title": "FIFA Discovered the Commercial Break",
+    "section": "The Number That Never Stops Climbing",
+    "text": "The Number That Never Stops Climbing\nFIFA’s broadcasting revenue has gone up every single cycle, through scandal, through a pandemic, through a widely disliked Qatar tournament played in November. It is one of the most reliable upward-sloping lines in global media.\n\n\n\nFIFA’s broadcasting-rights revenue by four-year cycle. The jump from Qatar 2022 to the 2026 cycle is about 24%. Sources: FIFA Annual Report 2022; Statista.\n\n\nThe 2026 tournament turbocharges this for reasons that have nothing to do with hydration:\n\nIt’s bigger. The field expanded from 32 teams to 48, and the match count ballooned from 64 to 104. More matches means more broadcast hours means more inventory to sell.\nIt’s in the right time zones. After Qatar’s inconvenient kickoffs, the 2026 tournament is hosted across the United States, Canada, and Mexico — meaning matches land in North American prime time and afternoon slots, the most valuable advertising windows on Earth.\nThe rights got more expensive. Industry estimates put the value of the 2026 TV rights 20–30% above Qatar 2022 (Rio Times). Fox reportedly paid $400–500 million for the English-language U.S. package alone.\n\nNow hold that Fox number — $400–500 million for the whole tournament — in your head. We are about to compare it to something absurd."
+  },
+  {
+    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#the-other-half-renting-out-the-logo",
+    "href": "blog/posts/fifa-hydration-break-economics/index.html#the-other-half-renting-out-the-logo",
+    "title": "FIFA Discovered the Commercial Break",
+    "section": "The Other Half: Renting Out the Logo",
+    "text": "The Other Half: Renting Out the Logo\nIf television is FIFA selling the audience, sponsorship is FIFA selling access to that audience — and it is sold, appropriately, as a pyramid. The higher you climb, the more exclusive the air and the thinner your wallet gets afterward.\n\nFIFA’s three-tier sponsorship structure. FIFA does not publish per-brand fees; figures are industry estimates. Sources: Forbes; Zappi.\n\n\nTier\nWhat you get\nEst. price\nExamples (2026)\n\n\n\n\nFIFA Partners\nYear-round rights across every FIFA competition; top billing\n~$150–200M\nadidas, Coca-Cola, Visa, Hyundai-Kia, Lenovo, Qatar Airways, Aramco\n\n\nWorld Cup Sponsors\nRights to this tournament, worldwide\n~$65–95M\nBudweiser, McDonald’s, Bank of America, Lay’s, Verizon, Unilever\n\n\nRegional Supporters\nRights within one region only\n~$10–25M\nRegional brands across North America\n\n\n\nThe economics of the pyramid are ruthless and clever. There are only seven FIFA Partner slots, and that scarcity is the entire point — an adidas or a Visa is not really paying for a logo on a billboard, it is paying to keep a competitor off it. When Nike cannot be a FIFA Partner because adidas already is, the price adidas will pay to hold that exclusivity goes up. FIFA has monetized not just the space on the field but the absence of your rival from it.\nAnd the pyramid, too, is ultimately priced off television. A World Cup Sponsor is buying pitchside LED boards, digital overlays, and the implied blessing of the tournament — all of which are worth precisely as much as the number of eyeballs the broadcast delivers. FIFA confirmed in March 2026 that all sixteen of its global sponsorship packages had sold out (Forbes), and total brand spending around the tournament — sponsorship plus the advertising that rides on it — is estimated north of $10 billion.\nSo both of FIFA’s big revenue lines, television and sponsorship, are really the same bet placed twice: how many people are watching, for how long, with how much attention? Anything that increases watching-time, or creates a fresh, attention-grabbing moment to sell, makes both lines go up at once.\nWhich is a very useful lens for thinking about a brand-new, perfectly-timed, guaranteed three-minute pause in the action."
+  },
+  {
+    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#enter-the-water-break",
+    "href": "blog/posts/fifa-hydration-break-economics/index.html#enter-the-water-break",
+    "title": "FIFA Discovered the Commercial Break",
+    "section": "Enter the Water Break",
+    "text": "Enter the Water Break\nHere is the mechanical genius of the hydration break, from a television executive’s point of view.\nBefore 2026, cooling breaks existed, but only as an emergency measure. They were introduced at the 2014 World Cup in Brazil and could be called only when a heat index (WBGT) crossed a defined threshold (Kestrel Instruments). They were unpredictable. You could not sell an advertiser a slot that might or might not exist depending on the humidity in Rotterdam. Unpredictable inventory is nearly worthless inventory.\nThe 2026 rule changes exactly one thing, and it is the thing that matters: the breaks are now mandatory in every match, at a roughly fixed time, regardless of weather (Fox News / OutKick). Suddenly the inventory is guaranteed. An ad buyer can be promised a national commercial pod around minute 22 and minute 67 of a match watched by tens of millions of people, and the buyer can budget for it a year in advance. That is the difference between a puddle and a pipeline.\nAnd notice what the schedule does to the shape of the game. A break at ~22 minutes and ~67 minutes carves each half neatly in two, turning a game of two 45-minute halves into something much more familiar to an American audience:\n\n\n\n\n\n\n\n\n\nOld soccer\nNew (2026)\n\n\n\n\nStructure\nTwo 45-min halves\nFour ~22-min “quarters”\n\n\nGuaranteed stoppages\nHalftime only\nHalftime + 2 hydration breaks\n\n\nWeather condition\nCooling break only if hot\nBreak every match, always\n\n\nSellable in-game ad pods\n0\n2 per match × 104 matches\n\n\n\nFrance manager Didier Deschamps said it out loud: “It’s not two halftimes, it’s four quarter times… the players and the coaches adapt to this new reality” (ESPN). He meant it tactically. But “four quarters” is also, conveniently, the exact structure of the NBA and NFL broadcasts that American advertisers have optimized around for fifty years."
+  },
+  {
+    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#the-billion-dollar-puddle",
+    "href": "blog/posts/fifa-hydration-break-economics/index.html#the-billion-dollar-puddle",
+    "title": "FIFA Discovered the Commercial Break",
+    "section": "The Billion-Dollar Puddle",
+    "text": "The Billion-Dollar Puddle\nSo what is a guaranteed in-game ad pod at the World Cup actually worth? The honest answer is that nobody knows precisely, because this is the first tournament with the inventory and FIFA and the broadcasters aren’t publishing the receipts. But the published estimates are eye-watering, and they cluster in a consistent range.\nAnalysts peg a single 30-second spot during a hydration break at $200,000 to $750,000, depending on the teams and the stage of the tournament, which works out to roughly $2.5 million to $9 million per match in fresh ad time across the two breaks (The Hollywood Reporter). Multiply across 104 matches and the estimates for Fox alone land at “at least $250 million, plausibly $500–600 million” (The Hollywood Reporter). Some global estimates, summing every broadcast market, run past $1 billion (Rio Times).\nHere is the punchline in one chart:\n\n\n\nEstimates for Fox’s hydration-break ad revenue against what Fox reportedly paid for the entire English-language rights package. The new water-break inventory alone could rival the cost of the whole tournament. Figures are analyst estimates, not official disclosures. Sources: The Hollywood Reporter; Rio Times.\n\n\nRead that again. Fox paid roughly $400–500 million for the rights to broadcast the entire tournament. The advertising revenue from the hydration breaks alone — three minutes, twice a match — is estimated to plausibly reach $500–600 million. The garnish may be worth more than the meal.\nAnd this compounds in FIFA’s favor on the next turn of the wheel. Broadcasters bid for rights based on how much money they can make from those rights. If the hydration break just made Fox’s package meaningfully more profitable, then the next rights auction starts from a higher floor. FIFA doesn’t even have to sell the ads itself — it simply raises the rent on the broadcasters who do. The water break pays FIFA twice: once by making the current tournament more valuable to Fox, and again by making the next set of rights more expensive."
+  },
+  {
+    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#to-be-fair-to-the-water",
+    "href": "blog/posts/fifa-hydration-break-economics/index.html#to-be-fair-to-the-water",
+    "title": "FIFA Discovered the Commercial Break",
+    "section": "To Be Fair to the Water",
+    "text": "To Be Fair to the Water\nIt would be too cynical — even for me — to claim this is only about money. Two things are true at once.\nThe player-welfare case is genuine. The 2026 tournament is being played in brutal conditions; matches in Kansas City, Dallas, and Monterrey have kicked off in temperatures well into the 90s Fahrenheit, and the 2025 Club World Cup (a dry run for all of this) featured genuinely dangerous heat. Giving players a structured chance to rehydrate is defensible sports science, and FIFA frames it exactly that way (FIFA).\nBut the criticism is also genuine, and it comes from two directions:\n\nThe scientists say three minutes is too short to meaningfully cool a body running at full exertion in extreme heat — useful, but more gesture than remedy when it’s truly sweltering (ESPN).\nThe coaches say the breaks distort the game. USWNT coach Emma Hayes calls them “momentum breaks” — a free tactical reset handed to whichever team is being outplayed (ESPN). Early tournament data hints she has a point: a striking share of goals arrived shortly after a break, when one side had just been allowed to regroup and re-instruct.\n\nNotice that the strongest argument for the breaks (heat safety) would justify the old rule — call a break when it’s hot. It does not obviously justify the new rule — call a break in every match, including a temperate evening in Vancouver. The delta between “break when it’s hot” and “break always” is precisely the part that isn’t about hydration. That delta is the part you can sell."
+  },
+  {
+    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#the-tell",
+    "href": "blog/posts/fifa-hydration-break-economics/index.html#the-tell",
+    "title": "FIFA Discovered the Commercial Break",
+    "section": "The Tell",
+    "text": "The Tell\nIf you want to know what a rule is really for, watch who opts out.\nThe purest evidence that the hydration break is now an advertising vehicle is that some broadcasters are treating it as one — and a few are conspicuously refusing. In the U.S., Spanish-language broadcaster Telemundo declined to cut to commercials during the breaks, staying with studio analysis instead; U.K. broadcaster ITV did the same (ESPN). You do not have to make a principled decision about whether to run ads during a genuine medical timeout. You only face that decision if the “medical timeout” has quietly become the most valuable ninety seconds of unsold airtime in the building.\nFIFA has spent a decade proving that its revenue line only points one way, and it has done it by relentlessly finding new surfaces to sell. It expanded the field to 48 teams. It moved the tournament into American prime time. It launched a 32-team Club World Cup out of thin air. The hydration break is the same instinct applied to the one piece of the product that had always resisted it: the ninety uninterrupted minutes themselves.\nSo drink up. Somewhere, an accountant is very, very hydrated.\n\nRevenue figures are from FIFA’s own budget and financial statements, linked inline. Advertising figures for the hydration breaks are analyst and press estimates, not official FIFA or broadcaster disclosures, and should be read as such. All charts are the author’s own, built from the cited data. No copyrighted imagery is used."
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "FIFA Discovered the Commercial Break\n\n\n\nfinance\n\nsports\n\nmedia\n\n\n\nThe 2026 World Cup added a three-minute hydration break to every half. Officially it’s about player welfare. Follow the money and it looks a lot like FIFA quietly inventing the TV timeout — and turning soccer into four quarters you can sell ads against.\n\n\n\n\n\nJul 6, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nSpaceX Filed an S-1. It Reads Like a Magazine.\n\n\n\nfinance\n\nIPO\n\nAI\n\n\n\nSpaceX filed an S-1 that reads like a magazine — Mars on the cover, Anthropic paying Elon $15 billion a year, and a Risk Factors page that’s literally a photo of a rocket on fire. Notes on what’s inside.\n\n\n\n\n\nMay 20, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nTime Value of Money on the BA II Plus and in Excel\n\n\n\nfinance\n\nteaching\n\n\n\nA side-by-side undergraduate guide to solving TVM problems with the TI BA II Plus calculator and Microsoft Excel — from setup to mortgages, NPV, and IRR.\n\n\n\n\n\nMay 15, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nSummary: From EDGAR Filings to a Structured Database\n\n\n\nAI\n\ndata\n\nfinance\n\n\n\nA summary of Paul Goldsmith-Pinkham’s article on using Claude Code to build a 10-K Risk Factors dataset from SEC EDGAR.\n\n\n\n\n\nMay 11, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nSummary: Large Datasets and Structured Databases\n\n\n\nAI\n\ndata\n\neconomics\n\n\n\nA summary of Paul Goldsmith-Pinkham’s article on AI-assisted data engineering for economists.\n\n\n\n\n\nMay 9, 2026\n\n\nHe Ren\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "He Ren, PhD, CFA",
+    "section": "",
+    "text": "I’m an Associate Professor of Finance at Merrilee Alexander Kick College of Business and Entrepreneurship, Texas Woman’s University. My research interest focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets."
+  },
+  {
+    "objectID": "about.html#hi-im-happy-youre-here",
+    "href": "about.html#hi-im-happy-youre-here",
+    "title": "He Ren, PhD, CFA",
+    "section": "",
+    "text": "I’m an Associate Professor of Finance at Merrilee Alexander Kick College of Business and Entrepreneurship, Texas Woman’s University. My research interest focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets."
+  },
+  {
+    "objectID": "about.html#outside-the-classroom",
+    "href": "about.html#outside-the-classroom",
+    "title": "He Ren, PhD, CFA",
+    "section": "Outside the classroom",
+    "text": "Outside the classroom\nOutside the classroom and my research, I’m also a Rubik’s cube solver. You can check out my World Cube Association (WCA) profile to see my official results. I’m also passionate about photography. You can browse some of my favorite shots in the Photography section of this website."
+  },
+  {
+    "objectID": "about.html#what-youll-find-here",
+    "href": "about.html#what-youll-find-here",
+    "title": "He Ren, PhD, CFA",
+    "section": "What you’ll find here",
+    "text": "What you’ll find here\n\nTeaching — courses I currently teach and have taught.\nResearch — publications and working papers.\nBooks — open textbooks I’m writing, work in progress.\nBlog — occasional writing.\nPhotography — a gallery of photos."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "He Ren, PhD, CFA",
+    "section": "Education",
+    "text": "Education\n\nPh.D. in Finance, University of North Texas, 2019\nM.B.A., University of Texas at Dallas, 2014\nM.S. in Finance, State University of New York at Buffalo, 2011\nB.S. in Economics, Shanghai University of International Business and Economics, 2010"
+  },
+  {
+    "objectID": "about.html#professional-certifications",
+    "href": "about.html#professional-certifications",
+    "title": "He Ren, PhD, CFA",
+    "section": "Professional Certifications",
+    "text": "Professional Certifications\n\nCFA Institute Sustainable Investing Certificate, 2023\nChartered Financial Analyst (CFA®), 2022\nFinancial Risk Manager (FRM®), 2022"
+  },
+  {
     "objectID": "blog/posts/edgar-filings-to-structured-database/index.html",
     "href": "blog/posts/edgar-filings-to-structured-database/index.html",
     "title": "Summary: From EDGAR Filings to a Structured Database",
@@ -166,55 +271,6 @@
     "title": "Summary: From EDGAR Filings to a Structured Database",
     "section": "Conclusion",
     "text": "Conclusion\nThe pipeline is small — one researcher, one afternoon, 480 lines of Python — but it shows how the per-project cost of building real research infrastructure has dropped. The interesting question is no longer whether the pipeline is feasible, but which research questions are worth pointing it at."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "He Ren, PhD, CFA",
-    "section": "",
-    "text": "I’m an Associate Professor of Finance at Merrilee Alexander Kick College of Business and Entrepreneurship, Texas Woman’s University. My research interest focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets."
-  },
-  {
-    "objectID": "about.html#hi-im-happy-youre-here",
-    "href": "about.html#hi-im-happy-youre-here",
-    "title": "He Ren, PhD, CFA",
-    "section": "",
-    "text": "I’m an Associate Professor of Finance at Merrilee Alexander Kick College of Business and Entrepreneurship, Texas Woman’s University. My research interest focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets."
-  },
-  {
-    "objectID": "about.html#outside-the-classroom",
-    "href": "about.html#outside-the-classroom",
-    "title": "He Ren, PhD, CFA",
-    "section": "Outside the classroom",
-    "text": "Outside the classroom\nOutside the classroom and my research, I’m also a Rubik’s cube solver. You can check out my World Cube Association (WCA) profile to see my official results. I’m also passionate about photography. You can browse some of my favorite shots in the Photography section of this website."
-  },
-  {
-    "objectID": "about.html#what-youll-find-here",
-    "href": "about.html#what-youll-find-here",
-    "title": "He Ren, PhD, CFA",
-    "section": "What you’ll find here",
-    "text": "What you’ll find here\n\nTeaching — courses I currently teach and have taught.\nResearch — publications and working papers.\nBooks — open textbooks I’m writing, work in progress.\nBlog — occasional writing.\nPhotography — a gallery of photos."
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "He Ren, PhD, CFA",
-    "section": "Education",
-    "text": "Education\n\nPh.D. in Finance, University of North Texas, 2019\nM.B.A., University of Texas at Dallas, 2014\nM.S. in Finance, State University of New York at Buffalo, 2011\nB.S. in Economics, Shanghai University of International Business and Economics, 2010"
-  },
-  {
-    "objectID": "about.html#professional-certifications",
-    "href": "about.html#professional-certifications",
-    "title": "He Ren, PhD, CFA",
-    "section": "Professional Certifications",
-    "text": "Professional Certifications\n\nCFA Institute Sustainable Investing Certificate, 2023\nChartered Financial Analyst (CFA®), 2022\nFinancial Risk Manager (FRM®), 2022"
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "SpaceX Filed an S-1. It Reads Like a Magazine.\n\n\n\nfinance\n\nIPO\n\nAI\n\n\n\nSpaceX filed an S-1 that reads like a magazine — Mars on the cover, Anthropic paying Elon $15 billion a year, and a Risk Factors page that’s literally a photo of a rocket on fire. Notes on what’s inside.\n\n\n\n\n\nMay 20, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nTime Value of Money on the BA II Plus and in Excel\n\n\n\nfinance\n\nteaching\n\n\n\nA side-by-side undergraduate guide to solving TVM problems with the TI BA II Plus calculator and Microsoft Excel — from setup to mortgages, NPV, and IRR.\n\n\n\n\n\nMay 15, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nSummary: From EDGAR Filings to a Structured Database\n\n\n\nAI\n\ndata\n\nfinance\n\n\n\nA summary of Paul Goldsmith-Pinkham’s article on using Claude Code to build a 10-K Risk Factors dataset from SEC EDGAR.\n\n\n\n\n\nMay 11, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nSummary: Large Datasets and Structured Databases\n\n\n\nAI\n\ndata\n\neconomics\n\n\n\nA summary of Paul Goldsmith-Pinkham’s article on AI-assisted data engineering for economists.\n\n\n\n\n\nMay 9, 2026\n\n\nHe Ren\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/posts/large-datasets-and-structured-databases/index.html",
