@@ -2,24 +2,60 @@
 title: "Teaching"
 ---
 
-## Texas Woman's University
+Open, web-based resources for the finance courses I teach — a financial calculator emulator and lecture notes for three of my courses. All are works in progress, freely available online, and updated as the courses evolve.
 
-*Merrilee Alexander Kick College of Business and Entrepreneurship*
+## FinCalc — TI BA II Plus Emulator
 
-**Graduate**
+::: {.book-entry}
+::: {.book-blurb}
+<a href="https://imrenhe.github.io/ba-ii-plus-emu/" target="_blank" rel="noopener">**Open the calculator →**</a>
 
-- FIN 5753 — Foundations of Financial Management
-- FIN 5243 — Managerial Finance
+A browser-based emulator of the TI BA II Plus, the financial calculator students use throughout my courses and on the exam. It runs on any phone, tablet, or laptop — no purchase required — so students can practice the time value of money keystrokes anywhere, exactly as they'd press them on the real device.
 
-**Undergraduate**
+It also installs like a native app: on a phone or tablet, open the link in your browser and choose **Add to Home Screen** (Share menu on iOS Safari, the menu on Android Chrome). FinCalc then launches full-screen from its own icon — no address bar, no internet connection needed — so it behaves just like a dedicated calculator app on your device.
+:::
 
-- FIN 3053 — Business Finance
-- FIN 3133 — Investments
-- FIN 4243 — Financial Management
-- FIN 4253 — Financial Planning
+<a href="https://imrenhe.github.io/ba-ii-plus-emu/" target="_blank" rel="noopener" class="book-cover-link"><img src="images/fincalc.png" alt="FinCalc TI BA II Plus emulator" class="book-cover"></a>
+:::
 
-## University of North Texas
+## Lecture Notes
 
-*G. Brint Ryan College of Business — Teaching Fellow / Instructor*
+I'm writing three open, web-based lecture notes for these courses.
 
-- FINA 3770 — Introduction to Finance and Financial Management
+### Business Finance
+
+::: {.book-entry}
+::: {.book-blurb}
+<a href="https://imrenhe.github.io/fin3053-business-finance-book/" target="_blank" rel="noopener">**Read online →**</a>
+
+An introduction to corporate finance for students with no prior finance background, written for FIN 3053. The whole lecture note rests on one idea — that the value of anything is the size, timing, and risk of the cash it will produce in the future — so you always know *why* you're doing a calculation, not just how. It builds every concept from the ground up, assuming no math beyond algebra: reading financial statements and ratios, the time value of money and interest rates, valuing bonds and stocks, and then the corporate decisions — cost of capital, capital budgeting, cash flows and risk, and how risk and return are priced. A fictional company, Summit Outdoor Gear, runs through the entire lecture note with one consistent set of numbers, and every quantitative problem is worked three ways: by formula, on the TI BA II Plus calculator, and in Excel.
+:::
+
+<a href="https://imrenhe.github.io/fin3053-business-finance-book/" target="_blank" rel="noopener" class="book-cover-link"><img src="images/cover-business-finance.png" alt="Business Finance book cover" class="book-cover"></a>
+:::
+
+### Financial Management
+
+::: {.book-entry}
+::: {.book-blurb}
+<a href="https://imrenhe.github.io/fin4243-financial-management-book/" target="_blank" rel="noopener">**Read online →**</a>
+
+The sequel to *Business Finance*, written for FIN 4243. Where the first course teaches you to *value* things, this one is about the decisions that *create* value: how much debt to carry, whether to pay a dividend or buy back stock, whether to lease or borrow, when to acquire a rival or hedge a currency, and how to manage risk and even failure. Every decision is judged by a single test — does it increase the intrinsic value of the firm? A fictional company, Cascade Robotics, runs through all twelve chapters with one consistent set of numbers, and every quantitative method is shown by formula and worked in Excel, most with a downloadable spreadsheet template. The lecture note assumes the toolkit from *Business Finance* and keeps the math at the level of algebra and present-value arithmetic.
+:::
+
+<a href="https://imrenhe.github.io/fin4243-financial-management-book/" target="_blank" rel="noopener" class="book-cover-link"><img src="images/cover-financial-management.png" alt="Financial Management book cover" class="book-cover"></a>
+:::
+
+### Investments
+
+::: {.book-entry}
+::: {.book-blurb}
+<a href="https://imrenhe.github.io/fin3133-investments-book/" target="_blank" rel="noopener">**Read online →**</a>
+
+An introduction to investing for students with no background in finance, written for FIN 3133. It builds from the ground up — what a stock, a bond, and a fund actually are — toward the tools professionals use to value securities, construct portfolios, and judge performance, always asking *why* a result holds rather than just how to compute it. A fictional firm, Cascade Devices, recurs throughout so each new idea builds on numbers you already recognize. Chapters move from asset classes, securities markets, and mutual funds, through the core theory of risk and return, diversification, the CAPM, and the efficient market hypothesis, to the application chapters on bond and stock valuation, financial statement analysis, and performance evaluation. Real-world examples, visual intuition, and copy-and-paste AI study prompts run through every chapter.
+:::
+
+<a href="https://imrenhe.github.io/fin3133-investments-book/" target="_blank" rel="noopener" class="book-cover-link"><img src="images/cover-investments.png" alt="Investments book cover" class="book-cover"></a>
+:::
+</content>
+</invoke>

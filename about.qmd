@@ -28,9 +28,8 @@ Outside the classroom and my research, I'm also a Rubik's cube solver. You can c
 
 ## What you'll find here
 
-- [**Teaching**](teaching.qmd) — courses I currently teach and have taught.
+- [**Teaching**](teaching.qmd) — a financial calculator and open textbooks I'm writing, work in progress.
 - [**Research**](research.qmd) — publications and working papers.
-- [**Books**](books.qmd) — open textbooks I'm writing, work in progress.
 - [**Blog**](blog/index.qmd) — occasional writing.
 - [**Photography**](photography.qmd) — a gallery of photos.
 
