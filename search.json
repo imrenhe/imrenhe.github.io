@@ -4,21 +4,21 @@
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "Merrilee Alexander Kick College of Business and Entrepreneurship\nGraduate\n\nFIN 5753 — Foundations of Financial Management\nFIN 5243 — Managerial Finance\n\nUndergraduate\n\nFIN 3053 — Business Finance\nFIN 3133 — Investments\nFIN 4243 — Financial Management\nFIN 4253 — Financial Planning"
+    "text": "Open, web-based resources for the finance courses I teach — a financial calculator emulator and lecture notes for three of my courses. All are works in progress, freely available online, and updated as the courses evolve."
   },
   {
-    "objectID": "teaching.html#texas-womans-university",
-    "href": "teaching.html#texas-womans-university",
+    "objectID": "teaching.html#fincalc-ti-ba-ii-plus-emulator",
+    "href": "teaching.html#fincalc-ti-ba-ii-plus-emulator",
     "title": "Teaching",
-    "section": "",
-    "text": "Merrilee Alexander Kick College of Business and Entrepreneurship\nGraduate\n\nFIN 5753 — Foundations of Financial Management\nFIN 5243 — Managerial Finance\n\nUndergraduate\n\nFIN 3053 — Business Finance\nFIN 3133 — Investments\nFIN 4243 — Financial Management\nFIN 4253 — Financial Planning"
+    "section": "FinCalc — TI BA II Plus Emulator",
+    "text": "FinCalc — TI BA II Plus Emulator\n\n\nOpen the calculator →\nA browser-based emulator of the TI BA II Plus, the financial calculator students use throughout my courses and on the exam. It runs on any phone, tablet, or laptop — no purchase required — so students can practice the time value of money keystrokes anywhere, exactly as they’d press them on the real device.\nIt also installs like a native app: on a phone or tablet, open the link in your browser and choose Add to Home Screen (Share menu on iOS Safari, the menu on Android Chrome). FinCalc then launches full-screen from its own icon — no address bar, no internet connection needed — so it behaves just like a dedicated calculator app on your device."
   },
   {
-    "objectID": "teaching.html#university-of-north-texas",
-    "href": "teaching.html#university-of-north-texas",
+    "objectID": "teaching.html#lecture-notes",
+    "href": "teaching.html#lecture-notes",
     "title": "Teaching",
-    "section": "University of North Texas",
-    "text": "University of North Texas\nG. Brint Ryan College of Business — Teaching Fellow / Instructor\n\nFINA 3770 — Introduction to Finance and Financial Management"
+    "section": "Lecture Notes",
+    "text": "Lecture Notes\nI’m writing three open, web-based lecture notes for these courses.\n\nBusiness Finance\n\n\nRead online →\nAn introduction to corporate finance for students with no prior finance background, written for FIN 3053. The whole lecture note rests on one idea — that the value of anything is the size, timing, and risk of the cash it will produce in the future — so you always know why you’re doing a calculation, not just how. It builds every concept from the ground up, assuming no math beyond algebra: reading financial statements and ratios, the time value of money and interest rates, valuing bonds and stocks, and then the corporate decisions — cost of capital, capital budgeting, cash flows and risk, and how risk and return are priced. A fictional company, Summit Outdoor Gear, runs through the entire lecture note with one consistent set of numbers, and every quantitative problem is worked three ways: by formula, on the TI BA II Plus calculator, and in Excel.\n\n\n\n\n\nFinancial Management\n\n\nRead online →\nThe sequel to Business Finance, written for FIN 4243. Where the first course teaches you to value things, this one is about the decisions that create value: how much debt to carry, whether to pay a dividend or buy back stock, whether to lease or borrow, when to acquire a rival or hedge a currency, and how to manage risk and even failure. Every decision is judged by a single test — does it increase the intrinsic value of the firm? A fictional company, Cascade Robotics, runs through all twelve chapters with one consistent set of numbers, and every quantitative method is shown by formula and worked in Excel, most with a downloadable spreadsheet template. The lecture note assumes the toolkit from Business Finance and keeps the math at the level of algebra and present-value arithmetic.\n\n\n\n\n\nInvestments\n\n\nRead online →\nAn introduction to investing for students with no background in finance, written for FIN 3133. It builds from the ground up — what a stock, a bond, and a fund actually are — toward the tools professionals use to value securities, construct portfolios, and judge performance, always asking why a result holds rather than just how to compute it. A fictional firm, Cascade Devices, recurs throughout so each new idea builds on numbers you already recognize. Chapters move from asset classes, securities markets, and mutual funds, through the core theory of risk and return, diversification, the CAPM, and the efficient market hypothesis, to the application chapters on bond and stock valuation, financial statement analysis, and performance evaluation. Real-world examples, visual intuition, and copy-and-paste AI study prompts run through every chapter."
   },
   {
     "objectID": "photography.html",
@@ -26,300 +26,6 @@
     "title": "Photography",
     "section": "",
     "text": "Flying\n\n\n\n\n\n\n\nUnderwater\n\n\n\n\n\n\n\nSummer\n\n\n\n\n\n\n\n\n\nStar Trails\n\n\n\n\n\n\n\nDallas\n\n\n\n\n\n\n\nBird\n\n\n\n\n\n\n\n\n\nFilm\n\n\n\n\n\n\n\nChill"
-  },
-  {
-    "objectID": "books.html",
-    "href": "books.html",
-    "title": "Books",
-    "section": "",
-    "text": "I’m writing three open, web-based textbooks for the undergraduate finance courses I teach. All are works in progress, freely available online, and updated as the courses evolve."
-  },
-  {
-    "objectID": "books.html#business-finance",
-    "href": "books.html#business-finance",
-    "title": "Books",
-    "section": "Business Finance",
-    "text": "Business Finance\n\n\nRead online →\nAn introduction to corporate finance for students with no prior finance background, written for FIN 3053. The whole book rests on one idea — that the value of anything is the size, timing, and risk of the cash it will produce in the future — so you always know why you’re doing a calculation, not just how. It builds every concept from the ground up, assuming no math beyond algebra: reading financial statements and ratios, the time value of money and interest rates, valuing bonds and stocks, and then the corporate decisions — cost of capital, capital budgeting, cash flows and risk, and how risk and return are priced. A fictional company, Summit Outdoor Gear, runs through the entire book with one consistent set of numbers, and every quantitative problem is worked three ways: by formula, on the TI BA II Plus calculator, and in Excel."
-  },
-  {
-    "objectID": "books.html#financial-management",
-    "href": "books.html#financial-management",
-    "title": "Books",
-    "section": "Financial Management",
-    "text": "Financial Management\n\n\nRead online →\nThe sequel to Business Finance, written for FIN 4243. Where the first course teaches you to value things, this one is about the decisions that create value: how much debt to carry, whether to pay a dividend or buy back stock, whether to lease or borrow, when to acquire a rival or hedge a currency, and how to manage risk and even failure. Every decision is judged by a single test — does it increase the intrinsic value of the firm? A fictional company, Cascade Robotics, runs through all twelve chapters with one consistent set of numbers, and every quantitative method is shown by formula and worked in Excel, most with a downloadable spreadsheet template. The book assumes the toolkit from Business Finance and keeps the math at the level of algebra and present-value arithmetic."
-  },
-  {
-    "objectID": "books.html#investments",
-    "href": "books.html#investments",
-    "title": "Books",
-    "section": "Investments",
-    "text": "Investments\n\n\nRead online →\nAn introduction to investing for students with no background in finance, written for FIN 3133. It builds from the ground up — what a stock, a bond, and a fund actually are — toward the tools professionals use to value securities, construct portfolios, and judge performance, always asking why a result holds rather than just how to compute it. A fictional firm, Cascade Devices, recurs throughout so each new idea builds on numbers you already recognize. Chapters move from asset classes, securities markets, and mutual funds, through the core theory of risk and return, diversification, the CAPM, and the efficient market hypothesis, to the application chapters on bond and stock valuation, financial statement analysis, and performance evaluation. Real-world examples, visual intuition, and copy-and-paste AI study prompts run through every chapter."
-  },
-  {
-    "objectID": "blog/posts/spacex-s1-magazine/index.html",
-    "href": "blog/posts/spacex-s1-magazine/index.html",
-    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
-    "section": "",
-    "text": "Normally, when a company files for an IPO, the document looks like a tax form. Times New Roman. Gray boxes. 280 pages of legalese designed to make your eyes glaze over before page 12.\nSpaceX’s S-1, filed May 20, 2026, is not that.\nWithin the first few pages is a full-bleed photograph of Mars. From there on, the document is sprinkled with dozens more embedded images — full-bleed launch photos, Elon pull-quote posters, glossy product spec sheets for every rocket in the fleet, and a “RISK FACTORS” section opener that is, no exaggeration, a photograph of a rocket on fire. (We’ll get to that one.)\nThe whole thing reads more like a coffee-table magazine than an SEC filing. Which sets the tone — and signals the next several billion dollars they want from you. Let’s walk through it."
-  },
-  {
-    "objectID": "blog/posts/spacex-s1-magazine/index.html#what-was-filed",
-    "href": "blog/posts/spacex-s1-magazine/index.html#what-was-filed",
-    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
-    "section": "What Was Filed",
-    "text": "What Was Filed\nThe company is Space Exploration Technologies Corp., headquartered at 1 Rocket Road, Starbase, Texas. (Yes, “Starbase” is now an actual incorporated town. No, I am not making that up.)\nThe ticker will be SPCX, dual-listed on Nasdaq and the brand-new Nasdaq Texas exchange — because when your CEO is in Texas, your rockets launch from Texas, and your headquarters is in Texas, you may as well list on the Texas exchange too. Goldman Sachs is the lead bank, with Morgan Stanley, BofA, Citi, JPMorgan, and Barclays just behind. Then seventeen more banks pile in underneath, presumably for moral support.\nThe price isn’t in the document yet — they fill that in closer to the roadshow — but reporting around the filing puts it at roughly $1.75 trillion valuation, a ~$75 billion raise, and a June 12 listing, with an indicative price of $525–530 per share (TradingKey; NBC News).\nFor reference: $1.75T puts SpaceX between Amazon and Alphabet in market cap on day one. The IPO alone would make Musk a trillionaire on paper. No pressure."
-  },
-  {
-    "objectID": "blog/posts/spacex-s1-magazine/index.html#the-company-is-now-three-businesses-not-one",
-    "href": "blog/posts/spacex-s1-magazine/index.html#the-company-is-now-three-businesses-not-one",
-    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
-    "section": "The Company Is Now Three Businesses, Not One",
-    "text": "The Company Is Now Three Businesses, Not One\nThe fact most people haven’t fully absorbed yet: SpaceX quietly absorbed xAI on February 2, 2026, in what the lawyers call a “transaction between entities under common control.” Translation: Musk owned both, so he merged them. The company you’re buying into is no longer just a rocket company. It’s a rocket company, an internet company, and an AI company, stapled together by the same controlling shareholder.\nThe three businesses make money in extremely different ways. One mints cash. One spends a fortune on the next rocket. One spends a fortune on, well, chips.\n\nAll figures FY 2025, in USD billions.\n\n\nSegment\nRevenue\nOp result\nCapex\n\n\n\n\nSpace (Falcon, Dragon, Starship)\n4.1\n(0.7)\n3.8\n\n\nConnectivity (Starlink)\n11.4\n4.4\n4.2\n\n\nAI (xAI, Grok, X)\n3.2\n(6.4)\n12.7\n\n\nTotal\n18.7\n(2.6)\n20.7\n\n\n\nThree quick takeaways:\n\nStarlink is the engine. Revenue grew 50% year over year. Operating income grew 120%. It’s the only segment making real money, and it’s making a lot of it.\nSpace looks like a loser, but it isn’t really. Starship development swallowed $3 billion of 2025 spend. Strip that out and the launch business — Falcon 9, Falcon Heavy, Dragon — is comfortably profitable. The headline loss is because Musk is building the next rocket.\nAI is the hungry one. $12.7 billion in capex in 2025, plus another $7.7 billion in Q1 2026 alone, against $3.2 billion of revenue. AI is the bet that lives downstream of Starlink’s cash flow.\n\nIn one sentence: you are buying a satellite internet company that happens to own a rocket factory and a giant warehouse full of GPUs.\n\n\n\nOne of the segment-opener pages from the prospectus. This is what ‘Space’ looks like, formatted like a magazine. Source: SEC filing."
-  },
-  {
-    "objectID": "blog/posts/spacex-s1-magazine/index.html#two-classes-of-stock-one-person-in-charge",
-    "href": "blog/posts/spacex-s1-magazine/index.html#two-classes-of-stock-one-person-in-charge",
-    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
-    "section": "Two Classes of Stock, One Person in Charge",
-    "text": "Two Classes of Stock, One Person in Charge\nThe cap structure section is short, important, and a little spicy.\nAfter the IPO, there will be two classes of stock:\n\nClass A — what you buy on the open market. One vote per share.\nClass B — held by Musk. Ten votes per share. And the kicker: Class B holders, voting as a class, elect a majority of the board on their own.\n\nThe S-1 spells it out plainly. Musk will control the outcome of anything that requires a shareholder vote, and SpaceX will use the “controlled company” exemption from a bunch of Nasdaq governance rules — including the one that usually requires a majority of independent directors on the board.\nIf you’ve followed Google, Meta, or Snap IPOs, you’ve seen this movie. Founder-controlled tech companies do it all the time. What’s a little different here is that Musk doesn’t even need to win a Class A vote. Class B alone elects a majority of the board. You’re buying the cash flows. Musk keeps the steering wheel.\nFor passive investors, this matters in one specific way: index providers have been getting increasingly grumpy about super-voting structures, and the prospectus itself lists “exclusion from certain stock indices” as a risk factor. Even at $1.75 trillion, S&P 500 admission on day one is not guaranteed."
-  },
-  {
-    "objectID": "blog/posts/spacex-s1-magazine/index.html#the-1.25-billion-a-month-anthropic-contract",
-    "href": "blog/posts/spacex-s1-magazine/index.html#the-1.25-billion-a-month-anthropic-contract",
-    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
-    "section": "The $1.25 Billion-a-Month Anthropic Contract",
-    "text": "The $1.25 Billion-a-Month Anthropic Contract\nNow we get to the section that made me re-read the filing to make sure I wasn’t hallucinating.\nOn May 3, 2026, SpaceX (using the data centers it inherited from xAI) signed a Cloud Services Agreement with Anthropic — the AI lab founded by former OpenAI researchers, makers of Claude. The terms:\n\nPursuant to these agreements, the customer has agreed to pay us $1.25 billion per month through May 2029.\n\nThat’s $15 billion a year. For three years. From Anthropic. To Elon Musk’s company.\nLet’s appreciate this for a second. Anthropic was founded by people who left OpenAI. OpenAI was co-founded by Elon Musk before he stormed out and started xAI. Now Anthropic is renting GPUs from Musk’s xAI to train Claude, the model that competes most directly with ChatGPT.\nIt’s the corporate equivalent of buying batteries from your ex.\nThe strategy actually makes sense for both sides, despite the optics:\n\nAnthropic has more money than it can spend on chips. They just raised $30B at a $380B valuation (Forge). What they don’t have is electricity. xAI’s Memphis data centers came online in 122 days flat — a terrestrial speedrun — and have capacity to spare. Anthropic rents what they need.\nxAI/SpaceX gets to fund its own AI lab by selling compute to its biggest model competitor. This is exactly what OpenAI did to Microsoft in 2019. Except now SpaceX is playing the Microsoft role.\n\nThe optics are funny. The strategic logic is solid.\n\n\n\nOne of the dozens of pull-quote pages in the prospectus, set against a glamour shot of Starship S38. Source: SEC filing."
-  },
-  {
-    "objectID": "blog/posts/spacex-s1-magazine/index.html#the-60-billion-option-on-cursor",
-    "href": "blog/posts/spacex-s1-magazine/index.html#the-60-billion-option-on-cursor",
-    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
-    "section": "The $60 Billion Option on Cursor",
-    "text": "The $60 Billion Option on Cursor\nThe Anthropic deal is the big one. The Cursor deal is the weird one.\nIn April 2026, SpaceX signed a “compute and option agreement” with Cursor — yes, that Cursor, the AI-powered code editor that every software engineer you know is currently using. The terms:\n\nSpaceX gives Cursor GPU capacity to run their product.\nSpaceX has the option to buy Cursor at an implied equity value of $60 billion, payable in SPCX stock.\nIf SpaceX walks away, they owe Cursor $10 billion in pre-baked break-up fees ($1.5B option termination + $8.5B deferred compute services).\n\nWhy would a rocket company want to buy a code editor? The S-1 is fairly honest about it. Cursor’s millions of developers generate “context-rich, verifiable data” about how humans actually write code — exactly the kind of training fuel that improves an AI model. You’re not buying a code editor. You’re buying a giant pipeline of human coding behavior, which happens to come wrapped inside a code editor.\nThis structure is genuinely new. It’s the same compute-today-equity-tomorrow dance Microsoft did with OpenAI and Amazon did with Anthropic, but now applied one layer higher — at the application layer instead of the model layer. If it works, expect to see more of it. The next twelve months will probably involve a lot of AI startups being offered “free” compute that comes with a $40 billion option attached."
-  },
-  {
-    "objectID": "blog/posts/spacex-s1-magazine/index.html#openai-the-two-sentence-mention-that-should-have-been-much-longer",
-    "href": "blog/posts/spacex-s1-magazine/index.html#openai-the-two-sentence-mention-that-should-have-been-much-longer",
-    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
-    "section": "OpenAI: The Two-Sentence Mention That Should Have Been Much Longer",
-    "text": "OpenAI: The Two-Sentence Mention That Should Have Been Much Longer\nThe full S-1 mentions OpenAI exactly twice, both in routine “we have competitors” boilerplate. There is no mention of the lawsuit Musk filed in 2024 trying to block OpenAI’s for-profit conversion and force out Sam Altman.\nWhy? Because two days before this S-1 was filed, a federal jury in California threw the lawsuit out.\nThe verdict landed on May 18, 2026. The jurors deliberated for less than two hours (NPR; Axios; NBC News). They didn’t even rule on the merits — they decided Musk had simply waited too long to sue. Statute of limitations. Game over. Musk’s related claim against Microsoft was dismissed on the same grounds.\nMusk’s lawyer told reporters: “This one is not over. I can sum it up in one word: appeal.” Sure.\nBut the timing is impossible to ignore. Filing a $75 billion IPO the same week your big-ticket lawsuit against your biggest AI rival gets dismissed in two hours is — let’s say — convenient. The cloud that would have hung over SPCX’s risk factors evaporated three trading days before the prospectus went public.\nAnd in case you thought OpenAI was just going to sit there and watch Musk go public alone: on the same day this prospectus dropped, multiple outlets reported that OpenAI is preparing to confidentially file its own S-1, with the same lead banks (Goldman Sachs and Morgan Stanley), targeting a fall debut at a valuation that “exceeds $1 trillion” (Bloomberg; Axios; CNBC).\nSo: in one week, Musk’s lawsuit against OpenAI dies, SpaceX files publicly, and OpenAI files confidentially. None of that is quite planets-aligning, but it’s close."
-  },
-  {
-    "objectID": "blog/posts/spacex-s1-magazine/index.html#three-giants-in-twelve-months",
-    "href": "blog/posts/spacex-s1-magazine/index.html#three-giants-in-twelve-months",
-    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
-    "section": "Three Giants in Twelve Months",
-    "text": "Three Giants in Twelve Months\nThree of the largest IPOs in the history of public markets are about to hit within roughly one calendar year:\n\n\n\n\n\n\n\n\n\n\nCompany\nFiling status\nTarget listing\nIndicative size / valuation\nLead banks\n\n\n\n\nSpaceX\nS-1 public, May 20, 2026\nJune 12, 2026\n~$75B raise / ~$1.75T\nGoldman, Morgan Stanley\n\n\nOpenAI\nConfidential S-1 imminent\nFall 2026 (~September)\n&gt;$1T valuation\nGoldman, Morgan Stanley\n\n\nAnthropic\nNot filed; ~Q4 2026 expected\nMore likely 2027\n~$60B+ raise / $380B+\nNot announced\n\n\n\nA few notes:\nThe same two banks are running two of these deals. Goldman Sachs and Morgan Stanley are leading both SpaceX and OpenAI. For deals this big and this competitively sensitive, that’s unusual — normally the banks would split clients. The same teams will pitch Musk’s company in June and Altman’s company in September. The “Chinese walls” inside investment banks (the rules that supposedly stop one client’s confidential info from leaking to another) are about to get a real-world stress test.\nThe flow event is going to be loud. SPCX at $1.75T would be a top-10 weight in any major US index that admits it. If OpenAI joins in the fall at $1T+, you’d have two of the five biggest companies in the world IPO’ing within five months. Every S&P 500 fund and Nasdaq-100 fund on Earth would need to buy a lot of stock, all on the same admission day. Quant desks have been modeling this for a quarter.\nAnthropic gets to wait. They have $30B of run-rate revenue, just raised $30B, and have the cleanest equity story of the three — no founder-control questions, no rival lawsuits, no for-profit-conversion drama. Their stated plan is a 2027 listing. Filing third may turn out to be the best slot of the three."
-  },
-  {
-    "objectID": "blog/posts/spacex-s1-magazine/index.html#one-more-thing-possibly-the-first-s-1-with-posters",
-    "href": "blog/posts/spacex-s1-magazine/index.html#one-more-thing-possibly-the-first-s-1-with-posters",
-    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
-    "section": "One More Thing: Possibly the First S-1 With Posters",
-    "text": "One More Thing: Possibly the First S-1 With Posters\nWhich brings us back to the cover.\nA typical S-1 has exactly one image: the company logo, on page one. The ratio of text to pictures is roughly that of the IRS Form 1040 instructions.\nSpaceX’s S-1 has dozens of embedded images. Among them:\n\nA full-bleed photograph of Mars from orbit.\nMultiple full-page Musk pull-quotes set against glamour shots of Starship in flight.\nA “SPACE — ACTIVATED 2002 — FIRSTS” infographic with launch counts, reused-booster percentages, and crewmembers flown.\nA photograph of Starman (the spacesuit mannequin SpaceX launched on a Tesla Roadster in 2018, currently floating somewhere between Mars and the asteroid belt).\nGlossy spec sheets for Falcon 9, Falcon Heavy, Dragon, Starship, and Starlink V3.\nA “RISK FACTORS” section opener that is, literally, a photograph of a rocket surrounded by fire.\n\nThat last one is not metaphorical:\n\n\n\nThe actual title page for the Risk Factors section of the S-1. Source: SEC filing.\n\n\nThe page where the company discusses what could go horribly wrong with the business is, in the prospectus itself, illustrated by an image of their main product on fire.\nCoinbase, Airbnb, and Roblox were the previous gold-standard for “S-1 with design sense” — branded color blocks, full-bleed photos, the occasional pull quote. None of them put a photograph of their core product on actual fire as the masthead of their risk factors. SpaceX may be the first.\nThere’s a real argument that this is part of the offering. When you’re trying to convince public-market investors to buy into a controlled company with an AI segment burning $12B a year and a CEO with a non-zero probability of any given Tuesday being interesting, “trust us, the vibes are great” is a legitimate strategy. The prospectus isn’t selling a document. It’s selling a feeling.\nIt’s also, in fairness, the only S-1 you can read twice without falling asleep. That might be worth a few basis points all by itself.\n\nFinancial figures and contract terms come from Space Exploration Technologies Corp.’s Form S-1, filed with the SEC on May 20, 2026. Images shown are downsampled reproductions of figures in the same filing. External reporting cited inline."
-  },
-  {
-    "objectID": "blog/posts/fifa-hydration-break-economics/index.html",
-    "href": "blog/posts/fifa-hydration-break-economics/index.html",
-    "title": "FIFA Discovered the Commercial Break",
-    "section": "",
-    "text": "American sports fans have spent their whole lives being trained to expect a break. The NFL has the two-minute warning and roughly a hundred stoppages. The NBA has quarters, timeouts, and a coach’s challenge that exists mostly so the network can sell you a truck. Soccer, famously, has none of this. Ninety minutes, two halves, one clock that never stops and never lies. You cannot cut to a car commercial mid-move, because there is no mid-move — the ball is always live.\nThis has always been a small tragedy for the people who sell advertising.\nAt the 2026 World Cup, that tragedy quietly ended. FIFA introduced a mandatory three-minute hydration break in each half of every match — around the 22nd minute and again around the 67th — regardless of the weather (FIFA). The stated reason is player welfare, and in the summer heat of Kansas City and Dallas, that reason is real. But if you squint at the timing, the structure, and the money, something else comes into focus: FIFA just gave the world’s most-watched sport its first built-in commercial break — and handed broadcasters a new pile of inventory to sell.\nLet me walk through where FIFA’s money actually comes from, why television is the tail that wags the entire dog, and how a water break becomes a billion-dollar idea."
-  },
-  {
-    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#where-fifas-money-actually-comes-from",
-    "href": "blog/posts/fifa-hydration-break-economics/index.html#where-fifas-money-actually-comes-from",
-    "title": "FIFA Discovered the Commercial Break",
-    "section": "Where FIFA’s Money Actually Comes From",
-    "text": "Where FIFA’s Money Actually Comes From\nFirst, a myth to dispose of: FIFA does not primarily make its money from ticket sales, or from that overpriced beer at the stadium, or from selling jerseys. FIFA makes its money from selling the right to broadcast the World Cup, and secondarily from selling the right to associate your brand with the World Cup. Everything else is a rounding error by comparison.\nHere is the budgeted revenue for the 2023–2026 cycle, which is how FIFA keeps its books (it thinks in four-year chunks anchored on a World Cup, not calendar years):\n\n\n\nFIFA’s own budget for the 2023–26 cycle. TV rights are the single biggest line — and, as we’ll see, the one the hydration breaks quietly inflate. Source: FIFA Annual Report 2022.\n\n\n\nFIFA budgeted $11.0B for the 2023–26 cycle and has since revised its internal target upward toward ~$13B. Source: FIFA Annual Report 2022.\n\n\nRevenue source\n2023–26 budget\nShare\n\n\n\n\nTV broadcasting rights\n$4.26B\n39%\n\n\nHospitality & ticketing\n$3.10B\n28%\n\n\nMarketing (sponsorship)\n$2.69B\n24%\n\n\nLicensing rights\n$0.67B\n6%\n\n\nOther\n$0.28B\n3%\n\n\nTotal\n$11.00B\n100%\n\n\n\nTwo lines do almost two-thirds of the work: television and sponsorship. And these two are not independent — they are joined at the hip. A sponsor pays FIFA to put its logo where a billion people will see it, and the reason a billion people see it is television. Broadcasters pay for the audience; sponsors pay for access to that same audience. TV is the product, and everything else is priced off it.\nWhich is why the most important number on FIFA’s income statement is the one at the top — and why FIFA spends so much energy making that number bigger."
-  },
-  {
-    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#the-number-that-never-stops-climbing",
-    "href": "blog/posts/fifa-hydration-break-economics/index.html#the-number-that-never-stops-climbing",
-    "title": "FIFA Discovered the Commercial Break",
-    "section": "The Number That Never Stops Climbing",
-    "text": "The Number That Never Stops Climbing\nFIFA’s broadcasting revenue has gone up every single cycle, through scandal, through a pandemic, through a widely disliked Qatar tournament played in November. It is one of the most reliable upward-sloping lines in global media.\n\n\n\nFIFA’s broadcasting-rights revenue by four-year cycle. The jump from Qatar 2022 to the 2026 cycle is about 24%. Sources: FIFA Annual Report 2022; Statista.\n\n\nThe 2026 tournament turbocharges this for reasons that have nothing to do with hydration:\n\nIt’s bigger. The field expanded from 32 teams to 48, and the match count ballooned from 64 to 104. More matches means more broadcast hours means more inventory to sell.\nIt’s in the right time zones. After Qatar’s inconvenient kickoffs, the 2026 tournament is hosted across the United States, Canada, and Mexico — meaning matches land in North American prime time and afternoon slots, the most valuable advertising windows on Earth.\nThe rights got more expensive. Industry estimates put the value of the 2026 TV rights 20–30% above Qatar 2022 (Rio Times). Fox reportedly paid $400–500 million for the English-language U.S. package alone.\n\nNow hold that Fox number — $400–500 million for the whole tournament — in your head. We are about to compare it to something absurd."
-  },
-  {
-    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#the-other-half-renting-out-the-logo",
-    "href": "blog/posts/fifa-hydration-break-economics/index.html#the-other-half-renting-out-the-logo",
-    "title": "FIFA Discovered the Commercial Break",
-    "section": "The Other Half: Renting Out the Logo",
-    "text": "The Other Half: Renting Out the Logo\nIf television is FIFA selling the audience, sponsorship is FIFA selling access to that audience — and it is sold, appropriately, as a pyramid. The higher you climb, the more exclusive the air and the thinner your wallet gets afterward.\n\nFIFA’s three-tier sponsorship structure. FIFA does not publish per-brand fees; figures are industry estimates. Sources: Forbes; Zappi.\n\n\nTier\nWhat you get\nEst. price\nExamples (2026)\n\n\n\n\nFIFA Partners\nYear-round rights across every FIFA competition; top billing\n~$150–200M\nadidas, Coca-Cola, Visa, Hyundai-Kia, Lenovo, Qatar Airways, Aramco\n\n\nWorld Cup Sponsors\nRights to this tournament, worldwide\n~$65–95M\nBudweiser, McDonald’s, Bank of America, Lay’s, Verizon, Unilever\n\n\nRegional Supporters\nRights within one region only\n~$10–25M\nRegional brands across North America\n\n\n\nThe economics of the pyramid are ruthless and clever. There are only seven FIFA Partner slots, and that scarcity is the entire point — an adidas or a Visa is not really paying for a logo on a billboard, it is paying to keep a competitor off it. When Nike cannot be a FIFA Partner because adidas already is, the price adidas will pay to hold that exclusivity goes up. FIFA has monetized not just the space on the field but the absence of your rival from it.\nAnd the pyramid, too, is ultimately priced off television. A World Cup Sponsor is buying pitchside LED boards, digital overlays, and the implied blessing of the tournament — all of which are worth precisely as much as the number of eyeballs the broadcast delivers. FIFA confirmed in March 2026 that all sixteen of its global sponsorship packages had sold out (Forbes), and total brand spending around the tournament — sponsorship plus the advertising that rides on it — is estimated north of $10 billion.\nSo both of FIFA’s big revenue lines, television and sponsorship, are really the same bet placed twice: how many people are watching, for how long, with how much attention? Anything that increases watching-time, or creates a fresh, attention-grabbing moment to sell, makes both lines go up at once.\nWhich is a very useful lens for thinking about a brand-new, perfectly-timed, guaranteed three-minute pause in the action."
-  },
-  {
-    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#enter-the-water-break",
-    "href": "blog/posts/fifa-hydration-break-economics/index.html#enter-the-water-break",
-    "title": "FIFA Discovered the Commercial Break",
-    "section": "Enter the Water Break",
-    "text": "Enter the Water Break\nHere is the mechanical genius of the hydration break, from a television executive’s point of view.\nBefore 2026, cooling breaks existed, but only as an emergency measure. They were introduced at the 2014 World Cup in Brazil and could be called only when a heat index (WBGT) crossed a defined threshold (Kestrel Instruments). They were unpredictable. You could not sell an advertiser a slot that might or might not exist depending on the humidity in Rotterdam. Unpredictable inventory is nearly worthless inventory.\nThe 2026 rule changes exactly one thing, and it is the thing that matters: the breaks are now mandatory in every match, at a roughly fixed time, regardless of weather (Fox News / OutKick). Suddenly the inventory is guaranteed. An ad buyer can be promised a national commercial pod around minute 22 and minute 67 of a match watched by tens of millions of people, and the buyer can budget for it a year in advance. That is the difference between a puddle and a pipeline.\nAnd notice what the schedule does to the shape of the game. A break at ~22 minutes and ~67 minutes carves each half neatly in two, turning a game of two 45-minute halves into something much more familiar to an American audience:\n\n\n\n\n\n\n\n\n\nOld soccer\nNew (2026)\n\n\n\n\nStructure\nTwo 45-min halves\nFour ~22-min “quarters”\n\n\nGuaranteed stoppages\nHalftime only\nHalftime + 2 hydration breaks\n\n\nWeather condition\nCooling break only if hot\nBreak every match, always\n\n\nSellable in-game ad pods\n0\n2 per match × 104 matches\n\n\n\nFrance manager Didier Deschamps said it out loud: “It’s not two halftimes, it’s four quarter times… the players and the coaches adapt to this new reality” (ESPN). He meant it tactically. But “four quarters” is also, conveniently, the exact structure of the NBA and NFL broadcasts that American advertisers have optimized around for fifty years."
-  },
-  {
-    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#the-billion-dollar-puddle",
-    "href": "blog/posts/fifa-hydration-break-economics/index.html#the-billion-dollar-puddle",
-    "title": "FIFA Discovered the Commercial Break",
-    "section": "The Billion-Dollar Puddle",
-    "text": "The Billion-Dollar Puddle\nSo what is a guaranteed in-game ad pod at the World Cup actually worth? The honest answer is that nobody knows precisely, because this is the first tournament with the inventory and FIFA and the broadcasters aren’t publishing the receipts. But the published estimates are eye-watering, and they cluster in a consistent range.\nAnalysts peg a single 30-second spot during a hydration break at $200,000 to $750,000, depending on the teams and the stage of the tournament, which works out to roughly $2.5 million to $9 million per match in fresh ad time across the two breaks (The Hollywood Reporter). Multiply across 104 matches and the estimates for Fox alone land at “at least $250 million, plausibly $500–600 million” (The Hollywood Reporter). Some global estimates, summing every broadcast market, run past $1 billion (Rio Times).\nHere is the punchline in one chart:\n\n\n\nEstimates for Fox’s hydration-break ad revenue against what Fox reportedly paid for the entire English-language rights package. The new water-break inventory alone could rival the cost of the whole tournament. Figures are analyst estimates, not official disclosures. Sources: The Hollywood Reporter; Rio Times.\n\n\nRead that again. Fox paid roughly $400–500 million for the rights to broadcast the entire tournament. The advertising revenue from the hydration breaks alone — three minutes, twice a match — is estimated to plausibly reach $500–600 million. The garnish may be worth more than the meal.\nAnd this compounds in FIFA’s favor on the next turn of the wheel. Broadcasters bid for rights based on how much money they can make from those rights. If the hydration break just made Fox’s package meaningfully more profitable, then the next rights auction starts from a higher floor. FIFA doesn’t even have to sell the ads itself — it simply raises the rent on the broadcasters who do. The water break pays FIFA twice: once by making the current tournament more valuable to Fox, and again by making the next set of rights more expensive."
-  },
-  {
-    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#to-be-fair-to-the-water",
-    "href": "blog/posts/fifa-hydration-break-economics/index.html#to-be-fair-to-the-water",
-    "title": "FIFA Discovered the Commercial Break",
-    "section": "To Be Fair to the Water",
-    "text": "To Be Fair to the Water\nIt would be too cynical — even for me — to claim this is only about money. Two things are true at once.\nThe player-welfare case is genuine. The 2026 tournament is being played in brutal conditions; matches in Kansas City, Dallas, and Monterrey have kicked off in temperatures well into the 90s Fahrenheit, and the 2025 Club World Cup (a dry run for all of this) featured genuinely dangerous heat. Giving players a structured chance to rehydrate is defensible sports science, and FIFA frames it exactly that way (FIFA).\nBut the criticism is also genuine, and it comes from two directions:\n\nThe scientists say three minutes is too short to meaningfully cool a body running at full exertion in extreme heat — useful, but more gesture than remedy when it’s truly sweltering (ESPN).\nThe coaches say the breaks distort the game. USWNT coach Emma Hayes calls them “momentum breaks” — a free tactical reset handed to whichever team is being outplayed (ESPN). Early tournament data hints she has a point: a striking share of goals arrived shortly after a break, when one side had just been allowed to regroup and re-instruct.\n\nNotice that the strongest argument for the breaks (heat safety) would justify the old rule — call a break when it’s hot. It does not obviously justify the new rule — call a break in every match, including a temperate evening in Vancouver. The delta between “break when it’s hot” and “break always” is precisely the part that isn’t about hydration. That delta is the part you can sell."
-  },
-  {
-    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#the-tell",
-    "href": "blog/posts/fifa-hydration-break-economics/index.html#the-tell",
-    "title": "FIFA Discovered the Commercial Break",
-    "section": "The Tell",
-    "text": "The Tell\nIf you want to know what a rule is really for, watch who opts out.\nThe purest evidence that the hydration break is now an advertising vehicle is that some broadcasters are treating it as one — and a few are conspicuously refusing. In the U.S., Spanish-language broadcaster Telemundo declined to cut to commercials during the breaks, staying with studio analysis instead; U.K. broadcaster ITV did the same (ESPN). You do not have to make a principled decision about whether to run ads during a genuine medical timeout. You only face that decision if the “medical timeout” has quietly become the most valuable ninety seconds of unsold airtime in the building.\nFIFA has spent a decade proving that its revenue line only points one way, and it has done it by relentlessly finding new surfaces to sell. It expanded the field to 48 teams. It moved the tournament into American prime time. It launched a 32-team Club World Cup out of thin air. The hydration break is the same instinct applied to the one piece of the product that had always resisted it: the ninety uninterrupted minutes themselves.\nSo drink up. Somewhere, an accountant is very, very hydrated.\n\nRevenue figures are from FIFA’s own budget and financial statements, linked inline. Advertising figures for the hydration breaks are analyst and press estimates, not official FIFA or broadcaster disclosures, and should be read as such. All charts are the author’s own, built from the cited data. No copyrighted imagery is used."
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "FIFA Discovered the Commercial Break\n\n\n\nfinance\n\nsports\n\nmedia\n\n\n\nThe 2026 World Cup added a three-minute hydration break to every half. Officially it’s about player welfare. Follow the money and it looks a lot like FIFA quietly inventing the TV timeout — and turning soccer into four quarters you can sell ads against.\n\n\n\n\n\nJul 6, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nSpaceX Filed an S-1. It Reads Like a Magazine.\n\n\n\nfinance\n\nIPO\n\nAI\n\n\n\nSpaceX filed an S-1 that reads like a magazine — Mars on the cover, Anthropic paying Elon $15 billion a year, and a Risk Factors page that’s literally a photo of a rocket on fire. Notes on what’s inside.\n\n\n\n\n\nMay 20, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nTime Value of Money on the BA II Plus and in Excel\n\n\n\nfinance\n\nteaching\n\n\n\nA side-by-side undergraduate guide to solving TVM problems with the TI BA II Plus calculator and Microsoft Excel — from setup to mortgages, NPV, and IRR.\n\n\n\n\n\nMay 15, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nSummary: From EDGAR Filings to a Structured Database\n\n\n\nAI\n\ndata\n\nfinance\n\n\n\nA summary of Paul Goldsmith-Pinkham’s article on using Claude Code to build a 10-K Risk Factors dataset from SEC EDGAR.\n\n\n\n\n\nMay 11, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nSummary: Large Datasets and Structured Databases\n\n\n\nAI\n\ndata\n\neconomics\n\n\n\nA summary of Paul Goldsmith-Pinkham’s article on AI-assisted data engineering for economists.\n\n\n\n\n\nMay 9, 2026\n\n\nHe Ren\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "He Ren, PhD, CFA",
-    "section": "",
-    "text": "I’m an Associate Professor of Finance at Merrilee Alexander Kick College of Business and Entrepreneurship, Texas Woman’s University. My research interest focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets."
-  },
-  {
-    "objectID": "about.html#hi-im-happy-youre-here",
-    "href": "about.html#hi-im-happy-youre-here",
-    "title": "He Ren, PhD, CFA",
-    "section": "",
-    "text": "I’m an Associate Professor of Finance at Merrilee Alexander Kick College of Business and Entrepreneurship, Texas Woman’s University. My research interest focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets."
-  },
-  {
-    "objectID": "about.html#outside-the-classroom",
-    "href": "about.html#outside-the-classroom",
-    "title": "He Ren, PhD, CFA",
-    "section": "Outside the classroom",
-    "text": "Outside the classroom\nOutside the classroom and my research, I’m also a Rubik’s cube solver. You can check out my World Cube Association (WCA) profile to see my official results. I’m also passionate about photography. You can browse some of my favorite shots in the Photography section of this website."
-  },
-  {
-    "objectID": "about.html#what-youll-find-here",
-    "href": "about.html#what-youll-find-here",
-    "title": "He Ren, PhD, CFA",
-    "section": "What you’ll find here",
-    "text": "What you’ll find here\n\nTeaching — courses I currently teach and have taught.\nResearch — publications and working papers.\nBooks — open textbooks I’m writing, work in progress.\nBlog — occasional writing.\nPhotography — a gallery of photos."
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "He Ren, PhD, CFA",
-    "section": "Education",
-    "text": "Education\n\nPh.D. in Finance, University of North Texas, 2019\nM.B.A., University of Texas at Dallas, 2014\nM.S. in Finance, State University of New York at Buffalo, 2011\nB.S. in Economics, Shanghai University of International Business and Economics, 2010"
-  },
-  {
-    "objectID": "about.html#professional-certifications",
-    "href": "about.html#professional-certifications",
-    "title": "He Ren, PhD, CFA",
-    "section": "Professional Certifications",
-    "text": "Professional Certifications\n\nCFA Institute Sustainable Investing Certificate, 2023\nChartered Financial Analyst (CFA®), 2022\nFinancial Risk Manager (FRM®), 2022"
-  },
-  {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
-    "section": "",
-    "text": "A summary of Paul Goldsmith-Pinkham’s article.\nThis follow-up to the earlier HMDA post walks through a complete, end-to-end research pipeline built with Claude Code: pulling 10-K filings from SEC EDGAR, parsing out the Risk Factors section, and loading the results into a queryable database. The motivating research question is whether trade-exposed U.S. firms ramped up tariff-related language in their risk disclosures after the 2025 tariff escalation. The broader methodological point is that a researcher can go from a raw internet source to an analyzable dataset in roughly half an hour."
-  },
-  {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#overview",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html#overview",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
-    "section": "",
-    "text": "A summary of Paul Goldsmith-Pinkham’s article.\nThis follow-up to the earlier HMDA post walks through a complete, end-to-end research pipeline built with Claude Code: pulling 10-K filings from SEC EDGAR, parsing out the Risk Factors section, and loading the results into a queryable database. The motivating research question is whether trade-exposed U.S. firms ramped up tariff-related language in their risk disclosures after the 2025 tariff escalation. The broader methodological point is that a researcher can go from a raw internet source to an analyzable dataset in roughly half an hour."
-  },
-  {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#the-pipeline",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html#the-pipeline",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
-    "section": "The Pipeline",
-    "text": "The Pipeline\nThe author builds the pipeline in phases, with Claude Code first entering “plan mode” to read EDGAR API documentation and propose an approach before writing any code. The phases:\n\nResearch and planning. Claude reads EDGAR docs and proposes a design.\nDesign clarification. Claude asks the researcher to choose between DuckDB and SQLite, between simple keyword search and LLM classification, and what User-Agent string to use.\nCIK lookup. Claude resolves Central Index Keys for 29 of 30 target firms. Gap Inc. fails because its ticker had changed (GPS → GAP).\nFiling index queries. Claude hits the EDGAR API for each firm’s 10-Ks from 2022 to 2025.\nDownload. Raw HTML filings are downloaded with caching so reruns avoid redundant network calls.\nParsing. BeautifulSoup extracts Item 1A (Risk Factors), with regex tweaks for filings that split “Item 1A” and “Risk Factors” across lines.\nStorage. Parsed text is loaded into DuckDB, alongside tariff keyword counts and context snippets.\nQuality reports. An extraction-quality report flags parsing failures, which is how the author catches the Honeywell and Intel regex issue.\nQuerying. SQL queries against DuckDB produce the descriptive results.\n\nThe final dataset covers 119 of 120 filings successfully parsed. Total code: roughly 480 lines of Python."
-  },
-  {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#the-original-prompts",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html#the-original-prompts",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
-    "section": "The Original Prompts",
-    "text": "The Original Prompts\n\nInitial prompt\n\nI want to build a dataset of 10-K Risk Factors from SEC EDGAR to study how tariff-related risk disclosure changed 2022–2025. Here’s what I know about EDGAR:\n\nEvery company has a CIK (Central Index Key)\nThe EDGAR filing API is at https://efts.sec.gov/LATEST/\nRate limit: 10 requests/second, must include User-Agent header\n\nI want 10-Ks for ~30 trade-exposed firms — manufacturing, retail, tech hardware. Caterpillar, Nike, Apple, Deere, Ford, 3M, Intel…\n\n\n\nExecution\n\nRun it for the full list. Let’s see how it goes.\n\n\n\nQuerying the database\n\nWhich firms mentioned tariffs the most?"
-  },
-  {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#key-findings",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html#key-findings",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
-    "section": "Key Findings",
-    "text": "Key Findings\nThe descriptive results aren’t the main point, but they validate the pipeline:\n\nJohn Deere had the highest tariff mention count, rising from three to four mentions over the period.\nThe 2022–2025 sample produced 26–35 tariff-related paragraphs per year, compared to 25 total across 18 firms in a 2010 baseline.\nLanguage shifted from generic phrases like “changes in trade policy” to specific references — Section 301, particular product categories, “liberation day.”\nWalmart did not mention tariffs until its 2025 filing.\nRetail firms mentioned tariffs less often than manufacturing or tech-hardware firms."
-  },
-  {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#lessons",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html#lessons",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
-    "section": "Lessons",
-    "text": "Lessons\nFront-load the scraping context. Specifying rate limits, headers, and API structure up front saves debugging rounds later.\nLet Claude ask design questions. Instead of pre-specifying every detail, give Claude the high-level task and let it surface design choices (DuckDB vs. SQLite, keyword search vs. classification). The researcher’s job is to make the calls.\nBuild resume capability in. Network failures are common. Caching and idempotent scripts make reruns cheap — the Gap Inc. ticker fix required only four new downloads in 43 seconds, not a full re-pull.\nGenerate extraction-quality reports. They are how subtle parsing bugs get caught before they corrupt months of downstream analysis.\nSQL beats CSVs for text-as-data. DuckDB gives zero-config deployment, SQL queryability, and relational structure without running a server."
-  },
-  {
-    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#conclusion",
-    "href": "blog/posts/edgar-filings-to-structured-database/index.html#conclusion",
-    "title": "Summary: From EDGAR Filings to a Structured Database",
-    "section": "Conclusion",
-    "text": "Conclusion\nThe pipeline is small — one researcher, one afternoon, 480 lines of Python — but it shows how the per-project cost of building real research infrastructure has dropped. The interesting question is no longer whether the pipeline is feasible, but which research questions are worth pointing it at."
-  },
-  {
-    "objectID": "blog/posts/large-datasets-and-structured-databases/index.html",
-    "href": "blog/posts/large-datasets-and-structured-databases/index.html",
-    "title": "Summary: Large Datasets and Structured Databases",
-    "section": "",
-    "text": "A summary of Paul Goldsmith-Pinkham’s article, published April 5, 2026.\nPaul Goldsmith-Pinkham argues that AI coding agents (specifically Claude Code) have collapsed the fixed costs of professional data engineering, making it feasible for economists to build harmonized, documented, queryable databases from massive government datasets without specialized data engineering training."
-  },
-  {
-    "objectID": "blog/posts/large-datasets-and-structured-databases/index.html#overview",
-    "href": "blog/posts/large-datasets-and-structured-databases/index.html#overview",
-    "title": "Summary: Large Datasets and Structured Databases",
-    "section": "",
-    "text": "A summary of Paul Goldsmith-Pinkham’s article, published April 5, 2026.\nPaul Goldsmith-Pinkham argues that AI coding agents (specifically Claude Code) have collapsed the fixed costs of professional data engineering, making it feasible for economists to build harmonized, documented, queryable databases from massive government datasets without specialized data engineering training."
-  },
-  {
-    "objectID": "blog/posts/large-datasets-and-structured-databases/index.html#the-core-problem",
-    "href": "blog/posts/large-datasets-and-structured-databases/index.html#the-core-problem",
-    "title": "Summary: Large Datasets and Structured Databases",
-    "section": "The Core Problem",
-    "text": "The Core Problem\nEconomists traditionally work with flat CSV files and copies because learning proper data infrastructure (parquet files, databases, schemas) required significant upfront investment. This made messy workflows a rational choice — the fixed cost of “doing it right” was too high to justify for one-off projects."
-  },
-  {
-    "objectID": "blog/posts/large-datasets-and-structured-databases/index.html#the-demonstration",
-    "href": "blog/posts/large-datasets-and-structured-databases/index.html#the-demonstration",
-    "title": "Summary: Large Datasets and Structured Databases",
-    "section": "The Demonstration",
-    "text": "The Demonstration\nTo prove the point, the author transformed a 70GB HMDA (Home Mortgage Disclosure Act) mortgage dataset — 291 million rows across 18 years — into a professional-grade pipeline using Claude Code. Work that traditionally takes weeks now takes hours.\n\nKey results\n\nDownloaded and harmonized 18 years of mortgage data from two incompatible sources (2007–2017 vs. 2018–2024)\nAchieved 15× compression converting CSVs to parquet (70GB → 6GB)\nBuilt a DuckDB database with a queryable metadata table documenting every column\nCreated county-by-year aggregate tables (HHI concentration, denial rates, median loan amounts, etc.)\nClassified lenders as fintech vs. traditional banks\nFound fintech origination share grew from ~1.1% (2007) to a peak of 16.3% (2021), settling around 11% by 2024"
-  },
-  {
-    "objectID": "blog/posts/large-datasets-and-structured-databases/index.html#the-original-prompts",
-    "href": "blog/posts/large-datasets-and-structured-databases/index.html#the-original-prompts",
-    "title": "Summary: Large Datasets and Structured Databases",
-    "section": "The Original Prompts",
-    "text": "The Original Prompts\n\nInitial comprehensive prompt\n\nI want to build a county-level panel dataset of mortgage lending in the US from 2007 to 2024 using HMDA (Home Mortgage Disclosure Act) data. The goal is to study the geographic expansion of fintech mortgage lenders over time.\nThe data comes from two sources (I’ve verified both are accessible):\n\n2007–2017: CFPB historic data at https://files.consumerfinance.gov/hmda-historic-loan-data/hmda_{YEAR}_nationwide_all-records_codes.zip. These are zipped CSVs with numeric codes and the old LAR column names.\n2018–2024: CFPB Data Browser API at https://ffiec.cfpb.gov/v2/data-browser-api/view/nationwide/csv?years={YEAR}. These stream as CSV with 99 columns, string codes, and the new format (uses lei instead of respondent_id, different column names throughout).\n\nEach year is millions of rows. The full panel is 250M+ rows. This will not fit in pandas.\nHere’s what I’d like you to do:\n\nWrite a download script that pulls the full LAR files for 2007–2024 from the URLs above. Include resume capability in case downloads get interrupted. Use a proper User-Agent header.\nConvert each year’s CSV to parquet for efficient storage.\nSet up a DuckDB database. Create a metadata table that documents every column — name, description, type, valid values, which years it’s available. This metadata table is important: I want future sessions to be able to query it and immediately understand the dataset without me re-explaining anything.\n\nImportant: the pre-2017 and post-2018 formats are very different — different column names, different coding schemes, different variable availability. You’ll need to figure out a crosswalk and harmonize into a consistent schema.\nKey variables I care about: year, lender ID, lender name, county FIPS, state FIPS, loan type, loan purpose, action taken (originated, denied, etc.), loan amount, applicant race, applicant income. Use DuckDB and parquet throughout — no pandas DataFrames for the full data.\n\n\n\nFeasibility inquiry\n\nI want to classify lenders as fintech or shadow banks versus traditional. Start with the lender classification from Fuster, Plosser, Schnabl and Vickery (2019). Tell me what it would take to do this task before you try anything complicated. Is this feasible? What might be missing?\n\n\n\nAggregate table request\n\nI want to build an aggregate database: county by year, total originations, dollar value, number of active lenders, the HHI (Herfindahl-Hirschman Index) of lender market shares, the denial rate, and the median loan amount.\n\n\n\nVisualization request\n\nPlease make a figure of the trend in fintech origination share over time in the dataset, using Kieran Healy stylings for plotting."
-  },
-  {
-    "objectID": "blog/posts/large-datasets-and-structured-databases/index.html#key-insights",
-    "href": "blog/posts/large-datasets-and-structured-databases/index.html#key-insights",
-    "title": "Summary: Large Datasets and Structured Databases",
-    "section": "Key Insights",
-    "text": "Key Insights\nMetadata as context engineering. The metadata table acts as a form of “context engineering for data” — it stores column descriptions, valid values, and availability information directly inside the database. Future sessions can query the documentation without the human having to re-explain.\nRight tools for big data. When data exceeds RAM, parquet and DuckDB are the right tools — pandas is the wrong tool.\nPlan before coding. For complex pipelines, asking the model to scope the task before implementation pays off (the feasibility prompt above is a good example)."
-  },
-  {
-    "objectID": "blog/posts/large-datasets-and-structured-databases/index.html#conclusion",
-    "href": "blog/posts/large-datasets-and-structured-databases/index.html#conclusion",
-    "title": "Summary: Large Datasets and Structured Databases",
-    "section": "Conclusion",
-    "text": "Conclusion\nThe author argues that AI-assisted data engineering has fundamentally shifted the economics of research infrastructure. The bottleneck for empirical work has moved from “can I build the infrastructure?” to “do I have a worthwhile research question?”\nKey takeaways:\n\nThe fixed costs of professional data engineering have collapsed\nLarge public datasets are more accessible than commonly assumed\nEmbedding metadata in the database makes future work cheaper\nPlanning matters more than coding speed"
   },
   {
     "objectID": "blog/posts/tvm-ba-ii-plus-and-excel/index.html",
@@ -390,6 +96,272 @@
     "title": "Time Value of Money on the BA II Plus and in Excel",
     "section": "Closing Thoughts",
     "text": "Closing Thoughts\nThree habits will save you in this class:\n\nAlways clear the calculator (2nd CLR TVM for TVM keys, 2nd CLR WORK inside CF) before starting a new problem.\nMatch the period. If the problem is monthly, your N, I/Y, and PMT all need to be monthly. Mixing annual and monthly is the most common error.\nWatch the signs. If you put money in (a loan, an investment), it’s negative. If you take money out (a withdrawal, a repayment), it’s positive. Excel and the BA II Plus follow the same rule.\n\nWhen you graduate, you’ll do almost everything in Excel — once a problem is bigger than the five TVM keys, the spreadsheet wins. But knowing both makes you faster, and it gives you a sanity check: if the calculator and the spreadsheet disagree, you’ve made a setup mistake somewhere, and you’ll catch it before turning it in."
+  },
+  {
+    "objectID": "blog/posts/large-datasets-and-structured-databases/index.html",
+    "href": "blog/posts/large-datasets-and-structured-databases/index.html",
+    "title": "Summary: Large Datasets and Structured Databases",
+    "section": "",
+    "text": "A summary of Paul Goldsmith-Pinkham’s article, published April 5, 2026.\nPaul Goldsmith-Pinkham argues that AI coding agents (specifically Claude Code) have collapsed the fixed costs of professional data engineering, making it feasible for economists to build harmonized, documented, queryable databases from massive government datasets without specialized data engineering training."
+  },
+  {
+    "objectID": "blog/posts/large-datasets-and-structured-databases/index.html#overview",
+    "href": "blog/posts/large-datasets-and-structured-databases/index.html#overview",
+    "title": "Summary: Large Datasets and Structured Databases",
+    "section": "",
+    "text": "A summary of Paul Goldsmith-Pinkham’s article, published April 5, 2026.\nPaul Goldsmith-Pinkham argues that AI coding agents (specifically Claude Code) have collapsed the fixed costs of professional data engineering, making it feasible for economists to build harmonized, documented, queryable databases from massive government datasets without specialized data engineering training."
+  },
+  {
+    "objectID": "blog/posts/large-datasets-and-structured-databases/index.html#the-core-problem",
+    "href": "blog/posts/large-datasets-and-structured-databases/index.html#the-core-problem",
+    "title": "Summary: Large Datasets and Structured Databases",
+    "section": "The Core Problem",
+    "text": "The Core Problem\nEconomists traditionally work with flat CSV files and copies because learning proper data infrastructure (parquet files, databases, schemas) required significant upfront investment. This made messy workflows a rational choice — the fixed cost of “doing it right” was too high to justify for one-off projects."
+  },
+  {
+    "objectID": "blog/posts/large-datasets-and-structured-databases/index.html#the-demonstration",
+    "href": "blog/posts/large-datasets-and-structured-databases/index.html#the-demonstration",
+    "title": "Summary: Large Datasets and Structured Databases",
+    "section": "The Demonstration",
+    "text": "The Demonstration\nTo prove the point, the author transformed a 70GB HMDA (Home Mortgage Disclosure Act) mortgage dataset — 291 million rows across 18 years — into a professional-grade pipeline using Claude Code. Work that traditionally takes weeks now takes hours.\n\nKey results\n\nDownloaded and harmonized 18 years of mortgage data from two incompatible sources (2007–2017 vs. 2018–2024)\nAchieved 15× compression converting CSVs to parquet (70GB → 6GB)\nBuilt a DuckDB database with a queryable metadata table documenting every column\nCreated county-by-year aggregate tables (HHI concentration, denial rates, median loan amounts, etc.)\nClassified lenders as fintech vs. traditional banks\nFound fintech origination share grew from ~1.1% (2007) to a peak of 16.3% (2021), settling around 11% by 2024"
+  },
+  {
+    "objectID": "blog/posts/large-datasets-and-structured-databases/index.html#the-original-prompts",
+    "href": "blog/posts/large-datasets-and-structured-databases/index.html#the-original-prompts",
+    "title": "Summary: Large Datasets and Structured Databases",
+    "section": "The Original Prompts",
+    "text": "The Original Prompts\n\nInitial comprehensive prompt\n\nI want to build a county-level panel dataset of mortgage lending in the US from 2007 to 2024 using HMDA (Home Mortgage Disclosure Act) data. The goal is to study the geographic expansion of fintech mortgage lenders over time.\nThe data comes from two sources (I’ve verified both are accessible):\n\n2007–2017: CFPB historic data at https://files.consumerfinance.gov/hmda-historic-loan-data/hmda_{YEAR}_nationwide_all-records_codes.zip. These are zipped CSVs with numeric codes and the old LAR column names.\n2018–2024: CFPB Data Browser API at https://ffiec.cfpb.gov/v2/data-browser-api/view/nationwide/csv?years={YEAR}. These stream as CSV with 99 columns, string codes, and the new format (uses lei instead of respondent_id, different column names throughout).\n\nEach year is millions of rows. The full panel is 250M+ rows. This will not fit in pandas.\nHere’s what I’d like you to do:\n\nWrite a download script that pulls the full LAR files for 2007–2024 from the URLs above. Include resume capability in case downloads get interrupted. Use a proper User-Agent header.\nConvert each year’s CSV to parquet for efficient storage.\nSet up a DuckDB database. Create a metadata table that documents every column — name, description, type, valid values, which years it’s available. This metadata table is important: I want future sessions to be able to query it and immediately understand the dataset without me re-explaining anything.\n\nImportant: the pre-2017 and post-2018 formats are very different — different column names, different coding schemes, different variable availability. You’ll need to figure out a crosswalk and harmonize into a consistent schema.\nKey variables I care about: year, lender ID, lender name, county FIPS, state FIPS, loan type, loan purpose, action taken (originated, denied, etc.), loan amount, applicant race, applicant income. Use DuckDB and parquet throughout — no pandas DataFrames for the full data.\n\n\n\nFeasibility inquiry\n\nI want to classify lenders as fintech or shadow banks versus traditional. Start with the lender classification from Fuster, Plosser, Schnabl and Vickery (2019). Tell me what it would take to do this task before you try anything complicated. Is this feasible? What might be missing?\n\n\n\nAggregate table request\n\nI want to build an aggregate database: county by year, total originations, dollar value, number of active lenders, the HHI (Herfindahl-Hirschman Index) of lender market shares, the denial rate, and the median loan amount.\n\n\n\nVisualization request\n\nPlease make a figure of the trend in fintech origination share over time in the dataset, using Kieran Healy stylings for plotting."
+  },
+  {
+    "objectID": "blog/posts/large-datasets-and-structured-databases/index.html#key-insights",
+    "href": "blog/posts/large-datasets-and-structured-databases/index.html#key-insights",
+    "title": "Summary: Large Datasets and Structured Databases",
+    "section": "Key Insights",
+    "text": "Key Insights\nMetadata as context engineering. The metadata table acts as a form of “context engineering for data” — it stores column descriptions, valid values, and availability information directly inside the database. Future sessions can query the documentation without the human having to re-explain.\nRight tools for big data. When data exceeds RAM, parquet and DuckDB are the right tools — pandas is the wrong tool.\nPlan before coding. For complex pipelines, asking the model to scope the task before implementation pays off (the feasibility prompt above is a good example)."
+  },
+  {
+    "objectID": "blog/posts/large-datasets-and-structured-databases/index.html#conclusion",
+    "href": "blog/posts/large-datasets-and-structured-databases/index.html#conclusion",
+    "title": "Summary: Large Datasets and Structured Databases",
+    "section": "Conclusion",
+    "text": "Conclusion\nThe author argues that AI-assisted data engineering has fundamentally shifted the economics of research infrastructure. The bottleneck for empirical work has moved from “can I build the infrastructure?” to “do I have a worthwhile research question?”\nKey takeaways:\n\nThe fixed costs of professional data engineering have collapsed\nLarge public datasets are more accessible than commonly assumed\nEmbedding metadata in the database makes future work cheaper\nPlanning matters more than coding speed"
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "",
+    "text": "A summary of Paul Goldsmith-Pinkham’s article.\nThis follow-up to the earlier HMDA post walks through a complete, end-to-end research pipeline built with Claude Code: pulling 10-K filings from SEC EDGAR, parsing out the Risk Factors section, and loading the results into a queryable database. The motivating research question is whether trade-exposed U.S. firms ramped up tariff-related language in their risk disclosures after the 2025 tariff escalation. The broader methodological point is that a researcher can go from a raw internet source to an analyzable dataset in roughly half an hour."
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#overview",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html#overview",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "",
+    "text": "A summary of Paul Goldsmith-Pinkham’s article.\nThis follow-up to the earlier HMDA post walks through a complete, end-to-end research pipeline built with Claude Code: pulling 10-K filings from SEC EDGAR, parsing out the Risk Factors section, and loading the results into a queryable database. The motivating research question is whether trade-exposed U.S. firms ramped up tariff-related language in their risk disclosures after the 2025 tariff escalation. The broader methodological point is that a researcher can go from a raw internet source to an analyzable dataset in roughly half an hour."
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#the-pipeline",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html#the-pipeline",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "The Pipeline",
+    "text": "The Pipeline\nThe author builds the pipeline in phases, with Claude Code first entering “plan mode” to read EDGAR API documentation and propose an approach before writing any code. The phases:\n\nResearch and planning. Claude reads EDGAR docs and proposes a design.\nDesign clarification. Claude asks the researcher to choose between DuckDB and SQLite, between simple keyword search and LLM classification, and what User-Agent string to use.\nCIK lookup. Claude resolves Central Index Keys for 29 of 30 target firms. Gap Inc. fails because its ticker had changed (GPS → GAP).\nFiling index queries. Claude hits the EDGAR API for each firm’s 10-Ks from 2022 to 2025.\nDownload. Raw HTML filings are downloaded with caching so reruns avoid redundant network calls.\nParsing. BeautifulSoup extracts Item 1A (Risk Factors), with regex tweaks for filings that split “Item 1A” and “Risk Factors” across lines.\nStorage. Parsed text is loaded into DuckDB, alongside tariff keyword counts and context snippets.\nQuality reports. An extraction-quality report flags parsing failures, which is how the author catches the Honeywell and Intel regex issue.\nQuerying. SQL queries against DuckDB produce the descriptive results.\n\nThe final dataset covers 119 of 120 filings successfully parsed. Total code: roughly 480 lines of Python."
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#the-original-prompts",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html#the-original-prompts",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "The Original Prompts",
+    "text": "The Original Prompts\n\nInitial prompt\n\nI want to build a dataset of 10-K Risk Factors from SEC EDGAR to study how tariff-related risk disclosure changed 2022–2025. Here’s what I know about EDGAR:\n\nEvery company has a CIK (Central Index Key)\nThe EDGAR filing API is at https://efts.sec.gov/LATEST/\nRate limit: 10 requests/second, must include User-Agent header\n\nI want 10-Ks for ~30 trade-exposed firms — manufacturing, retail, tech hardware. Caterpillar, Nike, Apple, Deere, Ford, 3M, Intel…\n\n\n\nExecution\n\nRun it for the full list. Let’s see how it goes.\n\n\n\nQuerying the database\n\nWhich firms mentioned tariffs the most?"
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#key-findings",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html#key-findings",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "Key Findings",
+    "text": "Key Findings\nThe descriptive results aren’t the main point, but they validate the pipeline:\n\nJohn Deere had the highest tariff mention count, rising from three to four mentions over the period.\nThe 2022–2025 sample produced 26–35 tariff-related paragraphs per year, compared to 25 total across 18 firms in a 2010 baseline.\nLanguage shifted from generic phrases like “changes in trade policy” to specific references — Section 301, particular product categories, “liberation day.”\nWalmart did not mention tariffs until its 2025 filing.\nRetail firms mentioned tariffs less often than manufacturing or tech-hardware firms."
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#lessons",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html#lessons",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "Lessons",
+    "text": "Lessons\nFront-load the scraping context. Specifying rate limits, headers, and API structure up front saves debugging rounds later.\nLet Claude ask design questions. Instead of pre-specifying every detail, give Claude the high-level task and let it surface design choices (DuckDB vs. SQLite, keyword search vs. classification). The researcher’s job is to make the calls.\nBuild resume capability in. Network failures are common. Caching and idempotent scripts make reruns cheap — the Gap Inc. ticker fix required only four new downloads in 43 seconds, not a full re-pull.\nGenerate extraction-quality reports. They are how subtle parsing bugs get caught before they corrupt months of downstream analysis.\nSQL beats CSVs for text-as-data. DuckDB gives zero-config deployment, SQL queryability, and relational structure without running a server."
+  },
+  {
+    "objectID": "blog/posts/edgar-filings-to-structured-database/index.html#conclusion",
+    "href": "blog/posts/edgar-filings-to-structured-database/index.html#conclusion",
+    "title": "Summary: From EDGAR Filings to a Structured Database",
+    "section": "Conclusion",
+    "text": "Conclusion\nThe pipeline is small — one researcher, one afternoon, 480 lines of Python — but it shows how the per-project cost of building real research infrastructure has dropped. The interesting question is no longer whether the pipeline is feasible, but which research questions are worth pointing it at."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "He Ren, PhD, CFA",
+    "section": "",
+    "text": "I’m an Associate Professor of Finance at Merrilee Alexander Kick College of Business and Entrepreneurship, Texas Woman’s University. My research interest focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets."
+  },
+  {
+    "objectID": "about.html#hi-im-happy-youre-here",
+    "href": "about.html#hi-im-happy-youre-here",
+    "title": "He Ren, PhD, CFA",
+    "section": "",
+    "text": "I’m an Associate Professor of Finance at Merrilee Alexander Kick College of Business and Entrepreneurship, Texas Woman’s University. My research interest focuses on investments, household finance, and the impact of AI and Fintech on financial decision-making and markets."
+  },
+  {
+    "objectID": "about.html#outside-the-classroom",
+    "href": "about.html#outside-the-classroom",
+    "title": "He Ren, PhD, CFA",
+    "section": "Outside the classroom",
+    "text": "Outside the classroom\nOutside the classroom and my research, I’m also a Rubik’s cube solver. You can check out my World Cube Association (WCA) profile to see my official results. I’m also passionate about photography. You can browse some of my favorite shots in the Photography section of this website."
+  },
+  {
+    "objectID": "about.html#what-youll-find-here",
+    "href": "about.html#what-youll-find-here",
+    "title": "He Ren, PhD, CFA",
+    "section": "What you’ll find here",
+    "text": "What you’ll find here\n\nTeaching — a financial calculator and open textbooks I’m writing, work in progress.\nResearch — publications and working papers.\nBlog — occasional writing.\nPhotography — a gallery of photos."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "He Ren, PhD, CFA",
+    "section": "Education",
+    "text": "Education\n\nPh.D. in Finance, University of North Texas, 2019\nM.B.A., University of Texas at Dallas, 2014\nM.S. in Finance, State University of New York at Buffalo, 2011\nB.S. in Economics, Shanghai University of International Business and Economics, 2010"
+  },
+  {
+    "objectID": "about.html#professional-certifications",
+    "href": "about.html#professional-certifications",
+    "title": "He Ren, PhD, CFA",
+    "section": "Professional Certifications",
+    "text": "Professional Certifications\n\nCFA Institute Sustainable Investing Certificate, 2023\nChartered Financial Analyst (CFA®), 2022\nFinancial Risk Manager (FRM®), 2022"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "FIFA Discovered the Commercial Break\n\n\n\nfinance\n\nsports\n\nmedia\n\n\n\nThe 2026 World Cup added a three-minute hydration break to every half. Officially it’s about player welfare. Follow the money and it looks a lot like FIFA quietly inventing the TV timeout — and turning soccer into four quarters you can sell ads against.\n\n\n\n\n\nJul 6, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nSpaceX Filed an S-1. It Reads Like a Magazine.\n\n\n\nfinance\n\nIPO\n\nAI\n\n\n\nSpaceX filed an S-1 that reads like a magazine — Mars on the cover, Anthropic paying Elon $15 billion a year, and a Risk Factors page that’s literally a photo of a rocket on fire. Notes on what’s inside.\n\n\n\n\n\nMay 20, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nTime Value of Money on the BA II Plus and in Excel\n\n\n\nfinance\n\nteaching\n\n\n\nA side-by-side undergraduate guide to solving TVM problems with the TI BA II Plus calculator and Microsoft Excel — from setup to mortgages, NPV, and IRR.\n\n\n\n\n\nMay 15, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nSummary: From EDGAR Filings to a Structured Database\n\n\n\nAI\n\ndata\n\nfinance\n\n\n\nA summary of Paul Goldsmith-Pinkham’s article on using Claude Code to build a 10-K Risk Factors dataset from SEC EDGAR.\n\n\n\n\n\nMay 11, 2026\n\n\nHe Ren\n\n\n\n\n\n\n\n\n\n\n\n\nSummary: Large Datasets and Structured Databases\n\n\n\nAI\n\ndata\n\neconomics\n\n\n\nA summary of Paul Goldsmith-Pinkham’s article on AI-assisted data engineering for economists.\n\n\n\n\n\nMay 9, 2026\n\n\nHe Ren\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/posts/fifa-hydration-break-economics/index.html",
+    "href": "blog/posts/fifa-hydration-break-economics/index.html",
+    "title": "FIFA Discovered the Commercial Break",
+    "section": "",
+    "text": "American sports fans have spent their whole lives being trained to expect a break. The NFL has the two-minute warning and roughly a hundred stoppages. The NBA has quarters, timeouts, and a coach’s challenge that exists mostly so the network can sell you a truck. Soccer, famously, has none of this. Ninety minutes, two halves, one clock that never stops and never lies. You cannot cut to a car commercial mid-move, because there is no mid-move — the ball is always live.\nThis has always been a small tragedy for the people who sell advertising.\nAt the 2026 World Cup, that tragedy quietly ended. FIFA introduced a mandatory three-minute hydration break in each half of every match — around the 22nd minute and again around the 67th — regardless of the weather (FIFA). The stated reason is player welfare, and in the summer heat of Kansas City and Dallas, that reason is real. But if you squint at the timing, the structure, and the money, something else comes into focus: FIFA just gave the world’s most-watched sport its first built-in commercial break — and handed broadcasters a new pile of inventory to sell.\nLet me walk through where FIFA’s money actually comes from, why television is the tail that wags the entire dog, and how a water break becomes a billion-dollar idea."
+  },
+  {
+    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#where-fifas-money-actually-comes-from",
+    "href": "blog/posts/fifa-hydration-break-economics/index.html#where-fifas-money-actually-comes-from",
+    "title": "FIFA Discovered the Commercial Break",
+    "section": "Where FIFA’s Money Actually Comes From",
+    "text": "Where FIFA’s Money Actually Comes From\nFirst, a myth to dispose of: FIFA does not primarily make its money from ticket sales, or from that overpriced beer at the stadium, or from selling jerseys. FIFA makes its money from selling the right to broadcast the World Cup, and secondarily from selling the right to associate your brand with the World Cup. Everything else is a rounding error by comparison.\nHere is the budgeted revenue for the 2023–2026 cycle, which is how FIFA keeps its books (it thinks in four-year chunks anchored on a World Cup, not calendar years):\n\n\n\nFIFA’s own budget for the 2023–26 cycle. TV rights are the single biggest line — and, as we’ll see, the one the hydration breaks quietly inflate. Source: FIFA Annual Report 2022.\n\n\n\nFIFA budgeted $11.0B for the 2023–26 cycle and has since revised its internal target upward toward ~$13B. Source: FIFA Annual Report 2022.\n\n\nRevenue source\n2023–26 budget\nShare\n\n\n\n\nTV broadcasting rights\n$4.26B\n39%\n\n\nHospitality & ticketing\n$3.10B\n28%\n\n\nMarketing (sponsorship)\n$2.69B\n24%\n\n\nLicensing rights\n$0.67B\n6%\n\n\nOther\n$0.28B\n3%\n\n\nTotal\n$11.00B\n100%\n\n\n\nTwo lines do almost two-thirds of the work: television and sponsorship. And these two are not independent — they are joined at the hip. A sponsor pays FIFA to put its logo where a billion people will see it, and the reason a billion people see it is television. Broadcasters pay for the audience; sponsors pay for access to that same audience. TV is the product, and everything else is priced off it.\nWhich is why the most important number on FIFA’s income statement is the one at the top — and why FIFA spends so much energy making that number bigger."
+  },
+  {
+    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#the-number-that-never-stops-climbing",
+    "href": "blog/posts/fifa-hydration-break-economics/index.html#the-number-that-never-stops-climbing",
+    "title": "FIFA Discovered the Commercial Break",
+    "section": "The Number That Never Stops Climbing",
+    "text": "The Number That Never Stops Climbing\nFIFA’s broadcasting revenue has gone up every single cycle, through scandal, through a pandemic, through a widely disliked Qatar tournament played in November. It is one of the most reliable upward-sloping lines in global media.\n\n\n\nFIFA’s broadcasting-rights revenue by four-year cycle. The jump from Qatar 2022 to the 2026 cycle is about 24%. Sources: FIFA Annual Report 2022; Statista.\n\n\nThe 2026 tournament turbocharges this for reasons that have nothing to do with hydration:\n\nIt’s bigger. The field expanded from 32 teams to 48, and the match count ballooned from 64 to 104. More matches means more broadcast hours means more inventory to sell.\nIt’s in the right time zones. After Qatar’s inconvenient kickoffs, the 2026 tournament is hosted across the United States, Canada, and Mexico — meaning matches land in North American prime time and afternoon slots, the most valuable advertising windows on Earth.\nThe rights got more expensive. Industry estimates put the value of the 2026 TV rights 20–30% above Qatar 2022 (Rio Times). Fox reportedly paid $400–500 million for the English-language U.S. package alone.\n\nNow hold that Fox number — $400–500 million for the whole tournament — in your head. We are about to compare it to something absurd."
+  },
+  {
+    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#the-other-half-renting-out-the-logo",
+    "href": "blog/posts/fifa-hydration-break-economics/index.html#the-other-half-renting-out-the-logo",
+    "title": "FIFA Discovered the Commercial Break",
+    "section": "The Other Half: Renting Out the Logo",
+    "text": "The Other Half: Renting Out the Logo\nIf television is FIFA selling the audience, sponsorship is FIFA selling access to that audience — and it is sold, appropriately, as a pyramid. The higher you climb, the more exclusive the air and the thinner your wallet gets afterward.\n\nFIFA’s three-tier sponsorship structure. FIFA does not publish per-brand fees; figures are industry estimates. Sources: Forbes; Zappi.\n\n\nTier\nWhat you get\nEst. price\nExamples (2026)\n\n\n\n\nFIFA Partners\nYear-round rights across every FIFA competition; top billing\n~$150–200M\nadidas, Coca-Cola, Visa, Hyundai-Kia, Lenovo, Qatar Airways, Aramco\n\n\nWorld Cup Sponsors\nRights to this tournament, worldwide\n~$65–95M\nBudweiser, McDonald’s, Bank of America, Lay’s, Verizon, Unilever\n\n\nRegional Supporters\nRights within one region only\n~$10–25M\nRegional brands across North America\n\n\n\nThe economics of the pyramid are ruthless and clever. There are only seven FIFA Partner slots, and that scarcity is the entire point — an adidas or a Visa is not really paying for a logo on a billboard, it is paying to keep a competitor off it. When Nike cannot be a FIFA Partner because adidas already is, the price adidas will pay to hold that exclusivity goes up. FIFA has monetized not just the space on the field but the absence of your rival from it.\nAnd the pyramid, too, is ultimately priced off television. A World Cup Sponsor is buying pitchside LED boards, digital overlays, and the implied blessing of the tournament — all of which are worth precisely as much as the number of eyeballs the broadcast delivers. FIFA confirmed in March 2026 that all sixteen of its global sponsorship packages had sold out (Forbes), and total brand spending around the tournament — sponsorship plus the advertising that rides on it — is estimated north of $10 billion.\nSo both of FIFA’s big revenue lines, television and sponsorship, are really the same bet placed twice: how many people are watching, for how long, with how much attention? Anything that increases watching-time, or creates a fresh, attention-grabbing moment to sell, makes both lines go up at once.\nWhich is a very useful lens for thinking about a brand-new, perfectly-timed, guaranteed three-minute pause in the action."
+  },
+  {
+    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#enter-the-water-break",
+    "href": "blog/posts/fifa-hydration-break-economics/index.html#enter-the-water-break",
+    "title": "FIFA Discovered the Commercial Break",
+    "section": "Enter the Water Break",
+    "text": "Enter the Water Break\nHere is the mechanical genius of the hydration break, from a television executive’s point of view.\nBefore 2026, cooling breaks existed, but only as an emergency measure. They were introduced at the 2014 World Cup in Brazil and could be called only when a heat index (WBGT) crossed a defined threshold (Kestrel Instruments). They were unpredictable. You could not sell an advertiser a slot that might or might not exist depending on the humidity in Rotterdam. Unpredictable inventory is nearly worthless inventory.\nThe 2026 rule changes exactly one thing, and it is the thing that matters: the breaks are now mandatory in every match, at a roughly fixed time, regardless of weather (Fox News / OutKick). Suddenly the inventory is guaranteed. An ad buyer can be promised a national commercial pod around minute 22 and minute 67 of a match watched by tens of millions of people, and the buyer can budget for it a year in advance. That is the difference between a puddle and a pipeline.\nAnd notice what the schedule does to the shape of the game. A break at ~22 minutes and ~67 minutes carves each half neatly in two, turning a game of two 45-minute halves into something much more familiar to an American audience:\n\n\n\n\n\n\n\n\n\nOld soccer\nNew (2026)\n\n\n\n\nStructure\nTwo 45-min halves\nFour ~22-min “quarters”\n\n\nGuaranteed stoppages\nHalftime only\nHalftime + 2 hydration breaks\n\n\nWeather condition\nCooling break only if hot\nBreak every match, always\n\n\nSellable in-game ad pods\n0\n2 per match × 104 matches\n\n\n\nFrance manager Didier Deschamps said it out loud: “It’s not two halftimes, it’s four quarter times… the players and the coaches adapt to this new reality” (ESPN). He meant it tactically. But “four quarters” is also, conveniently, the exact structure of the NBA and NFL broadcasts that American advertisers have optimized around for fifty years."
+  },
+  {
+    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#the-billion-dollar-puddle",
+    "href": "blog/posts/fifa-hydration-break-economics/index.html#the-billion-dollar-puddle",
+    "title": "FIFA Discovered the Commercial Break",
+    "section": "The Billion-Dollar Puddle",
+    "text": "The Billion-Dollar Puddle\nSo what is a guaranteed in-game ad pod at the World Cup actually worth? The honest answer is that nobody knows precisely, because this is the first tournament with the inventory and FIFA and the broadcasters aren’t publishing the receipts. But the published estimates are eye-watering, and they cluster in a consistent range.\nAnalysts peg a single 30-second spot during a hydration break at $200,000 to $750,000, depending on the teams and the stage of the tournament, which works out to roughly $2.5 million to $9 million per match in fresh ad time across the two breaks (The Hollywood Reporter). Multiply across 104 matches and the estimates for Fox alone land at “at least $250 million, plausibly $500–600 million” (The Hollywood Reporter). Some global estimates, summing every broadcast market, run past $1 billion (Rio Times).\nHere is the punchline in one chart:\n\n\n\nEstimates for Fox’s hydration-break ad revenue against what Fox reportedly paid for the entire English-language rights package. The new water-break inventory alone could rival the cost of the whole tournament. Figures are analyst estimates, not official disclosures. Sources: The Hollywood Reporter; Rio Times.\n\n\nRead that again. Fox paid roughly $400–500 million for the rights to broadcast the entire tournament. The advertising revenue from the hydration breaks alone — three minutes, twice a match — is estimated to plausibly reach $500–600 million. The garnish may be worth more than the meal.\nAnd this compounds in FIFA’s favor on the next turn of the wheel. Broadcasters bid for rights based on how much money they can make from those rights. If the hydration break just made Fox’s package meaningfully more profitable, then the next rights auction starts from a higher floor. FIFA doesn’t even have to sell the ads itself — it simply raises the rent on the broadcasters who do. The water break pays FIFA twice: once by making the current tournament more valuable to Fox, and again by making the next set of rights more expensive."
+  },
+  {
+    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#to-be-fair-to-the-water",
+    "href": "blog/posts/fifa-hydration-break-economics/index.html#to-be-fair-to-the-water",
+    "title": "FIFA Discovered the Commercial Break",
+    "section": "To Be Fair to the Water",
+    "text": "To Be Fair to the Water\nIt would be too cynical — even for me — to claim this is only about money. Two things are true at once.\nThe player-welfare case is genuine. The 2026 tournament is being played in brutal conditions; matches in Kansas City, Dallas, and Monterrey have kicked off in temperatures well into the 90s Fahrenheit, and the 2025 Club World Cup (a dry run for all of this) featured genuinely dangerous heat. Giving players a structured chance to rehydrate is defensible sports science, and FIFA frames it exactly that way (FIFA).\nBut the criticism is also genuine, and it comes from two directions:\n\nThe scientists say three minutes is too short to meaningfully cool a body running at full exertion in extreme heat — useful, but more gesture than remedy when it’s truly sweltering (ESPN).\nThe coaches say the breaks distort the game. USWNT coach Emma Hayes calls them “momentum breaks” — a free tactical reset handed to whichever team is being outplayed (ESPN). Early tournament data hints she has a point: a striking share of goals arrived shortly after a break, when one side had just been allowed to regroup and re-instruct.\n\nNotice that the strongest argument for the breaks (heat safety) would justify the old rule — call a break when it’s hot. It does not obviously justify the new rule — call a break in every match, including a temperate evening in Vancouver. The delta between “break when it’s hot” and “break always” is precisely the part that isn’t about hydration. That delta is the part you can sell."
+  },
+  {
+    "objectID": "blog/posts/fifa-hydration-break-economics/index.html#the-tell",
+    "href": "blog/posts/fifa-hydration-break-economics/index.html#the-tell",
+    "title": "FIFA Discovered the Commercial Break",
+    "section": "The Tell",
+    "text": "The Tell\nIf you want to know what a rule is really for, watch who opts out.\nThe purest evidence that the hydration break is now an advertising vehicle is that some broadcasters are treating it as one — and a few are conspicuously refusing. In the U.S., Spanish-language broadcaster Telemundo declined to cut to commercials during the breaks, staying with studio analysis instead; U.K. broadcaster ITV did the same (ESPN). You do not have to make a principled decision about whether to run ads during a genuine medical timeout. You only face that decision if the “medical timeout” has quietly become the most valuable ninety seconds of unsold airtime in the building.\nFIFA has spent a decade proving that its revenue line only points one way, and it has done it by relentlessly finding new surfaces to sell. It expanded the field to 48 teams. It moved the tournament into American prime time. It launched a 32-team Club World Cup out of thin air. The hydration break is the same instinct applied to the one piece of the product that had always resisted it: the ninety uninterrupted minutes themselves.\nSo drink up. Somewhere, an accountant is very, very hydrated.\n\nRevenue figures are from FIFA’s own budget and financial statements, linked inline. Advertising figures for the hydration breaks are analyst and press estimates, not official FIFA or broadcaster disclosures, and should be read as such. All charts are the author’s own, built from the cited data. No copyrighted imagery is used."
+  },
+  {
+    "objectID": "blog/posts/spacex-s1-magazine/index.html",
+    "href": "blog/posts/spacex-s1-magazine/index.html",
+    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
+    "section": "",
+    "text": "Normally, when a company files for an IPO, the document looks like a tax form. Times New Roman. Gray boxes. 280 pages of legalese designed to make your eyes glaze over before page 12.\nSpaceX’s S-1, filed May 20, 2026, is not that.\nWithin the first few pages is a full-bleed photograph of Mars. From there on, the document is sprinkled with dozens more embedded images — full-bleed launch photos, Elon pull-quote posters, glossy product spec sheets for every rocket in the fleet, and a “RISK FACTORS” section opener that is, no exaggeration, a photograph of a rocket on fire. (We’ll get to that one.)\nThe whole thing reads more like a coffee-table magazine than an SEC filing. Which sets the tone — and signals the next several billion dollars they want from you. Let’s walk through it."
+  },
+  {
+    "objectID": "blog/posts/spacex-s1-magazine/index.html#what-was-filed",
+    "href": "blog/posts/spacex-s1-magazine/index.html#what-was-filed",
+    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
+    "section": "What Was Filed",
+    "text": "What Was Filed\nThe company is Space Exploration Technologies Corp., headquartered at 1 Rocket Road, Starbase, Texas. (Yes, “Starbase” is now an actual incorporated town. No, I am not making that up.)\nThe ticker will be SPCX, dual-listed on Nasdaq and the brand-new Nasdaq Texas exchange — because when your CEO is in Texas, your rockets launch from Texas, and your headquarters is in Texas, you may as well list on the Texas exchange too. Goldman Sachs is the lead bank, with Morgan Stanley, BofA, Citi, JPMorgan, and Barclays just behind. Then seventeen more banks pile in underneath, presumably for moral support.\nThe price isn’t in the document yet — they fill that in closer to the roadshow — but reporting around the filing puts it at roughly $1.75 trillion valuation, a ~$75 billion raise, and a June 12 listing, with an indicative price of $525–530 per share (TradingKey; NBC News).\nFor reference: $1.75T puts SpaceX between Amazon and Alphabet in market cap on day one. The IPO alone would make Musk a trillionaire on paper. No pressure."
+  },
+  {
+    "objectID": "blog/posts/spacex-s1-magazine/index.html#the-company-is-now-three-businesses-not-one",
+    "href": "blog/posts/spacex-s1-magazine/index.html#the-company-is-now-three-businesses-not-one",
+    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
+    "section": "The Company Is Now Three Businesses, Not One",
+    "text": "The Company Is Now Three Businesses, Not One\nThe fact most people haven’t fully absorbed yet: SpaceX quietly absorbed xAI on February 2, 2026, in what the lawyers call a “transaction between entities under common control.” Translation: Musk owned both, so he merged them. The company you’re buying into is no longer just a rocket company. It’s a rocket company, an internet company, and an AI company, stapled together by the same controlling shareholder.\nThe three businesses make money in extremely different ways. One mints cash. One spends a fortune on the next rocket. One spends a fortune on, well, chips.\n\nAll figures FY 2025, in USD billions.\n\n\nSegment\nRevenue\nOp result\nCapex\n\n\n\n\nSpace (Falcon, Dragon, Starship)\n4.1\n(0.7)\n3.8\n\n\nConnectivity (Starlink)\n11.4\n4.4\n4.2\n\n\nAI (xAI, Grok, X)\n3.2\n(6.4)\n12.7\n\n\nTotal\n18.7\n(2.6)\n20.7\n\n\n\nThree quick takeaways:\n\nStarlink is the engine. Revenue grew 50% year over year. Operating income grew 120%. It’s the only segment making real money, and it’s making a lot of it.\nSpace looks like a loser, but it isn’t really. Starship development swallowed $3 billion of 2025 spend. Strip that out and the launch business — Falcon 9, Falcon Heavy, Dragon — is comfortably profitable. The headline loss is because Musk is building the next rocket.\nAI is the hungry one. $12.7 billion in capex in 2025, plus another $7.7 billion in Q1 2026 alone, against $3.2 billion of revenue. AI is the bet that lives downstream of Starlink’s cash flow.\n\nIn one sentence: you are buying a satellite internet company that happens to own a rocket factory and a giant warehouse full of GPUs.\n\n\n\nOne of the segment-opener pages from the prospectus. This is what ‘Space’ looks like, formatted like a magazine. Source: SEC filing."
+  },
+  {
+    "objectID": "blog/posts/spacex-s1-magazine/index.html#two-classes-of-stock-one-person-in-charge",
+    "href": "blog/posts/spacex-s1-magazine/index.html#two-classes-of-stock-one-person-in-charge",
+    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
+    "section": "Two Classes of Stock, One Person in Charge",
+    "text": "Two Classes of Stock, One Person in Charge\nThe cap structure section is short, important, and a little spicy.\nAfter the IPO, there will be two classes of stock:\n\nClass A — what you buy on the open market. One vote per share.\nClass B — held by Musk. Ten votes per share. And the kicker: Class B holders, voting as a class, elect a majority of the board on their own.\n\nThe S-1 spells it out plainly. Musk will control the outcome of anything that requires a shareholder vote, and SpaceX will use the “controlled company” exemption from a bunch of Nasdaq governance rules — including the one that usually requires a majority of independent directors on the board.\nIf you’ve followed Google, Meta, or Snap IPOs, you’ve seen this movie. Founder-controlled tech companies do it all the time. What’s a little different here is that Musk doesn’t even need to win a Class A vote. Class B alone elects a majority of the board. You’re buying the cash flows. Musk keeps the steering wheel.\nFor passive investors, this matters in one specific way: index providers have been getting increasingly grumpy about super-voting structures, and the prospectus itself lists “exclusion from certain stock indices” as a risk factor. Even at $1.75 trillion, S&P 500 admission on day one is not guaranteed."
+  },
+  {
+    "objectID": "blog/posts/spacex-s1-magazine/index.html#the-1.25-billion-a-month-anthropic-contract",
+    "href": "blog/posts/spacex-s1-magazine/index.html#the-1.25-billion-a-month-anthropic-contract",
+    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
+    "section": "The $1.25 Billion-a-Month Anthropic Contract",
+    "text": "The $1.25 Billion-a-Month Anthropic Contract\nNow we get to the section that made me re-read the filing to make sure I wasn’t hallucinating.\nOn May 3, 2026, SpaceX (using the data centers it inherited from xAI) signed a Cloud Services Agreement with Anthropic — the AI lab founded by former OpenAI researchers, makers of Claude. The terms:\n\nPursuant to these agreements, the customer has agreed to pay us $1.25 billion per month through May 2029.\n\nThat’s $15 billion a year. For three years. From Anthropic. To Elon Musk’s company.\nLet’s appreciate this for a second. Anthropic was founded by people who left OpenAI. OpenAI was co-founded by Elon Musk before he stormed out and started xAI. Now Anthropic is renting GPUs from Musk’s xAI to train Claude, the model that competes most directly with ChatGPT.\nIt’s the corporate equivalent of buying batteries from your ex.\nThe strategy actually makes sense for both sides, despite the optics:\n\nAnthropic has more money than it can spend on chips. They just raised $30B at a $380B valuation (Forge). What they don’t have is electricity. xAI’s Memphis data centers came online in 122 days flat — a terrestrial speedrun — and have capacity to spare. Anthropic rents what they need.\nxAI/SpaceX gets to fund its own AI lab by selling compute to its biggest model competitor. This is exactly what OpenAI did to Microsoft in 2019. Except now SpaceX is playing the Microsoft role.\n\nThe optics are funny. The strategic logic is solid.\n\n\n\nOne of the dozens of pull-quote pages in the prospectus, set against a glamour shot of Starship S38. Source: SEC filing."
+  },
+  {
+    "objectID": "blog/posts/spacex-s1-magazine/index.html#the-60-billion-option-on-cursor",
+    "href": "blog/posts/spacex-s1-magazine/index.html#the-60-billion-option-on-cursor",
+    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
+    "section": "The $60 Billion Option on Cursor",
+    "text": "The $60 Billion Option on Cursor\nThe Anthropic deal is the big one. The Cursor deal is the weird one.\nIn April 2026, SpaceX signed a “compute and option agreement” with Cursor — yes, that Cursor, the AI-powered code editor that every software engineer you know is currently using. The terms:\n\nSpaceX gives Cursor GPU capacity to run their product.\nSpaceX has the option to buy Cursor at an implied equity value of $60 billion, payable in SPCX stock.\nIf SpaceX walks away, they owe Cursor $10 billion in pre-baked break-up fees ($1.5B option termination + $8.5B deferred compute services).\n\nWhy would a rocket company want to buy a code editor? The S-1 is fairly honest about it. Cursor’s millions of developers generate “context-rich, verifiable data” about how humans actually write code — exactly the kind of training fuel that improves an AI model. You’re not buying a code editor. You’re buying a giant pipeline of human coding behavior, which happens to come wrapped inside a code editor.\nThis structure is genuinely new. It’s the same compute-today-equity-tomorrow dance Microsoft did with OpenAI and Amazon did with Anthropic, but now applied one layer higher — at the application layer instead of the model layer. If it works, expect to see more of it. The next twelve months will probably involve a lot of AI startups being offered “free” compute that comes with a $40 billion option attached."
+  },
+  {
+    "objectID": "blog/posts/spacex-s1-magazine/index.html#openai-the-two-sentence-mention-that-should-have-been-much-longer",
+    "href": "blog/posts/spacex-s1-magazine/index.html#openai-the-two-sentence-mention-that-should-have-been-much-longer",
+    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
+    "section": "OpenAI: The Two-Sentence Mention That Should Have Been Much Longer",
+    "text": "OpenAI: The Two-Sentence Mention That Should Have Been Much Longer\nThe full S-1 mentions OpenAI exactly twice, both in routine “we have competitors” boilerplate. There is no mention of the lawsuit Musk filed in 2024 trying to block OpenAI’s for-profit conversion and force out Sam Altman.\nWhy? Because two days before this S-1 was filed, a federal jury in California threw the lawsuit out.\nThe verdict landed on May 18, 2026. The jurors deliberated for less than two hours (NPR; Axios; NBC News). They didn’t even rule on the merits — they decided Musk had simply waited too long to sue. Statute of limitations. Game over. Musk’s related claim against Microsoft was dismissed on the same grounds.\nMusk’s lawyer told reporters: “This one is not over. I can sum it up in one word: appeal.” Sure.\nBut the timing is impossible to ignore. Filing a $75 billion IPO the same week your big-ticket lawsuit against your biggest AI rival gets dismissed in two hours is — let’s say — convenient. The cloud that would have hung over SPCX’s risk factors evaporated three trading days before the prospectus went public.\nAnd in case you thought OpenAI was just going to sit there and watch Musk go public alone: on the same day this prospectus dropped, multiple outlets reported that OpenAI is preparing to confidentially file its own S-1, with the same lead banks (Goldman Sachs and Morgan Stanley), targeting a fall debut at a valuation that “exceeds $1 trillion” (Bloomberg; Axios; CNBC).\nSo: in one week, Musk’s lawsuit against OpenAI dies, SpaceX files publicly, and OpenAI files confidentially. None of that is quite planets-aligning, but it’s close."
+  },
+  {
+    "objectID": "blog/posts/spacex-s1-magazine/index.html#three-giants-in-twelve-months",
+    "href": "blog/posts/spacex-s1-magazine/index.html#three-giants-in-twelve-months",
+    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
+    "section": "Three Giants in Twelve Months",
+    "text": "Three Giants in Twelve Months\nThree of the largest IPOs in the history of public markets are about to hit within roughly one calendar year:\n\n\n\n\n\n\n\n\n\n\nCompany\nFiling status\nTarget listing\nIndicative size / valuation\nLead banks\n\n\n\n\nSpaceX\nS-1 public, May 20, 2026\nJune 12, 2026\n~$75B raise / ~$1.75T\nGoldman, Morgan Stanley\n\n\nOpenAI\nConfidential S-1 imminent\nFall 2026 (~September)\n&gt;$1T valuation\nGoldman, Morgan Stanley\n\n\nAnthropic\nNot filed; ~Q4 2026 expected\nMore likely 2027\n~$60B+ raise / $380B+\nNot announced\n\n\n\nA few notes:\nThe same two banks are running two of these deals. Goldman Sachs and Morgan Stanley are leading both SpaceX and OpenAI. For deals this big and this competitively sensitive, that’s unusual — normally the banks would split clients. The same teams will pitch Musk’s company in June and Altman’s company in September. The “Chinese walls” inside investment banks (the rules that supposedly stop one client’s confidential info from leaking to another) are about to get a real-world stress test.\nThe flow event is going to be loud. SPCX at $1.75T would be a top-10 weight in any major US index that admits it. If OpenAI joins in the fall at $1T+, you’d have two of the five biggest companies in the world IPO’ing within five months. Every S&P 500 fund and Nasdaq-100 fund on Earth would need to buy a lot of stock, all on the same admission day. Quant desks have been modeling this for a quarter.\nAnthropic gets to wait. They have $30B of run-rate revenue, just raised $30B, and have the cleanest equity story of the three — no founder-control questions, no rival lawsuits, no for-profit-conversion drama. Their stated plan is a 2027 listing. Filing third may turn out to be the best slot of the three."
+  },
+  {
+    "objectID": "blog/posts/spacex-s1-magazine/index.html#one-more-thing-possibly-the-first-s-1-with-posters",
+    "href": "blog/posts/spacex-s1-magazine/index.html#one-more-thing-possibly-the-first-s-1-with-posters",
+    "title": "SpaceX Filed an S-1. It Reads Like a Magazine.",
+    "section": "One More Thing: Possibly the First S-1 With Posters",
+    "text": "One More Thing: Possibly the First S-1 With Posters\nWhich brings us back to the cover.\nA typical S-1 has exactly one image: the company logo, on page one. The ratio of text to pictures is roughly that of the IRS Form 1040 instructions.\nSpaceX’s S-1 has dozens of embedded images. Among them:\n\nA full-bleed photograph of Mars from orbit.\nMultiple full-page Musk pull-quotes set against glamour shots of Starship in flight.\nA “SPACE — ACTIVATED 2002 — FIRSTS” infographic with launch counts, reused-booster percentages, and crewmembers flown.\nA photograph of Starman (the spacesuit mannequin SpaceX launched on a Tesla Roadster in 2018, currently floating somewhere between Mars and the asteroid belt).\nGlossy spec sheets for Falcon 9, Falcon Heavy, Dragon, Starship, and Starlink V3.\nA “RISK FACTORS” section opener that is, literally, a photograph of a rocket surrounded by fire.\n\nThat last one is not metaphorical:\n\n\n\nThe actual title page for the Risk Factors section of the S-1. Source: SEC filing.\n\n\nThe page where the company discusses what could go horribly wrong with the business is, in the prospectus itself, illustrated by an image of their main product on fire.\nCoinbase, Airbnb, and Roblox were the previous gold-standard for “S-1 with design sense” — branded color blocks, full-bleed photos, the occasional pull quote. None of them put a photograph of their core product on actual fire as the masthead of their risk factors. SpaceX may be the first.\nThere’s a real argument that this is part of the offering. When you’re trying to convince public-market investors to buy into a controlled company with an AI segment burning $12B a year and a CEO with a non-zero probability of any given Tuesday being interesting, “trust us, the vibes are great” is a legitimate strategy. The prospectus isn’t selling a document. It’s selling a feeling.\nIt’s also, in fairness, the only S-1 you can read twice without falling asleep. That might be worth a few basis points all by itself.\n\nFinancial figures and contract terms come from Space Exploration Technologies Corp.’s Form S-1, filed with the SEC on May 20, 2026. Images shown are downsampled reproductions of figures in the same filing. External reporting cited inline."
   },
   {
     "objectID": "index.html",
