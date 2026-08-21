@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -39,14 +42,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea02be5fc9736d5e8f5ccf4f30b91c00.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-c8143b2d1f2b146070c8066d8497462a.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea02be5fc9736d5e8f5ccf4f30b91c00.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-216ae1b885f520181b8ac1ea2637991b.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8f5a2f21285bd0c95528dbdc74d75970.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-216ae1b885f520181b8ac1ea2637991b.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c9bde5fa88a6998081a2959fd191cdcc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-0ec83daf90dcb234d54368d0283687d2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-c9bde5fa88a6998081a2959fd191cdcc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-eb632f1eda9acb5ebaa9cc511b2d92cb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-f8bd06a229fb7dc43c3c94d410941bac.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-eb632f1eda9acb5ebaa9cc511b2d92cb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -337,12 +340,33 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="outside-the-classroom" class="level2">
 <h2 data-anchor-id="outside-the-classroom">Outside the classroom</h2>
-<p>Outside the classroom and my research, I’m also a Rubik’s cube solver. You can check out my <a href="https://www.worldcubeassociation.org/persons/2025RENH02" target="_blank" rel="noopener">World Cube Association (WCA) profile</a> to see my official results. I’m also passionate about photography. You can browse some of my favorite shots in the Photography section of this website.</p>
+<p>Outside the classroom and my research, I’m also a Rubik’s cube solver. You can check out my <a href="https://www.worldcubeassociation.org/persons/2025RENH02" target="_blank" rel="noopener">World Cube Association (WCA) profile</a> to see my official results, or <a href="#" data-bs-toggle="modal" data-bs-target="#cubeVideoModal">watch my fastest 3x3 solve</a>.</p>
+<p>I’m also passionate about photography. You can browse some of my favorite shots in the <a href="./photography.html">Photography</a> section of this website.</p>
+<div class="modal fade" id="cubeVideoModal" tabindex="-1" aria-label="My fastest 3x3 solve" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 bg-transparent">
+      <div class="ratio ratio-16x9">
+        <iframe id="cubeVideoFrame" src="" title="TX Champs 3x3 Round 1 - Waco, TX - Dec 2025" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("cubeVideoModal");
+    const frame = document.getElementById("cubeVideoFrame");
+    if (!modal || !frame) return;
+    const src = "https://www.youtube-nocookie.com/embed/rhAZwPB3108?rel=0";
+    // Load the video only when the modal opens, and unload it on close so it stops playing.
+    modal.addEventListener("show.bs.modal", () => { frame.src = src; });
+    modal.addEventListener("hidden.bs.modal", () => { frame.src = ""; });
+  });
+</script>
 </section>
 <section id="what-youll-find-here" class="level2">
 <h2 data-anchor-id="what-youll-find-here">What you’ll find here</h2>
 <ul>
-<li><a href="./teaching.html"><strong>Teaching</strong></a> — a financial calculator and open textbooks I’m writing, work in progress.</li>
+<li><a href="./teaching.html"><strong>Teaching</strong></a> — a financial calculator and open lecture notes I’m writing, work in progress.</li>
 <li><a href="./research.html"><strong>Research</strong></a> — publications and working papers.</li>
 <li><a href="./blog/index.html"><strong>Blog</strong></a> — occasional writing.</li>
 <li><a href="./photography.html"><strong>Photography</strong></a> — a gallery of photos.</li>
