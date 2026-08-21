@@ -2,24 +2,34 @@
 title: "Photography"
 page-layout: full
 title-block-banner: false
+lightbox:
+  match: auto
+  effect: zoom
+  desc-position: bottom
 ---
 
 ::: {layout-ncol=3}
 
-![Flying](images/photo/flying-bro.jpg)
+![Flying](images/photo/flying-bro.jpg){group="gallery"}
 
-![Underwater](images/photo/underwater.jpg)
+![Underwater](images/photo/underwater.jpg){group="gallery"}
 
-![Summer](images/photo/insta.jpg)
+![Summer](images/photo/insta.jpg){group="gallery"}
 
-![Star Trails](images/photo/star-trail.jpg)
+![Star Trails](images/photo/star-trail.jpg){group="gallery"}
 
-![Dallas](images/photo/dallas.jpg)
+![Dallas](images/photo/dallas.jpg){group="gallery"}
 
-![Bird](images/photo/bird.jpg)
+![Bird](images/photo/bird.jpg){group="gallery"}
 
-![Film](images/photo/film.jpg)
+![Snow Day](images/photo/winter.jpg){group="gallery"}
 
-![Chill](images/photo/sprite.jpg)
+![Top of Shanghai](images/photo/top-of-shanghai.jpg){group="gallery"}
+
+![Family](images/photo/family.jpg){group="gallery"}
+
+![Film](images/photo/film.jpg){group="gallery"}
+
+![Chill](images/photo/sprite.jpg){group="gallery"}
 
 :::
