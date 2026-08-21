@@ -7,6 +7,9 @@
 /*.html
 /*_files/
 
+# Web dependencies Quarto can drop at the project root during publish
+/site_libs/
+
 # OS
 .DS_Store
 Thumbs.db
