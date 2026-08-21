@@ -24,11 +24,36 @@ I'm an Associate Professor of Finance at [Merrilee Alexander Kick College of Bus
 
 ## Outside the classroom
 
-Outside the classroom and my research, I'm also a Rubik's cube solver. You can check out my <a href="https://www.worldcubeassociation.org/persons/2025RENH02" target="_blank" rel="noopener">World Cube Association (WCA) profile</a> to see my official results. I'm also passionate about photography. You can browse some of my favorite shots in the Photography section of this website.
+Outside the classroom and my research, I'm also a Rubik's cube solver. You can check out my <a href="https://www.worldcubeassociation.org/persons/2025RENH02" target="_blank" rel="noopener">World Cube Association (WCA) profile</a> to see my official results, or <a href="#" data-bs-toggle="modal" data-bs-target="#cubeVideoModal">watch my fastest 3x3 solve</a>.
+
+I'm also passionate about photography. You can browse some of my favorite shots in the [Photography](photography.qmd) section of this website.
+
+```{=html}
+<div class="modal fade" id="cubeVideoModal" tabindex="-1" aria-label="My fastest 3x3 solve" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 bg-transparent">
+      <div class="ratio ratio-16x9">
+        <iframe id="cubeVideoFrame" src="" title="TX Champs 3x3 Round 1 - Waco, TX - Dec 2025" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("cubeVideoModal");
+    const frame = document.getElementById("cubeVideoFrame");
+    if (!modal || !frame) return;
+    const src = "https://www.youtube-nocookie.com/embed/rhAZwPB3108?rel=0";
+    // Load the video only when the modal opens, and unload it on close so it stops playing.
+    modal.addEventListener("show.bs.modal", () => { frame.src = src; });
+    modal.addEventListener("hidden.bs.modal", () => { frame.src = ""; });
+  });
+</script>
+```
 
 ## What you'll find here
 
-- [**Teaching**](teaching.qmd) — a financial calculator and open textbooks I'm writing, work in progress.
+- [**Teaching**](teaching.qmd) — a financial calculator and open lecture notes I'm writing, work in progress.
 - [**Research**](research.qmd) — publications and working papers.
 - [**Blog**](blog/index.qmd) — occasional writing.
 - [**Photography**](photography.qmd) — a gallery of photos.
