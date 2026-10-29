@@ -10,8 +10,8 @@
 <atom:link href="https://imrenhe.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>This is my blog where I practice sharing my curiosity about the world.
 </description>
-<generator>quarto-1.10.18</generator>
-<lastBuildDate>Mon, 06 Jul 2026 05:00:00 GMT</lastBuildDate>
+<generator>quarto-1.7.32</generator>
+<lastBuildDate>Mon, 06 Jul 2026 00:00:00 GMT</lastBuildDate>
 <item>
   <title>FIFA Discovered the Commercial Break</title>
   <dc:creator>He Ren</dc:creator>
@@ -223,7 +223,7 @@
   <category>sports</category>
   <category>media</category>
   <guid>https://imrenhe.github.io/blog/posts/fifa-hydration-break-economics/</guid>
-  <pubDate>Mon, 06 Jul 2026 05:00:00 GMT</pubDate>
+  <pubDate>Mon, 06 Jul 2026 00:00:00 GMT</pubDate>
   <media:content url="https://imrenhe.github.io/blog/posts/fifa-hydration-break-economics/images/fifa-revenue-breakdown.png" medium="image" type="image/png" height="74" width="144"/>
 </item>
 <item>
@@ -443,7 +443,7 @@
   <category>IPO</category>
   <category>AI</category>
   <guid>https://imrenhe.github.io/blog/posts/spacex-s1-magazine/</guid>
-  <pubDate>Wed, 20 May 2026 05:00:00 GMT</pubDate>
+  <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
   <media:content url="https://imrenhe.github.io/blog/posts/spacex-s1-magazine/images/space-stats.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -474,7 +474,7 @@
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Sign convention
+Sign convention
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -942,7 +942,7 @@
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>The <code>=NPV</code> gotcha
+The <code>=NPV</code> gotcha
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -967,7 +967,7 @@
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>When IRR misleads
+When IRR misleads
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1067,7 +1067,7 @@
   <category>finance</category>
   <category>teaching</category>
   <guid>https://imrenhe.github.io/blog/posts/tvm-ba-ii-plus-and-excel/</guid>
-  <pubDate>Fri, 15 May 2026 05:00:00 GMT</pubDate>
+  <pubDate>Fri, 15 May 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Summary: From EDGAR Filings to a Structured Database</title>
@@ -1158,7 +1158,7 @@
   <category>data</category>
   <category>finance</category>
   <guid>https://imrenhe.github.io/blog/posts/edgar-filings-to-structured-database/</guid>
-  <pubDate>Mon, 11 May 2026 05:00:00 GMT</pubDate>
+  <pubDate>Mon, 11 May 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Summary: Large Datasets and Structured Databases</title>
@@ -1260,7 +1260,7 @@
   <category>data</category>
   <category>economics</category>
   <guid>https://imrenhe.github.io/blog/posts/large-datasets-and-structured-databases/</guid>
-  <pubDate>Sat, 09 May 2026 05:00:00 GMT</pubDate>
+  <pubDate>Sat, 09 May 2026 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
