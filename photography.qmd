@@ -32,4 +32,6 @@ lightbox:
 
 ![Chill](images/photo/sprite.jpg){group="gallery"}
 
+![Tethered](images/photo/parasail.jpg){group="gallery"}
+
 :::
