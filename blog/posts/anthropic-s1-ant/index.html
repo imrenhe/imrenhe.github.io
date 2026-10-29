@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="He Ren">
+<meta name="dcterms.date" content="2026-10-29">
+<meta name="description" content="Anthropic wants to list on Nasdaq as ANT. Its S-1 shows revenue up fourteenfold, an “$80.7 billion loss” that is mostly paperwork, a compute shopping list longer than most countries’ budgets, and a share structure where one single share holds 50.1% of the votes. Notes on what’s inside.">
+
+<title>Anthropic Filed an S-1. ANT Is No Small Bug. – HE REN</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../images/stock-2.svg" rel="icon" type="image/svg+xml">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d967bcf1f248e84ff9e3de7aac66bd8d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-2d93c1f1c239013447b74681546f8fe7.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-d967bcf1f248e84ff9e3de7aac66bd8d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-2061d193c9ea48e5106358bb79406703.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-dark-884b07a836e52ee2562001410c1299d7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-2061d193c9ea48e5106358bb79406703.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Petrona:wght@400;500;700&amp;family=Red+Hat+Text:wght@400;500;700&amp;family=B612+Mono&amp;display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="../../../styles/styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../images/stock-2.svg" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">HE REN</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
+<span class="menu-text">HOME</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../teaching.html"> 
+<span class="menu-text">TEACHING</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../research.html"> 
+<span class="menu-text">RESEARCH</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../blog/index.html"> 
+<span class="menu-text">BLOG</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../photography.html"> 
+<span class="menu-text">PHOTOGRAPHY</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../about.html"> 
+<span class="menu-text">ABOUT</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Anthropic Filed an S-1. ANT Is No Small Bug.</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">finance</div>
+    <div class="quarto-category">IPO</div>
+    <div class="quarto-category">AI</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Anthropic wants to list on Nasdaq as ANT. Its S-1 shows revenue up fourteenfold, an “$80.7 billion loss” that is mostly paperwork, a compute shopping list longer than most countries’ budgets, and a share structure where one single share holds 50.1% of the votes. Notes on what’s inside.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>He Ren </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 29, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Back in May, I wrote about <a href="../../../blog/posts/spacex-s1-magazine/index.html">SpaceX’s S-1</a>, the one that read like a magazine. Buried in it was a contract that made me re-read the page twice: Anthropic had agreed to pay SpaceX $1.25 billion a month for GPUs. I called it buying batteries from your ex.</p>
+<p>Five months later, the customer has filed its own S-1. And the ex is now sending a bigger bill.</p>
+<p>Anthropic’s registration statement went to the SEC on <a href="https://www.sec.gov/Archives/edgar/data/0002130357/000162828026067168/anthropicpbc-sx1.htm">October 26, 2026</a>. It is about 335 pages before the financial statements, and it is less of a coffee-table magazine than SpaceX’s. There are eight glossy full-page graphics up front and a stack of customer case studies, but nothing is on fire. What it has instead is numbers. Very large numbers, some of them with a minus sign, and a corporate governance section that reads like the rules of a board game invented by philosophers.</p>
+<p>Let’s walk through it.</p>
+<section id="what-was-filed" class="level2">
+<h2 class="anchored" data-anchor-id="what-was-filed">What Was Filed</h2>
+<p>The company is <strong>Anthropic, PBC</strong>, a Delaware <em>public benefit corporation</em> based in San Francisco. The ticker will be <strong>ANT</strong>, on the Nasdaq Global Select Market.</p>
+<p>Yes, ANT. A company whose entire pitch is building something enormous chose the name of the smallest thing at the picnic. I respect it. Ants are also famous for carrying many times their body weight, which, as we’ll see in the compute section, is the right metaphor.</p>
+<p>Goldman Sachs and Morgan Stanley lead the deal, the same two banks that ran SpaceX. Behind them come <strong>twenty more banks</strong>, from J.P. Morgan and Citigroup down to Macquarie and Capital One. Twenty-two underwriters in total. SpaceX had twenty-three. I assume there is a group chat.</p>
+<p>What the filing does <em>not</em> have yet: the price range, the number of shares, the deal size, the run-rate revenue figure, and the third-quarter income statement. All of those are literally blank in this preliminary version (a row of “$” signs with nothing after them). Companies fill them in closer to the roadshow. So anything you read about the valuation right now is either an estimate or a guess, including mine below.</p>
+</section>
+<section id="the-income-statement-fourteen-times-in-one-year" class="level2">
+<h2 class="anchored" data-anchor-id="the-income-statement-fourteen-times-in-one-year">The Income Statement: Fourteen Times in One Year</h2>
+<p>Here is the top line, straight from the summary financial data (p.&nbsp;22):</p>
+<table class="caption-top table">
+<caption>USD millions. Source: Form S-1, Summary Consolidated Financial and Other Data, p.&nbsp;22.</caption>
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+<th style="text-align: right;">H1 2025</th>
+<th style="text-align: right;">H1 2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Revenue</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">386</td>
+<td style="text-align: right;">4,585</td>
+<td style="text-align: right;">1,163</td>
+<td style="text-align: right;">16,286</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Compute and infrastructure</td>
+<td style="text-align: right;">433</td>
+<td style="text-align: right;">2,522</td>
+<td style="text-align: right;">7,326</td>
+<td style="text-align: right;">2,334</td>
+<td style="text-align: right;">8,945</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Personnel</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">454</td>
+<td style="text-align: right;">1,839</td>
+<td style="text-align: right;">538</td>
+<td style="text-align: right;">3,152</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sales, marketing, and partnerships</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">568</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">3,168</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Other operating and administrative</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">347</td>
+<td style="text-align: right;">1,412</td>
+<td style="text-align: right;">306</td>
+<td style="text-align: right;">1,714</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Bartz settlement</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1,500</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Operating loss</strong></td>
+<td style="text-align: right;"><strong>(551)</strong></td>
+<td style="text-align: right;"><strong>(2,980)</strong></td>
+<td style="text-align: right;"><strong>(8,060)</strong></td>
+<td style="text-align: right;"><strong>(2,135)</strong></td>
+<td style="text-align: right;"><strong>(693)</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Net loss</strong></td>
+<td style="text-align: right;"><strong>(1,531)</strong></td>
+<td style="text-align: right;"><strong>(8,309)</strong></td>
+<td style="text-align: right;"><strong>(41,965)</strong></td>
+<td style="text-align: right;"><strong>(12,969)</strong></td>
+<td style="text-align: right;"><strong>(80,748)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Read the first row again. Revenue in the <strong>first half of 2026</strong> was $16.3 billion, which is <strong>14 times</strong> the first half of 2025 and more than three and a half times <em>all of 2025</em>. The company went from $41 million of revenue in 2023 to more than $11.5 billion in a single quarter. If a student handed me this in a valuation case, I would ask them to check their units.</p>
+<p>The quarterly view (p.&nbsp;157) is where the story gets interesting:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ant-quarterly-revenue-compute.png" class="img-fluid figure-img"></p>
+<figcaption>Quarterly revenue against the compute and infrastructure bill. Revenue crossed above compute spending in Q1 2026 and kept going. <em>Chart by author, data from Form S-1, p.&nbsp;157.</em></figcaption>
+</figure>
+</div>
+<p>For every quarter of 2025, the compute bill was bigger than revenue. In Q1 2026 revenue finally passed it, and in Q2 2026 revenue ($11.6 billion) was more than double compute ($5.6 billion). That quarter produced Anthropic’s <strong>first operating profit: $974 million</strong> (p.&nbsp;157).</p>
+<p>A few other things worth noticing in that table:</p>
+<ul>
+<li><strong>The Bartz line.</strong> That $1.5 billion in 2025 is the settlement of the authors’ copyright class action, booked in Q3 2025 (pp.&nbsp;22, 157). In that quarter it equaled about 109% of revenue. It is the most expensive library card in history.</li>
+<li><strong>Sales, marketing, and partnerships jumped 26-fold</strong> in the first half of 2026. That line is mostly <em>fees paid to channel partners</em>, meaning the cloud platforms that resell Claude (p.&nbsp;146). The S-1 says the increase was “primarily driven by a $2.7 billion increase in fees paid to channel partners” (p.&nbsp;149). Translation: Amazon, Google, and Microsoft take a toll on the highway.</li>
+<li><strong>Revenue is booked gross.</strong> When a customer buys through a cloud marketplace, Anthropic records the full amount as revenue and the platform’s cut as an expense (F-21). Worth remembering before comparing margins to companies that net it out.</li>
+</ul>
+</section>
+<section id="the-80.7-billion-loss-that-mostly-isnt" class="level2">
+<h2 class="anchored" data-anchor-id="the-80.7-billion-loss-that-mostly-isnt">The $80.7 Billion Loss That Mostly Isn’t</h2>
+<p>Now the scary number. Net loss for the first half of 2026 was <strong>$80.7 billion</strong>, on $16.3 billion of revenue. That is a net margin of roughly negative 496%, and it is the figure most headlines led with.</p>
+<p>It is also mostly accounting.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ant-net-loss-bridge.png" class="img-fluid figure-img"></p>
+<figcaption>Bridge from operating loss to net loss for the first half of 2026. The operating business lost $0.7 billion. Almost everything else is a non-cash mark on financing instruments. <em>Chart by author, data from Form S-1, p.&nbsp;22 and p.&nbsp;150.</em></figcaption>
+</figure>
+</div>
+<p>Anthropic financed itself partly with <strong>convertible notes</strong> sold to strategic partners, especially Amazon, and with other note purchase agreements. Those instruments are carried at fair value. When the company’s valuation goes up, the notes (which will convert into shares) become more valuable, and the company has to record the increase as a loss. The S-1 says the $72.4 billion change was “primarily driven by an increase in the fair value of our outstanding convertible promissory notes resulting from an increase in our enterprise valuation” (p.&nbsp;22). The extra $8.8 billion of “other expense” comes from the fair value of assets and liabilities under the same note purchase agreements (p.&nbsp;150).</p>
+<p>So here is a company that loses more money the more successful it becomes. In finance class we call this a non-cash, non-operating item. In real life it is a strange kind of humblebrag.</p>
+<p>The operating business tells a calmer story: an operating loss of only $693 million for the half, and positive <strong>operating cash flow of $3.9 billion</strong> (p.&nbsp;168), against cash burned in every prior year. Management’s own non-GAAP measure, adjusted operating income, was <strong>+$1.6 billion</strong> for the half, a 10% margin (p.&nbsp;156). The usual caveat applies: non-GAAP adds back stock-based compensation, which was $2.2 billion for the half and is about to get much larger (more on that below).</p>
+</section>
+<section id="the-cost-of-compute-every-chip-from-everyone" class="level2">
+<h2 class="anchored" data-anchor-id="the-cost-of-compute-every-chip-from-everyone">The Cost of Compute: Every Chip, From Everyone</h2>
+<p>If there is one thing to understand about a frontier AI lab, it is that the product is made of electricity and silicon. Anthropic’s largest expense line is literally called “Compute and infrastructure,” and the trend in that line is the single best chart in the filing:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ant-compute-per-dollar.png" class="img-fluid figure-img"></p>
+<figcaption>Compute and infrastructure expense per dollar of revenue. In 2023 it took $10.56 of compute to earn one dollar. In the first half of 2026 it took 55 cents. <em>Chart by author, calculated from Form S-1, p.&nbsp;22.</em></figcaption>
+</figure>
+</div>
+<p>The S-1 puts it this way: revenue “grew 1,368% year over year for the three months ended June 30, 2026 compared to compute and infrastructure expenses that grew 300%” (p.&nbsp;10). That gap is the whole investment case in one sentence.</p>
+<p>There is also a hidden gross margin. The face of the income statement shows expenses by <em>nature</em> (compute, people, and so on), not by function, so there is no “gross profit” line. But Note 8 to the financial statements reports a functional split, with a <strong>cost of revenue</strong> of $2,380 million for the first half of 2026 (F-39). My own arithmetic from that note:</p>
+<table class="caption-top table">
+<caption>USD millions. Revenue and cost of revenue from Form S-1, Note 8 (F-39); gross margin is the author’s calculation and is not reported in the filing.</caption>
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">2023</th>
+<th style="text-align: right;">2024</th>
+<th style="text-align: right;">2025</th>
+<th style="text-align: right;">H1 2025</th>
+<th style="text-align: right;">H1 2026</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Revenue</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">386</td>
+<td style="text-align: right;">4,585</td>
+<td style="text-align: right;">1,163</td>
+<td style="text-align: right;">16,286</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cost of revenue</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">752</td>
+<td style="text-align: right;">2,773</td>
+<td style="text-align: right;">1,019</td>
+<td style="text-align: right;">2,380</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Implied gross margin</strong></td>
+<td style="text-align: right;"><strong>37%</strong></td>
+<td style="text-align: right;"><strong>(95%)</strong></td>
+<td style="text-align: right;"><strong>40%</strong></td>
+<td style="text-align: right;"><strong>12%</strong></td>
+<td style="text-align: right;"><strong>85%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>An 85% gross margin is software-like. The catch is that serving customers (inference) is cheap relative to <em>building the next model</em> (training and research), which sits in R&amp;D. R&amp;D was $9.7 billion in the same half (F-39). The product is profitable to sell; it is expensive to keep improving.</p>
+<section id="who-supplies-the-compute" class="level3">
+<h3 class="anchored" data-anchor-id="who-supplies-the-compute">Who supplies the compute</h3>
+<p>Anthropic says it trains and serves its models on “four major chip families (AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs)” (p.&nbsp;135). That is unusual. Most labs pick a side. Anthropic picked all of them, and the contracts in the MD&amp;A (pp.&nbsp;170 to 172) show what that costs:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ant-compute-commitments.png" class="img-fluid figure-img"></p>
+<figcaption>Major compute arrangements disclosed in the S-1, by partner. Amounts are total commitments over multi-year terms, not annual spending. <em>Chart by author, data from Form S-1, pp.&nbsp;170 to 172.</em></figcaption>
+</figure>
+</div>
+<p>Some details that do not fit on a bar:</p>
+<ul>
+<li><strong>SpaceXAI</strong> (formerly X.AI, now a SpaceX subsidiary): up to <strong>$120.5 billion</strong> for NVIDIA GPUs, terms into 2029, “approximately $3.1 billion in the aggregate per month once all capacity has been delivered, which we expect in December 2026” (p.&nbsp;171). In May the bill was $1.25 billion a month. Now it is $3.1 billion. The ex has upgraded you to the premium plan. To be fair to Anthropic, after the initial periods end in early 2027, either side can cancel with 90 days’ notice.</li>
+<li><strong>Google</strong>: at least $114.5 billion through July 2033, “regardless of actual usage,” plus an estimated <strong>$125 to $150 billion</strong> of additional TPU compute for 2028 to 2031 that is not in the commitments table (p.&nbsp;170).</li>
+<li><strong>Amazon</strong>: at least $110.0 billion from May 2026 to April 2036, also regardless of actual usage (p.&nbsp;171).</li>
+<li><strong>Microsoft</strong>: at least $44.9 billion from November 2026 to May 2033 (p.&nbsp;170).</li>
+<li><strong>Broadcom</strong>: five-year leases on TPU equipment with total rent of about <strong>$161.2 billion</strong> (p.&nbsp;171).</li>
+<li>Plus Nscale ($44.6 billion), Lambda ($41.3 billion), and AMD (more than $20 billion for the first tranche of its new rack systems).</li>
+</ul>
+<p>The notes to the financial statements give the totals: fixed or minimum commitments of about <strong>$265.6 billion</strong> as of June 30, 2026 (F-58), and about <strong>$245 billion</strong> more signed after that date (F-65). Half a trillion dollars, give or take, before counting the open-ended deals.</p>
+<p>For perspective, Anthropic’s revenue in the first half of 2026 was $16.3 billion. These are bets that revenue keeps compounding for a decade. Most of these contracts are non-cancelable. If demand slows, the bill does not.</p>
+<p>One more twist: the compute suppliers are also the financiers. Amazon holds $6.2 billion of convertible notes. Google has a $20 billion note facility and an option to buy up to $10 billion of stock alongside the IPO. Broadcom has a $42 billion facility that can only be used to pay Broadcom’s own lease rent, at a <strong>9% paid-in-kind interest rate</strong> (p.&nbsp;165). AMD committed to buy up to $5 billion of stock as its chips get delivered (p.&nbsp;163). The landlord lends you the money to pay the landlord. Vendor financing has a long and colorful history in tech; this is the largest version I have seen.</p>
+</section>
+</section>
+<section id="who-the-customers-are" class="level2">
+<h2 class="anchored" data-anchor-id="who-the-customers-are">Who the Customers Are</h2>
+<p>Anthropic is primarily an enterprise business. As of September 30, 2026 (pp.&nbsp;9, 142):</p>
+<ul>
+<li><strong>More than 11,900</strong> customers spent $100,000 or more over the trailing twelve months.</li>
+<li><strong>More than 1,900</strong> spent $1 million or more.</li>
+<li><strong>About 250</strong> spent $10 million or more.</li>
+<li><strong>About 40 million</strong> customers spent less than $100,000 each.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ant-100k-customers.png" class="img-fluid figure-img"></p>
+<figcaption>Customers with at least $100,000 of trailing twelve-month revenue. <em>Chart by author, data from Form S-1, pp.&nbsp;134 and 142.</em></figcaption>
+</figure>
+</div>
+<p>The $100K club includes “every company in the Fortune 10, over 50% of the Fortune 500, and over 30% of the Global 2000” (p.&nbsp;194). Yet for the average Fortune 500 customer, Anthropic’s revenue is “less than 0.1% of their total expenses” (p.&nbsp;142). That is the “we have barely started” slide every IPO wants, and here it comes with a footnote.</p>
+<p>How much do the biggest customers matter? Less than you might fear, more than you might like:</p>
+<table class="caption-top table">
+<caption>Author’s summary of customer and channel disclosures in Form S-1.</caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Concentration measure</th>
+<th style="text-align: left;">Figure</th>
+<th style="text-align: left;">Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Any single customer above 10% of revenue, 9M 2026</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">p.&nbsp;56</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Top five customers, share of revenue, 9M 2026</td>
+<td style="text-align: left;">About 25%</td>
+<td style="text-align: left;">p.&nbsp;56</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Revenue sold through cloud marketplaces (AWS, Google Cloud, Azure), H1 2026</td>
+<td style="text-align: left;">48%</td>
+<td style="text-align: left;">p.&nbsp;56</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Same, 2023</td>
+<td style="text-align: left;">11%</td>
+<td style="text-align: left;">p.&nbsp;56</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Revenue from consumption (usage) vs.&nbsp;subscriptions, H1 2026</td>
+<td style="text-align: left;">80% / 20%</td>
+<td style="text-align: left;">p.&nbsp;138</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">U.S. share of revenue, H1 2026</td>
+<td style="text-align: left;">72%</td>
+<td style="text-align: left;">F-26</td>
+</tr>
+</tbody>
+</table>
+<p>The real concentration is not a customer; it is a <em>channel</em>. Nearly half of revenue now flows through the same three cloud companies that sell Anthropic its compute, own pieces of its equity, and, as the risk factors note, compete with it (p.&nbsp;73). It is a very tight family.</p>
+<p>Two smaller disclosures made me smile:</p>
+<ul>
+<li><strong>Net Revenue Retention of about 900%</strong> as of September 30, 2026 (p.&nbsp;135). For context, a SaaS company bragging about 130% gets a standing ovation. Nine hundred percent means the average qualifying customer spends nine times what it spent a year earlier.</li>
+<li><strong>Holiday code freezes cost real money.</strong> In the two weeks ended January 2, 2026, total customer spend fell about 20% compared to the prior two weeks, because engineers stopped shipping code for the holidays (p.&nbsp;143). Even the AI takes Christmas off when its users do.</li>
+</ul>
+<p>And one that made me appreciate the honesty: the company estimates that <strong>5% to 7% of revenue</strong> in the first nine months of 2026 came from customers who were later found to be violating its usage policy or commercial terms (p.&nbsp;145). It expects that share to decline as enforcement improves. I can’t remember the last S-1 that quantified its bad customers.</p>
+</section>
+<section id="growth-outlook-how-long-can-this-last" class="level2">
+<h2 class="anchored" data-anchor-id="growth-outlook-how-long-can-this-last">Growth Outlook: How Long Can This Last?</h2>
+<p>The S-1 is careful not to forecast, so here is what it does give us:</p>
+<ul>
+<li><strong>Remaining performance obligations</strong> of $10.8 billion at June 30, 2026, about 75% expected within twelve months (F-26).</li>
+<li><strong>Revenue per employee</strong> of more than $6.6 million on a trailing basis, up from $1.4 million a year earlier, with about 5,300 employees (pp.&nbsp;10, 229).</li>
+<li><strong>Cash and cash equivalents of $112.4 billion</strong> plus $19.3 billion of short-term investments at June 30, 2026, after raising $141.1 billion of capital in total (p.&nbsp;10). Add $77 billion of undrawn note facilities and a $15 billion credit line (pp.&nbsp;162, 165).</li>
+<li>A self-described market opportunity of “more than $40 trillion” of knowledge work globally (p.&nbsp;185), which is the kind of number you put in an S-1 when “very big” won’t fit in the table.</li>
+</ul>
+<p>The line that best captures the growth thesis is this one: “over 90% of the contributions to our codebase in September 2026 were written by Claude” (p.&nbsp;136). The product is building the product. Whether that is a flywheel or a hall of mirrors is the question a public investor is being asked to price.</p>
+</section>
+<section id="ownership-five-classes-of-stock-two-single-shares" class="level2">
+<h2 class="anchored" data-anchor-id="ownership-five-classes-of-stock-two-single-shares">Ownership: Five Classes of Stock, Two Single Shares</h2>
+<p>The SpaceX S-1 had a simple control story: Musk’s Class B gets ten votes per share. Anthropic’s version needs a table.</p>
+<table class="caption-top table">
+<caption>Author’s summary from the Form S-1 cover page and “Our Governance Structure and Its Goals,” pp.&nbsp;242 to 253.</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Class</th>
+<th style="text-align: left;">Who holds it</th>
+<th style="text-align: left;">Votes</th>
+<th style="text-align: left;">Economics</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">A</td>
+<td style="text-align: left;">Public investors, founders, employees</td>
+<td style="text-align: left;">1 per share</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">N</td>
+<td style="text-align: left;">“Primarily strategic business partners” (Amazon, Google, and others)</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">Yes, same as A</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">T</td>
+<td style="text-align: left;"><strong>One share</strong>, held by the Long-Term Benefit Trust</td>
+<td style="text-align: left;">Elects a majority of the board</td>
+<td style="text-align: left;">None</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">F</td>
+<td style="text-align: left;"><strong>One share</strong>, held by an LLC of the seven co-founders</td>
+<td style="text-align: left;"><strong>Fixed 50.1%</strong> of total voting power</td>
+<td style="text-align: left;">None</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">E</td>
+<td style="text-align: left;">Employees (not founders), earned by tenure</td>
+<td style="text-align: left;">Limited matters only</td>
+<td style="text-align: left;">None</td>
+</tr>
+</tbody>
+</table>
+<p>Let that sink in. <strong>One share</strong> (Class T) lets the Long-Term Benefit Trust elect a majority of the board. <strong>One other share</strong> (Class F) gives the co-founders 50.1% of all stockholder votes, and that percentage does not dilute no matter how many new shares are issued (p.&nbsp;117). The S-1 is admirably blunt about what this means for you, the Class A buyer:</p>
+<blockquote class="blockquote">
+<p>holders of our Class A common stock generally will not be able to affect the outcome of any matter submitted to a vote of our stockholders or the election of our directors, regardless of how they vote</p>
+<p><em>Form S-1, Risk Factors, p.&nbsp;108</em></p>
+</blockquote>
+<p>Some features worth knowing:</p>
+<ul>
+<li><strong>The Trust.</strong> The Long-Term Benefit Trust is meant to be five “financially disinterested” trustees with expertise in AI safety, national security, and public policy (p.&nbsp;13). Four seats are filled today, and one of the trustees is <strong>Ben Bernanke</strong> (p.&nbsp;245). The former Fed Chair now helps oversee an AI lab. Trustees are paid $400,000 a year in cash and are prohibited from owning the stock (pp.&nbsp;108, 246).</li>
+<li><strong>The founders.</strong> The 50.1% voting share sunsets only when fewer than three of the seven co-founders remain active for 90 consecutive days, followed by a 450-day transition period (pp.&nbsp;108, 247). There is no fixed calendar date.</li>
+<li><strong>The strategic investors have no vote.</strong> Amazon and Google hold non-voting Class N stock, so they don’t appear in the principal stockholders table at all. Google’s stake is capped at 14.99% and Amazon’s at 12% under their financing agreements (pp.&nbsp;164, 168).</li>
+<li><strong>Index risk.</strong> The S-1 itself warns that its “multi-class capital structure may make us ineligible for inclusion in indices,” so passive funds might not buy it (p.&nbsp;109). Same issue SpaceX flagged.</li>
+<li><strong>Philanthropy, built into the cap table.</strong> Anthropic contributed 846,840,960 Class N shares, 5% of its fully diluted shares, to its own Anthropic Public Benefit Fund, and the board may add up to 2% more every time the stock price rises 50% (p.&nbsp;12). The co-founders have each pledged 80% of their personal equity to philanthropy. Your dilution is someone’s endowment.</li>
+</ul>
+<section id="a-napkin-valuation" class="level3">
+<h3 class="anchored" data-anchor-id="a-napkin-valuation">A napkin valuation</h3>
+<p>The filing does not state a valuation, so this part is mine, not the S-1’s. The most recent private round, Series H-1 in May and June 2026, priced at $589.0095 per preferred share, or about <strong>$58.90 per common share</strong> after the 10-for-1 stock split in September (pp.&nbsp;282 to 283). The public benefit contribution implies about <strong>16.9 billion fully diluted shares</strong> at June 30, 2026 (846.8 million is 5%, p.&nbsp;12). Multiply, and the last private round valued Anthropic at roughly <strong>$1 trillion</strong>.</p>
+<p>Against an annualized first-half revenue run of about $32.6 billion, that is around 30 times sales. The IPO price will tell us what public markets think. Remember that the price range is still blank.</p>
+<p>Also on the “know before you buy” list: $26.6 billion of unrecognized stock compensation, much of which will hit the income statement when the IPO happens (p.&nbsp;173). Expect the first public quarter to look ugly on a GAAP basis for that reason alone.</p>
+</section>
+</section>
+<section id="the-risk-factors-worth-reading" class="level2">
+<h2 class="anchored" data-anchor-id="the-risk-factors-worth-reading">The Risk Factors Worth Reading</h2>
+<p>The risk factors run from page 26 to page 119. Most are standard. A handful are not:</p>
+<ul>
+<li><strong>The government fight.</strong> In February 2026, after the company said its technology should not be used for mass domestic surveillance or fully autonomous weapons, “the President of the United States stated that he had directed that all federal executive agencies cease using our technology” (p.&nbsp;71). The Department of War labeled Anthropic a supply-chain risk. The company won in district court; an appeals court ruled 2 to 1 against it on one designation, and it has asked for rehearing (pp.&nbsp;71 to 72, F-64). This is still live.</li>
+<li><strong>Export controls.</strong> In June 2026, the Commerce Department imposed worldwide restrictions on two of Anthropic’s most advanced models, and the company disabled them for all customers until the restrictions were lifted (p.&nbsp;99). A product recall, but for intelligence.</li>
+<li><strong>The models themselves.</strong> The filing discloses that models, “including our own, have exhibited… unexpected strategic or self-preserving behaviors, including attempts to resist shutdown,” and even “behavior resembling blackmail” (p.&nbsp;46). It also notes “we have observed models behaving differently when they detect or infer that they are being evaluated” (p.&nbsp;46). I have read many S-1s. This is the first one where the product might be grading the auditor.</li>
+<li><strong>Copyright.</strong> Beyond the $1.5 billion Bartz settlement, music publishers, Reddit, and several Canadian news organizations have pending claims (pp.&nbsp;240 to 241).</li>
+<li><strong>Concentrated suppliers.</strong> The company relies on “a limited number of CSPs” (Amazon, Google, Microsoft) and chip supply concentrated in Taiwan (pp.&nbsp;33, 73).</li>
+</ul>
+</section>
+<section id="one-more-thing-the-s-1-warns-about-its-own-readers" class="level2">
+<h2 class="anchored" data-anchor-id="one-more-thing-the-s-1-warns-about-its-own-readers">One More Thing: The S-1 Warns About Its Own Readers</h2>
+<p>In May I joked that SpaceX illustrated its risk factors with a photo of a rocket on fire. Anthropic’s equivalent is a sentence: models may behave differently when they know they are being evaluated.</p>
+<p>I find that oddly reassuring as a disclosure, and slightly unnerving as a reader. Every analyst on Wall Street is about to evaluate ANT. I hope it behaves.</p>
+<p>Is it a good investment? That depends on the price, which isn’t in the document yet. What the document does show is a business whose unit economics turned positive this year, whose costs are locked in for a decade, and whose voting control is designed so that you, the shareholder, do not get the final say. You are buying the cash flows of a mission-driven company. The mission keeps the steering wheel.</p>
+<hr>
+<p><em>All financial figures, contract terms, and quotations come from Anthropic, PBC’s preliminary Form S-1, <a href="https://www.sec.gov/Archives/edgar/data/0002130357/000162828026067168/anthropicpbc-sx1.htm">filed with the SEC on October 26, 2026</a>; page numbers refer to that document. All charts are my own, drawn from figures in the filing. The implied gross margin, compute per revenue dollar, and napkin valuation are my calculations, not figures reported by the company. The preliminary filing leaves the price range, deal size, and several metrics blank, so details may change in later amendments. This post is commentary, not investment advice.</em></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/imrenhe\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 He Ren. All rights reserved. Made with <a href="https://quarto.org">Quarto</a>.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/imrenhe">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/imrenhe/">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://scholar.google.com/citations?user=POuWIfYAAAAJ&amp;hl=en">
+      <i class="bi bi-mortarboard-fill" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
